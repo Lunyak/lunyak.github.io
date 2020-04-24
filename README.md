@@ -6,4 +6,4 @@
 
 [Простой лендинг](https://lunyak.github.io/Lending_simple/ "Простой лендинг")
 
-[Чуть сложнее](https://github.com/Lunyak/ActiveBox/ "Чуть сложнее")
+[Чуть сложнее](https://lunyak.github.io/ActiveBox/ "Чуть сложнее")
