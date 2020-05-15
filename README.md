@@ -7,9 +7,9 @@
 
 Тут вы можете ознакомится с некоторыми моими работами:
 
-[ActiveBox](https://lunyak.github.io/ActiveBox/ "1")
+[ActiveBox](https://lunyak.github.io/ActiveBox "1")
 
-[Юридичесская консультация (lawyers)](https://lunyak.github.io/lawyers/ "2")
+[Юридичесская консультация (lawyers)](https://lunyak.github.io/lawyers "2")
 
-[Promises](https://lunyak.github.io/Love/ "3")
+[Promises](https://lunyak.github.io/Love "3")
 
