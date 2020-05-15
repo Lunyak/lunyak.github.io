@@ -2,13 +2,11 @@
 
 # Луняка Сергей
 
-Добрый день, тут вы можете ознакомиться с моими работами.
+Добрый день, тут вы можете ознакомиться с некоторыми моими работами.
 
-[Простой лендинг](https://lunyak.github.io/Lending_simple/ "Простой лендинг")
+[ActiveBox](https://lunyak.github.io/ActiveBox/ "Чуть сложнее")
 
-[Чуть сложнее](https://lunyak.github.io/ActiveBox/ "Чуть сложнее")
+[Юридичесская консультация (lawyers)](https://lunyak.github.io/lawyers/ "")
 
-[Юридичесская консультация](https://lunyak.github.io/lawyers/ "Чуть сложнее")
-
-[Одностраничный сайт, адаптивная верстка, немного jq](https://lunyak.github.io/Love/ "Одностраничный сайт, адаптивная верстка, немного jq, ")
+[Promises](https://lunyak.github.io/Love/ "Одностраничный сайт, адаптивная верстка, немного jq, ")
 
