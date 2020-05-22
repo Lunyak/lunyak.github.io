@@ -18,3 +18,7 @@
 
 [Promises](https://lunyak.github.io/Love "3")
 
+Фичи
+
+[Динамичесские карточки](https://codepen.io/lunyak/pen/KKdJJgR "3")
+
