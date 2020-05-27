@@ -6,9 +6,12 @@
 ![Альтернативный текст](https://sun9-15.userapi.com/zmo0OyjmhC7kbn_WJHpLOBNhMH3vlEblGao62g/Kw1SHLteaG8.jpg)
 
 Мне 29 лет. Работал инженером ПТО на Ростовской АЭС. Переехал в Питер и начал изучать програмирование. 
+Владею адаптивной версткой, pixel perfect, работаю на flex и grid, знаком с БЭМ, кроссбраузерной версткой. 
+Верстка с нуля с последующий интеграцие с wordpress.
+
 ### мои скилы: 
 
-|CSS|HTML|JavaScript|jQuery|Git|Sass|Gulp|Bootstrap|Wordpress|FIgma|Adobe Photoshop|
+CSS- HTML - JavaScript - jQuery- Git - Sass - Gulp - Bootstrap - Wordpress - FIgma - Adobe Photoshop
 
 Согласен на стажировку
 
@@ -20,3 +23,4 @@
 
 [Promises](https://lunyak.github.io/Love "3")
 
+### Если вы просмотрели мои анкету, и я вам не подашел, то я прошу вас, напишите несколько слов почему, думаю вы понимаете как важна обратная связь.
