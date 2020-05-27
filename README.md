@@ -3,7 +3,7 @@
 
 # Добро пожаловать на мою страничку в Git:
 
-мои скилы: 
+### мои скилы: 
 
 |CSS|HTML|JavaScript|jQuery|Git|Sass|Gulp|Bootstrap|Wordpress|FIgma|Adobe Photoshop|
 
