@@ -5,7 +5,7 @@
 
 ![Альтернативный текст](https://sun9-15.userapi.com/zmo0OyjmhC7kbn_WJHpLOBNhMH3vlEblGao62g/Kw1SHLteaG8.jpg)
 
-
+Мне 29 лет. Работал инженером ПТО на Ростовской АЭС. Переехал в Питер и начал изучать програмирование. 
 ### мои скилы: 
 
 |CSS|HTML|JavaScript|jQuery|Git|Sass|Gulp|Bootstrap|Wordpress|FIgma|Adobe Photoshop|
