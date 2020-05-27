@@ -4,6 +4,21 @@
 
 Добро пожаловать на мою страничку в Git:
 
+мои скилы: 
+
+CSS
+HTML
+JavaScript
+jQuery
+Git
+Sass
+Gulp
+Bootstrap
+Wordpress
+FIgma
+Adobe Photoshop
+
+Согласен на стажировку
 
 На этой страничке вы можете ознакомится с некоторыми моими работами. 
 
