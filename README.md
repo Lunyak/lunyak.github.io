@@ -3,7 +3,7 @@
 
 # Добро пожаловать на мою страничку в Git:
 
-![Альтернативный текст](https://sun9-43.userapi.com/vnMCPEqLdsNCg-Jh5Lax9ohdzKaV0gp5ZemhbA/_8V8_feE5bo.jpg)
+![Альтернативный текст](https://sun9-15.userapi.com/zmo0OyjmhC7kbn_WJHpLOBNhMH3vlEblGao62g/Kw1SHLteaG8.jpg)
 
 
 ### мои скилы: 
