@@ -6,17 +6,7 @@
 
 мои скилы: 
 
-CSS
-HTML
-JavaScript
-jQuery
-Git
-Sass
-Gulp
-Bootstrap
-Wordpress
-FIgma
-Adobe Photoshop
+|CSS|HTML|JavaScript|jQuery|Git|Sass|Gulp|Bootstrap|Wordpress|FIgma|Adobe Photoshop|
 
 Согласен на стажировку
 
