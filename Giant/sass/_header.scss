@@ -1,0 +1,294 @@
+
+
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-color: #f7fafc;
+  background-image: linear-gradient(to right, #fd712c 20%, #f21780 100%);
+  }
+
+.header__nav {
+  // width: 100%;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+// ===== Картинки с телефонами ==== //
+
+
+.header__phones {
+  overflow: hidden;
+  position: absolute;
+  width: 836px;
+  height: 80%;
+  top: 18%;
+  right: 0%;
+  perspective: 1000px;
+}
+
+// ===== Первый телефон ==== //
+
+.phones__card__one {
+  position: absolute;
+  top: 30%;
+  right: 37%;
+  width: 62%;
+  height: 60%;
+  transition: 1s;
+  z-index: 2;
+  cursor: pointer;
+  animation: pulsing 8s infinite;
+  img {
+    max-width: 100%;
+  }
+}
+
+.phones__card__one:active {
+  transform: translateY(-20px);
+}
+
+@keyframes pulsing {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+// =====  Два телефона ==== //
+
+
+.phones__card__two {
+  position: absolute;
+  top: 0%;
+  right: -2%;
+  width: 72%;
+  height: 82%;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.two__phone__img {
+  position: absolute;
+  right: 0%;
+  z-index: 2;
+  max-width: 100%;
+}
+
+.shadow{
+  position: absolute;
+  top: 90px;
+  right: 0;
+  width: 962px;
+  height: 86%;
+  transition: 0.3s;
+  background: url(../img/phones/Shadow.png);
+  img {
+    max-width: 100%;
+  }
+}
+
+.title__logo {
+  font-size: 36px;
+  margin-left: 50px;
+  position: relative;
+}
+
+.title__logo::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 40px;
+  top: 0;
+  left: -50px;
+  background-color: #ffffff;
+  background: url(../img/logo.svg);
+}
+
+.header__nav__link {
+  display: flex;
+  max-width: 500px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+    padding: 6px 29px 4px 30px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+    border: none;
+}
+
+.link:last-child {
+margin-right: 0;
+}
+
+.link:hover {
+  padding: 6px 29px 4px 30px;
+  background-color: #fff;
+  color: #222222;
+  font-weight: 500;
+  transition: .2s ease-in;
+}
+
+// Контетт главной страницы
+
+.header__content {
+  padding-top: 100px;
+  padding-bottom: 208px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header__title {
+  width: 507px;
+  color: #ffffff;
+}
+
+.title {
+  h1 {
+  margin-bottom: 16px;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 60px;
+  }
+
+  p {
+  margin-top: 23px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  }
+}
+
+.header__checklist {
+  margin: 16px 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.header__checklist li {
+  margin: 10px 0;
+  padding-left: 35px;
+  position: relative;
+}
+
+.header__checklist li::before {
+  position: absolute;
+  content: "\1111";
+  font-family: 'icomoon';
+  font-size: 1.3em;display: block;
+  width: 32px;
+  height: 29px;
+  top: -3px;
+  left: 4px
+}
+
+
+//  ===========   КНОПКА   ===============//
+
+.btn__title {
+  margin-top: 20px;
+  padding: 5px 40px;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 5px solid #e25724;
+  border-radius: 5px;
+  border-radius: 30px;
+  box-shadow:
+  0 -1px #e25724 inset,
+  0 1px #e25724 inset;
+  background: linear-gradient(#fff, #fff 20%, #d1d0cf);
+  cursor: pointer;
+  a{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2.4em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    //user-select: none;
+    color: #000;
+  }
+}
+
+.btn__title:active {
+  line-height: 2.6em;
+  background: linear-gradient(#ffffff, #c5d3de 20%, #f73939);
+  box-shadow: 0 -1px rgba(243, 7, 7, 0.4) inset;
+}
+
+.btn__title:before {
+  content: "";
+  position: absolute;
+  top: -10px; right: -10px; bottom: -10px; left: -10px;
+  z-index: -1;
+  border-radius: 8px;
+  background: linear-gradient(rgba(255, 255, 255, 0.795), rgba(255, 255, 255, 0.87));
+}
+
+// .burger {
+//   transition: all .4s ease;
+// }
+
+.burger {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 37px;
+  height: 25px;
+  transition: all .4s ease;
+
+}
+
+.burger__statick {
+  position: absolute;
+  width: 36px;
+  height: 24px;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  outline: none;
+  background: url(../img/menu-burger.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.burger__statick:active {
+  transform: rotate(0deg);
+}
+
+.burger__click {
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  outline: none;
+  background: url(../img/menu-cross.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.burger__click {
+  transform: rotate(180deg);
+}

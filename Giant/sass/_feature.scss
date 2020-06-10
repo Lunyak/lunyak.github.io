@@ -1,0 +1,127 @@
+
+.feature {
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+
+.feature::before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   border: 0px solid #777777;
+   width: 80%;
+   height: 2px;
+   background-color: #eeeeee;
+}
+
+.feature__wrap {
+   padding: 120px 0;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.feature__card {
+   margin-bottom: 58px;
+   max-width: 32%;
+   min-width: 295px;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   align-items: center;
+   z-index: 0;
+}
+
+.feature__card:nth-child(4) {
+   margin-bottom: 0px;
+}
+.feature__card:nth-child(5) {
+   margin-bottom: 0px;
+}
+.feature__card:nth-child(6) {
+   margin-bottom: 0px;
+}
+
+.card__img {
+   margin-right: 25px;
+   border: 1px solid #eeeeee;
+   border-radius: 50px;
+   width: 75px;
+   height: 75px;
+   position: relative;
+}
+
+.card__img::before {
+   color: #f31f79;
+   position: absolute;
+   font-size: 1.5em;
+   top: 34%;
+   left: 30%;
+   font-family: 'icomoon';
+   content: "\e900";
+   //transform: rotateY(180deg);
+}
+
+.icon2::before {
+   font-family: 'icomoon';
+   content: "\e901";
+   top: 35%;
+   left: 35%;
+   font-size: 1.5em;
+   }
+
+.icon3::before {
+   font-family: 'icomoon';
+   content: "\e903";
+   top: 35%;
+   left: 33%;
+   font-size: 1.5em;
+   transform: rotateY(0deg);
+   }
+
+.icon4::before {
+   font-family: 'icomoon';
+   content: "\e904";
+   top: 35%;
+   left: 37%;
+   font-size: 1.5em;
+   transform: rotateY(0deg);
+   }
+
+.icon5::before {
+   font-family: 'icomoon';
+   content: "\e905";
+   top: 35%;
+   left: 37%;
+   font-size: 1.4em;
+   }
+
+
+.icon6::before {
+   font-family: 'icomoon';
+   content: "\e906";
+   top: 35%;
+   left: 35%;
+   font-size: 1.4em;
+   }
+
+.card__feature-discription {
+   width: 257px;
+   h2 {
+      margin-bottom: 20px;
+      color: #222222;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 24px;
+   }
+   p {
+      display: inline;
+      color: #777777;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+   }
+}
