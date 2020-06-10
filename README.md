@@ -20,6 +20,8 @@ CSS- HTML - JavaScript - jQuery- Git - Sass - Gulp - Bootstrap - Wordpress - FIg
 
 [Promises](https://lunyak.github.io/Love "3")
 
+[Giant](https://lunyak.github.io/Giant "4")
+
 [Test work](https://lunyak.github.io/Test_work/ "5")
 
 ### Большое спасибо за просмотр.
