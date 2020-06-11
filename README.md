@@ -8,7 +8,7 @@
 
 ### мои скилы:
 
-CSS  HTML  JavaScript  jQuery- Git  Sass  Gulp  Bootstrap  Wordpress  FIgma  Adobe Photoshop
+ == CSS == HTML == JavaScript == jQuery == Git == Sass == Gulp == Bootstrap == Wordpress == FIgma == Adobe Photoshop
 
 ### Тут вы можете ознакомится с некоторыми моими работами.
 
@@ -20,7 +20,7 @@ CSS  HTML  JavaScript  jQuery- Git  Sass  Gulp  Bootstrap  Wordpress  FIgma  Ado
 
 [Web_market](https://lunyak.github.io/Web_market/ "4")
 
-[Good_carbon](https://Lunyak.github.io/Good_carbon/ "5")
+[Good_carbon](https://Lunyak.github.io/Good_carbon "5")
 
 [Bisness_Trans](https://lunyak.github.io/Bisness_Trans/ "6")
 
