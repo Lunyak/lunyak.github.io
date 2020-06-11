@@ -20,7 +20,7 @@
 
 [Web_market](https://lunyak.github.io/Web_market/ "4")
 
-[Good_carbon](https://Lunyak.github.io/Good_carbon "5")
+[Good_carbon](https://Lunyak.github.io/Good_carbon/ "5")
 
 [Bisness_Trans](https://lunyak.github.io/Bisness_Trans/ "6")
 
