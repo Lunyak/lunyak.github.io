@@ -424,6 +424,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 .product__content {
@@ -436,9 +437,12 @@ ul {
   width: 50%;
   height: 100%;
   min-height: 620px;
-  background-color: #DAE3F6;
   position: relative;
   overflow: hidden;
+}
+
+.product__content-left img {
+  max-width: 100%;
 }
 
 .product__img-left {
@@ -451,7 +455,12 @@ ul {
 
 .product__content-right {
   width: 50%;
+  height: 100%;
   position: relative;
+}
+
+.product__content-right img {
+  max-width: 100%;
 }
 
 .product__dots--1 {

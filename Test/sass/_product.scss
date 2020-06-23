@@ -3,6 +3,7 @@
   width: 100%;
   min-height: 620px;
   display: flex;
+  over
 }
 
 .product__content {
@@ -13,10 +14,11 @@
   width: 50%;
   height: 100%;
   min-height: 620px;
-
-  background-color: #DAE3F6;
   position: relative;
   overflow: hidden;
+  img {
+    max-width: 100%;
+  }
 }
 
 .product__img-left {
@@ -24,46 +26,16 @@
   top: 60%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-
 }
-
-// .product__img-left::before {
-//   content: "";
-//   position: absolute;
-//   top: 75%;
-//   left: 55%;
-//   width: 586px;
-//   height: 120px;
-//   background: url(../img/shadow.png) no-repeat;
-//   transform: translateY(-50%) translateX(-50%);
-//   z-index: 10;
-//   // background-color: red;
-// }
-
-// .product__content-right {
-//   position: relative;
-//   width: 50%;
-//   height: 540px;
-//   overflow: hidden;
-//   background: url(../img/product__fon2.jpg) no-repeat;
-//   // background-position: 15% 0%;
-//   background-size: cover;
-// }
 
 .product__content-right {
   width: 50%;
+  height: 100%;
   position: relative;
-  // background-position: 50% top;
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  img {
+    max-width: 100%;
+  }
 }
-
-// .product__img-right {
-  
-//   object-fit: cover;
-//   width: 100%;
-//   height: 100%;
-// }
 
 .product__dots--1 {
   position: absolute;
@@ -100,6 +72,5 @@
 
 .decor__right {
   position: absolute;
-  
 }
 
