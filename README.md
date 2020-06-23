@@ -26,7 +26,7 @@
 
 [Bisness_Trans](https://lunyak.github.io/Bisness_Trans/ "6")
 
-[Юридичесская консультация(lawyers)](https://lunyak.github.io/lawyers "8")
+[Юридичесская консультация](https://lunyak.github.io/lawyers "8")
 
 
 
