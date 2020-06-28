@@ -8,7 +8,7 @@
 
 ### мои скилы:
 
- == CSS == HTML == JavaScript == jQuery == Git == Sass == Gulp == Bootstrap == Wordpress == FIgma == Adobe Photoshop
+ == CSS == HTML == Vue.js == JavaScript == jQuery == Git == Sass == Gulp == Bootstrap == Wordpress == FIgma == Adobe Photoshop
 
 ### Тут вы можете ознакомится с некоторыми моими работами.
 
