@@ -22,7 +22,7 @@
 
 [Юридичесская консультация](https://lunyak.github.io/lawyers "5")
 
-[Фильтры на Vue](https://lunyak.github.io/WorkNeu "6")
+[Фильтры на Vue](https://lunyak.github.io/WorkVue "6")
 
 [Web_market](https://lunyak.github.io/Web_market/ "7")
 
