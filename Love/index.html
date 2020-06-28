@@ -35,9 +35,10 @@
                     </div>
                 </div>
             </div>
+
             <div class="header__content">
                 <div class="header__wrap">
-                    <img class="love__letter" src="../img/love_letter.png" alt="">
+                    <img class="love__letter" src="img/love_letter.png" alt="">
                     <div class="header__invite">
                         <p>You got an Invite!</p>
                     </div>
@@ -47,36 +48,42 @@
                     </div>
                 </div>
                 <div class="header__name">
-                    <div class="name__wrap">
+                    <form class="header__form" href="#">
                         <div class="name__left">
-                            <h1>John Smith</h1>
-                            <p>johnsmith@gmail.com</p>
+                            <input class="input__name text__right" placeholder="John Smith"></input>
+                            <input class="input__mail text__right" placeholder="johnsmith@gmail.com"></input>
                         </div>
                         <div class="name__icon">
+                            <button class="header__submit" type="submit"></button>
                         </div>
                         <div class="name__right">
-                            <h1>Janice Smith</h1>
-                            <p>janicesmith@hotmail.com</p>
+                            <input class="input__name" placeholder="Janice Smith"></input>
+                            <input class="input__mail" placeholder="janicesmith@hotmail.com"></input>
                         </div>
-                    </div>
+                    </form>
                     <div class="header__scroll">
                         <p>There’s a message inside</p>
                         <div class="scroll__bg">
-                            <h1>Hi Janice! Check out this great website</h1>
+                            <input class="scroll__bg-input" type="text" placeholder="Hi! write your promise here">
                         </div>
                     </div>
                 </div>
                 <div class="header__link">
-                    <div class="link__inner">
-                    </div>
+                    <a class="link__inner" href="#" data-scroll="#future"></a>
+                </div>
+                <div class="clouds__right">
+                    <img id="cloud__right" src="img/cloud__right.png" alt="funny__clouds">
+                </div>
+                <div class="clouds__left">
+                    <img src="img/cloud__left.png" alt="funny__clouds">
                 </div>
             </div>
     </header>
-    <div class="future">
+    <div class="future" id="future">
         <div class="container">
             <div class="future__content">
                 <div class="future__img">
-                    <img src="../img/illustration.svg" alt="">
+                    <img src="img/illustration.svg" alt="">
                 </div>
                 <div class="future__content-information">
                     <h1>Further Information</h1>
@@ -238,12 +245,8 @@
         </div>
     </div>
 </div>
-    <script src="libs/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
 </body>
 
 </html>

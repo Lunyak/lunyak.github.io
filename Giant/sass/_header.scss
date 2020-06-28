@@ -1,23 +1,48 @@
-
-
-
 .header {
   position: relative;
   width: 100%;
   height: 800px;
   background-color: #f7fafc;
   background-image: linear-gradient(to right, #fd712c 20%, #f21780 100%);
-  }
+}
 
-.header__nav {
-  // width: 100%;
+.header__inner {
   padding: 30px 0;
   display: flex;
   justify-content: space-between;
 }
 
-// ===== Картинки с телефонами ==== //
+.nav {
+  display: flex;
+  max-width: 500px;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.header__inner.fixed {
+  padding: 10px 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  height: auto;
+  background-image: linear-gradient(to right, #fd712c 20%, #f21780 100%);
+  z-index: 121;
+}
+
+.header__inner.fixed .nav {
+  margin-right: 15%;
+}
+
+.header__inner.fixed .header__logo {
+  margin-left: 15%;
+}
+
+.marggin {
+  margin-left: 0;
+}
+
+// ===== Картинки с телефонами ==== //
 
 .header__phones {
   overflow: hidden;
@@ -31,7 +56,7 @@
 
 // ===== Первый телефон ==== //
 
-.phones__card__one {
+.phones__card-one {
   position: absolute;
   top: 30%;
   right: 37%;
@@ -46,7 +71,7 @@
   }
 }
 
-.phones__card__one:active {
+.phones__card-one:active {
   transform: translateY(-20px);
 }
 
@@ -64,8 +89,7 @@
 
 // =====  Два телефона ==== //
 
-
-.phones__card__two {
+.phones__card-two {
   position: absolute;
   top: 0%;
   right: -2%;
@@ -75,14 +99,14 @@
   z-index: 2;
 }
 
-.two__phone__img {
+.two__phone-img {
   position: absolute;
   right: 0%;
   z-index: 2;
   max-width: 100%;
 }
 
-.shadow{
+.shadow {
   position: absolute;
   top: 90px;
   right: 0;
@@ -95,13 +119,13 @@
   }
 }
 
-.title__logo {
+.header__logo-text {
   font-size: 36px;
   margin-left: 50px;
   position: relative;
 }
 
-.title__logo::before {
+.header__logo-text::before {
   content: "";
   position: absolute;
   display: block;
@@ -113,24 +137,17 @@
   background: url(../img/logo.svg);
 }
 
-.header__nav__link {
-  display: flex;
-  max-width: 500px;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .link {
-    padding: 6px 29px 4px 30px;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 24px;
-    text-decoration: none;
-    border-radius: 25px;
-    text-align: center;
-    align-items: center;
-    border: none;
+  padding: 6px 29px 4px 30px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+  border-radius: 25px;
+  text-align: center;
+  align-items: center;
+  border: none;
 }
 
 .link:last-child {
@@ -142,7 +159,7 @@
   background-color: #fff;
   color: #222222;
   font-weight: 500;
-  transition: .2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 // Контетт главной страницы
@@ -164,17 +181,17 @@
 
 .title {
   h1 {
-  margin-bottom: 16px;
-  font-size: 54px;
-  font-weight: 700;
-  line-height: 60px;
+    margin-bottom: 16px;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 60px;
   }
 
   p {
-  margin-top: 23px;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
+    margin-top: 23px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
   }
 }
 
@@ -195,14 +212,14 @@
 .header__checklist li::before {
   position: absolute;
   content: "\1111";
-  font-family: 'icomoon';
-  font-size: 1.3em;display: block;
+  font-family: "icomoon";
+  font-size: 1.3em;
+  display: block;
   width: 32px;
   height: 29px;
   top: -3px;
-  left: 4px
+  left: 4px;
 }
-
 
 //  ===========   КНОПКА   ===============//
 
@@ -215,12 +232,10 @@
   border: 5px solid #e25724;
   border-radius: 5px;
   border-radius: 30px;
-  box-shadow:
-  0 -1px #e25724 inset,
-  0 1px #e25724 inset;
+  box-shadow: 0 -1px #e25724 inset, 0 1px #e25724 inset;
   background: linear-gradient(#fff, #fff 20%, #d1d0cf);
   cursor: pointer;
-  a{
+  a {
     font-size: 14px;
     font-weight: 700;
     line-height: 2.4em;
@@ -241,15 +256,14 @@
 .btn__title:before {
   content: "";
   position: absolute;
-  top: -10px; right: -10px; bottom: -10px; left: -10px;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
   z-index: -1;
   border-radius: 8px;
   background: linear-gradient(rgba(255, 255, 255, 0.795), rgba(255, 255, 255, 0.87));
 }
-
-// .burger {
-//   transition: all .4s ease;
-// }
 
 .burger {
   position: absolute;
@@ -257,8 +271,7 @@
   right: 30px;
   width: 37px;
   height: 25px;
-  transition: all .4s ease;
-
+  transition: all 0.4s ease;
 }
 
 .burger__statick {
@@ -272,7 +285,6 @@
   background: url(../img/menu-burger.svg);
   background-size: 100%;
   background-repeat: no-repeat;
-
 }
 
 .burger__statick:active {

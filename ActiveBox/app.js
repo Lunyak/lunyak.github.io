@@ -3,7 +3,7 @@ $(function(){
     /*fixed Header */
 
     let header = $("#header");
-    let intro = $("#intro");
+    let intro = $("#header");
     let introH = intro.innerHeight();
     let scrollPos = $(window).scrollTop();
     let nav = $("#nav");
@@ -16,8 +16,6 @@ $(function(){
         scrollPos = $(this).scrollTop();
 
         checkScroll(scrollPos, introH)
-
-        
     });
 
     function checkScroll(scrollPos, introH) {
@@ -26,48 +24,39 @@ $(function(){
         } else {
             header.removeClass("fixed");
         }
-
     }
 
 
      /* Smoof scroll */
-     $("[data-scroll]").on("click", function(event) {
-         event.preventDefault();
+    $("[data-scroll]").on("click", function(event) {
+        event.preventDefault();
 
-         let elementId = $(this).data('scroll');
-         let elementOffset = $(elementId).offset().top;
+        let elementId = $(this).data('scroll');
+        let elementOffset = $(elementId).offset().top;
 
-         nav.removeClass("show");
-
-         $("html, body").animate({
-             scrollTop: elementOffset - 70
-         }, 1000);
-     });
+        nav.removeClass("show");
+        $("html, body").animate({
+            scrollTop: elementOffset - 70
+        }, 1000);
+    });
 
       /* Nav Toggle */
-      NavToggle.on("click", function(event) {
-          event.preventDefault();
+    NavToggle.on("click", function(event) {
+        event.preventDefault();
 
-          nav.toggleClass("show")
-      });
+        nav.toggleClass("show")
+    });
 
-      /* Reviews https://kenwheeler.github.io/slick/*/ 
+    let slider = $("#reviewsSlider");
 
-      let slider = $("#reviewsSlider");
-      
-      slider.slick({
-          infinite: true,
-          sliderToShow: 1,
-          sliderToScroll: 1,
-          fade: false,
-          arrows: false,
-          dots: true
+    slider.slick({
+        infinite: true,
+        sliderToShow: 1,
+        sliderToScroll: 1,
+        fade: false,
+        arrows: false,
+        dots: true
 
-      });
-
-
-
-
-
+    });
 
 });

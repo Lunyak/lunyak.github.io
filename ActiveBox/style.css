@@ -5,7 +5,6 @@ body {
     font-size: 14px;
     color: #6c7279;
     -webkit-font-smoothing: antialiased;
-    
     background-color: #fff;
 }
 
@@ -22,7 +21,7 @@ h1,h2,h3,h4,h5,h6 {
 p {
     margin: 0 0 10px;
 }
-/* Container 
+/* Container
 ===============================*/
 
 .container {
@@ -56,7 +55,7 @@ p {
     border-bottom: 0;
 
 
-} 
+}
 
 .header__inner {
     display: flex;
@@ -741,7 +740,7 @@ opacity: 1;
     .works__item {
         width: 100%;
         height: 300px;
-    }    
+    }
 
     .team {
         margin: 60px 0 30px;
@@ -788,4 +787,5 @@ opacity: 1;
         right: -40%;
         z-index: 1;
 
+    }
 }

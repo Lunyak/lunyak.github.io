@@ -13,11 +13,11 @@ $(function () {
   });
 
    // if (window.innerWidth > 1000) {
-   $(".item").eq(1).css({
+  $(".item").eq(1).css({
       transform: "translate3d(65%,0,-150px)",
       "box-shadow": "0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19)",
       "z-index": "9",
-   });
+  });
    // } else {
    //    $(".item").eq(1).css({
    //       "opacity": "0",
@@ -30,11 +30,11 @@ $(function () {
   });
 //   №3 справа   //
    // if (window.innerWidth > 810) {
-   $(".item").eq(3).css({
+  $(".item").eq(3).css({
       transform: "translate3d(220%,0,-600px)",
       "box-shadow": "0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19)",
       "z-index": "7",
-   });
+  });
    // } else {
    //    $(".item").eq(1).css({
    //       "opacity": "0",
@@ -185,6 +185,8 @@ function slide(no) {
   });
 }
 
+// burger menu //
+
 let isClosed = true;
 
 $(document).ready(function () {
@@ -194,7 +196,7 @@ $(document).ready(function () {
     if (isClosed) {
       isClosed = false;
 
-      $(".header__nav__link ").css({
+      $(".nav").css({
         display: "flex",
       });
 
@@ -212,13 +214,15 @@ $(document).ready(function () {
         });
       }
 
-      $(".header__nav__link ").css({
+      $(".nav").css({
         display: "none",
       });
     }
   });
 });
 
+
+// убираем титульный текст при выпадании бургера //
 $(window).resize(function () {
   const windowWidth = $(window).width();
 
@@ -228,13 +232,10 @@ $(window).resize(function () {
     });
     isClosed = true;
   }
-  // if (isClosed = false) {
-  //    $(."title").css({
-  //       opacity: "0",
-  //    });
-  // }
 });
 
+
+//  условия закрытия/открытия бургера //
 let burger = true;
 
 $(document).ready(function () {
@@ -253,15 +254,16 @@ $(document).ready(function () {
   });
 });
 
+
+// slider - custom //
 $(document).ready(function () {
-   $(".custom__slider").slick({
-   centerMode: true,
-    // centerPadding: '60px',
-   slidesToShow: 1,
-   variableWidth: true,
-   responsive: [
+  $(".custom__slider").slick({
+  centerMode: true,
+  slidesToShow: 1,
+  variableWidth: true,
+  responsive: [
       {
-         breakpoint: 1300,
+      breakpoint: 1300,
       settings: {
       arrows: true,
       centerMode: true,
@@ -270,14 +272,58 @@ $(document).ready(function () {
       },
       },
       {
-        //  breakpoint: 480,
       settings: {
       arrows: false,
       centerMode: true,
-      // centerPadding: '40px',
       slidesToShow: 1,
       },
       },
-   ],
+    ],
+  });
 });
+
+
+  /*fixed Header */
+$(function(){
+
+  let nav = $(".header__inner");
+  let windowWidth = $(window).innerWidth();
+  let content = $("#header");
+  let contentH = content.innerHeight();
+  let scrollPos = $(window).scrollTop();
+  let NavToggle = $("#NavToggle");
+
+  // checkScroll(scrollPos, contentH);
+
+  $(window).on("scroll resize", function() {
+      scrollPos = $(this).scrollTop();
+
+      if( scrollPos > contentH - 80 ) {
+        nav.addClass("fixed");
+      } else {
+        nav.removeClass("fixed");
+      }
+  });
+
+
+   /* Smoof scroll */
+  $("[data-scroll]").on("click", function(event) {
+      event.preventDefault();
+
+      let elementId = $(this).data('scroll');
+      let elementOffset = $(elementId).offset().top;
+
+      nav.removeClass("show");
+
+      $("html, body").animate({
+          scrollTop: elementOffset - 70
+      }, 1000);
+  });
+
+    /* Nav Toggle */
+  NavToggle.on("click", function(event) {
+      event.preventDefault();
+
+      nav.toggleClass("show")
+  });
 });

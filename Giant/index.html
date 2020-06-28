@@ -12,34 +12,32 @@
 
     <!--=========== HEADER ===============-->
 
-    <header class="header">
-      <div class="header__phones">
-
-          <div class="phones__card__one">
-            <img src="img/phones/phone_one.png" alt="" />
-          </div>
-          <div class="phones__card__two">
-            <img class="two__phone__img" src="img/phones/two_phone.png" alt="" />
-          </div>
-          <div class="shadow"></div>
-
-        </div>
+    <header class="header" id="header">
       <div class="container">
-        <div class="header__nav">
-          <div class="header__nav__logo">
-            <h2 class="title__logo">Giant</h2>
+        <div class="header__inner">
+          <div class="header__logo">
+            <h2 class="header__logo-text">Giant</h2>
           </div>
-          <div class="header__nav__link">
-            <a class="link" href="#">Home</a>
-            <a class="link" href="#">Features</a>
-            <a class="link" href="#">Pricing</a>
-            <a class="link" href="#">Download Now</a>
+          <div class="nav">
+            <a class="link" href="#" data-scroll="#header">Home</a>
+            <a class="link" href="#" data-scroll="#feature">Features</a>
+            <a class="link" href="#" data-scroll="#pricing">Pricing</a>
+            <a class="link" href="#" data-scroll="#download">Download Now</a>
           </div>
           <div class="burger burger__statick">
-            <!-- <img src="img/menu-burger.svg" alt="burger"> -->
           </div>
+          </div>
+      </div>
+      <div class="header__phones">
+          <div class="phones__card-one">
+            <img src="img/phones/phone_one.png" alt="phone">
+          </div>
+          <div class="phones__card-two">
+            <img class="two__phone-img" src="img/phones/two_phone.png" alt="" />
+          </div>
+          <div class="shadow"></div>
         </div>
-        <!--=========  nav  ===============-->
+      <div class="container">
         <div class="header__content">
           <div class="header__title">
             <div class="title">
@@ -59,7 +57,6 @@
             </button>
           </div>
           <!-- /.header__title -->
-
         </div>
       </div>
       <!--=========  container   ===============-->
@@ -67,7 +64,7 @@
 
     <!--============= FUTURE  ===============-->
 
-    <section class="feature">
+    <section class="feature" id="feature">
       <div class="container">
         <div class="feature__wrap">
 
@@ -143,7 +140,7 @@
 
     <!--============= PRODUCT ================-->
 
-    <section class="product">
+    <section class="product" id="product">
       <div class="container">
         <div class="product__wrap flex">
           <div class="product__img">
@@ -176,7 +173,7 @@
 
     <!--============== SLIDER ================-->
 
-    <section class="slider">
+    <section class="slider" id="slider">
       <div class="slider__title">
         <h2>Take a look at our screenshots</h2>
         <p>Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
@@ -200,7 +197,7 @@
 
     <!--============= SERVISES ================-->
 
-    <section class="services">
+    <section class="services" id="pricing">
       <div class="container">
         <div class="services__contant">
           <div class="services__title">
@@ -291,7 +288,7 @@
 
     <!--=============== CUSTOM  ==================-->
 
-    <section class="custom">
+    <section class="custom" id="custom">
       <div class="container">
         <div class="custom__content">
           <div class="custom__title">
@@ -404,7 +401,7 @@
 
     <!--=============== DOWNLOAD  ==================-->
 
-    <section class="download">
+    <section class="download" id="download">
       <div class="container">
         <div class="download__title-wrap">
           <div class="download__title">
@@ -499,7 +496,7 @@
 
     <!--==============  FOOTER  ==================-->
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer__social">
         <a href="#" class="facebook"></a>
         <a href="#" class="twitter"></a>
@@ -512,7 +509,6 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="js/jquery-3.5.0.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>

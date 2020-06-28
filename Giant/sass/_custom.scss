@@ -66,6 +66,7 @@
    transform: translateY(-50%);
    border: 1px solid #eeeeee;
    background-color: #fff;
+   cursor: pointer;
 }
 
 
@@ -77,6 +78,7 @@
 .custom__slider .slick-arrow.slick-next {
    right: -10%;
    z-index: 10;
+   cursor: pointer;
 }
 
 .custom__slider .slick-arrow.slick-next::before {
@@ -130,11 +132,6 @@
    color: #ffffff;
 }
 
-
-
-
-
-
 .custom__slider-item {
    width: 350px;
    margin: 0 10px;
@@ -148,20 +145,6 @@
 background-color: #fff;
 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-
-// .custom__slider .slick-arrow.slick-next::before {
-//    position: absolute;
-//    display: block;
-//    font-family: 'icomoon';
-//    content: "\e908";
-//    top: 50%;
-//    left: 50%;
-//    transform: translateX(-50%) translateY(-50%);
-//    width: 100px;
-//    height: 100px;
-// }
-
-
 
 .custom__slider-item {
    min-width: 360px;

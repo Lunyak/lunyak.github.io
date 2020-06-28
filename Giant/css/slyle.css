@@ -142,7 +142,7 @@ p, a, li, button, span {
   background-image: linear-gradient(to right, #fd712c 20%, #f21780 100%);
 }
 
-.header__nav {
+.header__inner {
   padding: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,6 +150,43 @@ p, a, li, button, span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 500px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__inner.fixed {
+  padding: 10px 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  height: auto;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #fd712c), to(#f21780));
+  background-image: linear-gradient(to right, #fd712c 20%, #f21780 100%);
+  z-index: 121;
+}
+
+.header__inner.fixed .nav {
+  margin-right: 15%;
+}
+
+.header__inner.fixed .header__logo {
+  margin-left: 15%;
+}
+
+.marggin {
+  margin-left: 0;
 }
 
 .header__phones {
@@ -163,7 +200,7 @@ p, a, li, button, span {
           perspective: 1000px;
 }
 
-.phones__card__one {
+.phones__card-one {
   position: absolute;
   top: 30%;
   right: 37%;
@@ -177,11 +214,11 @@ p, a, li, button, span {
           animation: pulsing 8s infinite;
 }
 
-.phones__card__one img {
+.phones__card-one img {
   max-width: 100%;
 }
 
-.phones__card__one:active {
+.phones__card-one:active {
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
@@ -216,7 +253,7 @@ p, a, li, button, span {
   }
 }
 
-.phones__card__two {
+.phones__card-two {
   position: absolute;
   top: 0%;
   right: -2%;
@@ -227,7 +264,7 @@ p, a, li, button, span {
   z-index: 2;
 }
 
-.two__phone__img {
+.two__phone-img {
   position: absolute;
   right: 0%;
   z-index: 2;
@@ -249,13 +286,13 @@ p, a, li, button, span {
   max-width: 100%;
 }
 
-.title__logo {
+.header__logo-text {
   font-size: 36px;
   margin-left: 50px;
   position: relative;
 }
 
-.title__logo::before {
+.header__logo-text::before {
   content: "";
   position: absolute;
   display: block;
@@ -265,19 +302,6 @@ p, a, li, button, span {
   left: -50px;
   background-color: #ffffff;
   background: url(../img/logo.svg);
-}
-
-.header__nav__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 500px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .link {
@@ -304,8 +328,8 @@ p, a, li, button, span {
   background-color: #fff;
   color: #222222;
   font-weight: 500;
-  -webkit-transition: .2s ease-in;
-  transition: .2s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .header__content {
@@ -360,7 +384,7 @@ p, a, li, button, span {
 .header__checklist li::before {
   position: absolute;
   content: "\1111";
-  font-family: 'icomoon';
+  font-family: "icomoon";
   font-size: 1.3em;
   display: block;
   width: 32px;
@@ -378,8 +402,8 @@ p, a, li, button, span {
   border: 5px solid #e25724;
   border-radius: 5px;
   border-radius: 30px;
-  -webkit-box-shadow: 0 -1px #e25724 inset, 0 1px #e25724 inset;
-          box-shadow: 0 -1px #e25724 inset, 0 1px #e25724 inset;
+  -webkit-box-shadow: 0 -1px #e25724 inset, 0 1px #e25724 inset;
+          box-shadow: 0 -1px #e25724 inset, 0 1px #e25724 inset;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(20%, #fff), to(#d1d0cf));
   background: linear-gradient(#fff, #fff 20%, #d1d0cf);
   cursor: pointer;
@@ -422,8 +446,8 @@ p, a, li, button, span {
   right: 30px;
   width: 37px;
   height: 25px;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .burger__statick {
@@ -1225,11 +1249,13 @@ p, a, li, button, span {
           transform: translateY(-50%);
   border: 1px solid #eeeeee;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .custom__slider .slick-arrow.slick-next {
   right: -10%;
   z-index: 10;
+  cursor: pointer;
 }
 
 .custom__slider .slick-arrow.slick-next::before {
@@ -1655,8 +1681,14 @@ p, a, li, button, span {
 }
 
 @media (max-width: 1350px) {
-  .header__nav {
-    margin: 0 40px;
+  .header__inner.fixed .nav {
+    margin-right: 5%;
+  }
+  .header__inner.fixed .header__logo {
+    margin-left: 5%;
+  }
+  .header__logo {
+    margin-left: 40px;
   }
   .header__phones {
     width: 682px;
@@ -1697,7 +1729,7 @@ p, a, li, button, span {
     width: 548px;
     top: 26%;
   }
-  .phones__card__one {
+  .phones__card-one {
     top: 22%;
   }
   .shadow {
@@ -2021,7 +2053,7 @@ p, a, li, button, span {
     top: 40px;
     right: 40px;
   }
-  .header__nav__link {
+  .nav {
     padding: 0px 0px;
     display: none;
     position: absolute;
@@ -2037,7 +2069,7 @@ p, a, li, button, span {
             transform: translateX(50%);
     z-index: 10;
   }
-  .header__nav__link a {
+  .nav a {
     color: #000;
     -webkit-box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
@@ -2206,13 +2238,13 @@ p, a, li, button, span {
   .header {
     height: 800px;
   }
-  .header__nav {
+  .header__inner {
     margin: 0 10px;
   }
   .container {
     padding: 0 10px;
   }
-  .header__nav__link {
+  .nav {
     width: 90%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2248,7 +2280,7 @@ p, a, li, button, span {
     margin: 45px 0;
     text-align: left;
   }
-  .header__nav__link {
+  .nav {
     padding: 0px 0px;
     display: none;
     position: absolute;
@@ -2269,7 +2301,7 @@ p, a, li, button, span {
             transform: translateX(50%);
     z-index: 10;
   }
-  .header__nav__link a {
+  .nav a {
     color: #000;
     -webkit-box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.1);
@@ -2490,17 +2522,17 @@ p, a, li, button, span {
   .header__content {
     padding: 20px 0 20px 0;
   }
-  .header__nav {
+  .header__inner {
     margin: 0 10px;
   }
   .title h1 {
     font-size: 36px;
   }
-  .title__logo {
+  .header__logo-text {
     font-size: 32px;
     margin-left: 35px;
   }
-  .title__logo::before {
+  .header__logo-text::before {
     width: 48px;
     height: 25px;
     top: 50%;
@@ -2519,7 +2551,7 @@ p, a, li, button, span {
   .header {
     height: 100vh;
   }
-  .header__nav__link {
+  .nav {
     top: 100px;
   }
   .title h1 {
@@ -2546,11 +2578,11 @@ p, a, li, button, span {
     top: -3px;
     left: -1px;
   }
-  .title__logo {
+  .header__logo-text {
     font-size: 28px;
     margin-left: 35px;
   }
-  .title__logo::before {
+  .header__logo-text::before {
     width: 48px;
     height: 25px;
     top: 50%;
