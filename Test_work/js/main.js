@@ -517,3 +517,29 @@ $(window).resize(function () {
     burger = true;
   }
 });
+
+$(document).ready(function(){
+
+  var cur_width = $(window).width();
+
+  $(window).resize(function(){
+      if($(window).width() <= 1200 && cur_width > 1200){
+          //reload
+          location.reload();
+      }
+      else if($(window).width() > 1200 && cur_width <= 1200){
+          //reload
+          location.reload();
+      }
+
+      if($(window).width() <= 740 && cur_width > 740){
+          //reload
+          location.reload();
+      }
+      else if($(window).width() > 740 && cur_width <= 740){
+          //reload
+          location.reload();
+      }
+  });
+
+});
