@@ -30,7 +30,7 @@
 
 [Bisness_Trans](https://lunyak.github.io/Bisness_Trans/ "9")
 
-[TEST 03.07.20](https://lunyak.github.io/TEST_03.07.20/ "10")
+[TEST 03.07.20](https://lunyak.github.io//Test_03.07.20/ "10")
 
 
 
