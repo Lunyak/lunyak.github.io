@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Museo Sans", sans-serif;
+  font-size: 0.737vw;
+  line-height: 1.158vw;
+}
+
+ul,
+li,
+a {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 50.474vw;
+  margin: 0 auto;
+}
+
+// .main {
+//   flex-grow: 2;
+//   min-height: calc(100vh - 20.7vw);
+// }
+
+.footer {
+  margin-top: auto;
+  flex-grow: 0;
+}
+
+// .footer__fixed {
+//   position: fixed;
+// }
