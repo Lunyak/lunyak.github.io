@@ -1,6 +1,8 @@
 # Добро пожаловать на мою страничку:
 ![Альтернативный текст](https://sun9-15.userapi.com/zmo0OyjmhC7kbn_WJHpLOBNhMH3vlEblGao62g/Kw1SHLteaG8.jpg)
+
 ----------------------
+
 Мне 30 лет. Работал инженером ПТО на Ростовской АЭС. Переехал в Питер.
 Сменил сферу деятельности. Увлекся програмированием.
 Владею адаптивной версткой, pixel perfect, верстаю на flex и grid, владею методологией БЭМ, кроссбраузерной версткой.
@@ -9,47 +11,49 @@
 Хочу работать и развиваться в сфере Frontend разработки.
 
 ----------------------
+
 ### мои скилы:
-1. CSS   |+++++|
-2. HTML  |+++++|
-3. JavaScript |++++|
-4. Vue.js |+|
-5. React |++|
-6. Git |++++|
-7. Sass |+++++|
-8. Gulp/Webpack |++++|
-9. Bootstrap |++++|
-10. Wordpress |+++|
-11. Figma |++++|
-12. Adobe Photoshop |++++|
-13. Vue.js |+|
-14. React |++|
-15. jQuery |++++|
-16. 
+* CSS   |+++++|
+* HTML  |+++++|
+* JavaScript |++++|
+* Vue.js |+|
+* React |++|
+* Git |++++|
+* Sass |+++++|
+* Gulp/Webpack |++++|
+* Bootstrap |++++|
+* Wordpress |+++|
+* Figma |++++|
+* Adobe Photoshop |++++|
+* Vue.js |+|
+* React |++|
+* jQuery |++++|
+*
+
 ----------------------
 
 ### Тут вы можете ознакомится с некоторыми моими работами.
 
-[Giant](https://lunyak.github.io/Giant "1")
+[Giant](https://lunyak.github.io/Giant "1")*
 Лендинг - Немного Jq. Адаптивная верстка. Простой и сложный слайдер.
 Навигационное меню. Анимация.
 
-[Test Work](https://lunyak.github.io/Test_work/ "2")
+[Test Work](https://lunyak.github.io/Test_work/ "2")*
 Бургер меню. Модальное окно. Drop menu. Адаптация.
 Анимация. Замена контекта при клике. Сложный слайдер.
 
-[Promises](https://lunyak.github.io/Love "3")
+[Promises](https://lunyak.github.io/Love "3")*
 Анимация. Адаптивная верстка. Немного Jq. Простой слайдер.
 
-[ActiveBox](https://lunyak.github.io/ActiveBox "4")
+[ActiveBox](https://lunyak.github.io/ActiveBox "4")*
 Немного Jq. Панель навигации при скроле. Простой сладер.
-Адаптивная верстка. 
+Адаптивная верстка.*
 
-[Юридичесская консультация](https://lunyak.github.io/lawyers "5")
+[Юридичесская консультация](https://lunyak.github.io/lawyers "5")*
 Обратная форма связи. Адаптивная верстка. Простой слайдер.
 Немного Jq. Карта.
 
-[Фильтры на Vue](https://lunyak.github.io/WorklVue/ "6")
+[Фильтры на Vue](https://lunyak.github.io/WorklVue/ "6")*
 Освоил технику фильтрации на vue.js
 
 
