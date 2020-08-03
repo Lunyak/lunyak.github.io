@@ -16,6 +16,12 @@
 | 1. | css         | +++++  |
 | 2. | html        | +++++  |
 
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
 ### мои скилы:
 * CSS   |+++++|
 * HTML  |+++++|
