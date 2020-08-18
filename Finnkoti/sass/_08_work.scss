@@ -66,8 +66,8 @@
 .work-slider-description h3 {
   @media (max-width: 720px) {
     position: absolute;
-    top: -74%;
-    left: 52px;
+    top: -118%;
+    left: 59px;
     z-index: 11;
     max-width: 100%;
     font-size: 18px;
@@ -112,7 +112,7 @@
   transform: translateX(-50%);
   @media (max-width: 720px) {
     z-index: 10;
-    top: -82%;
+    top: -128%;
     left: 38px;
 
   }
@@ -167,10 +167,12 @@
   }
   @media (max-width: 720px) {
     max-width: 300px;
-    min-height: 354px;
+    min-height: 453px;
+    height: 453px;
     display: flex;
     align-items: center;
     padding-top: 100px;
+    max-height: 100%;
   }
 }
 

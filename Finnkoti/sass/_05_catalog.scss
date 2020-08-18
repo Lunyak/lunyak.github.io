@@ -672,7 +672,6 @@ input::-webkit-inner-spin-button {
     width: 100%;
     height: 15px;
     position: relative;
-
     font-family: SF UI Display;
     font-size: 14px;
     line-height: 150%;
@@ -682,8 +681,8 @@ input::-webkit-inner-spin-button {
         display: none;
     }
     @media (max-width: 768px) {
-      width: 100%;
-  }
+        width: 100%;
+    }
 }
 
 .catalog-form-square {
@@ -707,12 +706,12 @@ input::-webkit-inner-spin-button {
 .catalog-form-cheched-check label {
 	cursor: pointer;
 	position: absolute;
-	width: 15px;
-	height: 15px;
+	width: 16px;
+	height: 16px;
     top: 50%;
-	left: 20px;
+    left: 20px;
+    // right: 20px;
     transform: translateY(-50%);
-
 	background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
@@ -731,7 +730,7 @@ input::-webkit-inner-spin-button {
 
 	top: 50%;
 	left: 50%;
-  transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
 	// box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
 }
 
@@ -897,9 +896,12 @@ input::-webkit-inner-spin-button {
     margin: 20px 0;
 }
 .catalog-form-cheched-item-wrap {
-    margin-right: 5px;
+    margin-right: 15px;
+    @media (max-width: 1300px) {
+        // min-width: 178px;
+    }
     @media (max-width: 768px) {
-      min-width: 178px;
+        min-width: 178px;
     }
 }
 
@@ -908,18 +910,16 @@ input::-webkit-inner-spin-button {
     align-items: center;
     @media (max-width: 1300px) {
         display: none;
-     }
-   
+    }
 }
 
 .garage {
     margin-right: 20px;
-
-    // max-width: 150px;
     padding: 0 15px 0 0;
     line-height: 100%;
     label {
-        left: 80%;
+        left: auto;
+        right: 10px;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -955,7 +955,7 @@ input::-webkit-inner-spin-button {
     padding: 8px 16px;
     justify-content: center;
     outline: none;
-    
+
     @media (min-width: 1300px) {
         display: none;
     }
