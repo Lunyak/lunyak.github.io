@@ -31,7 +31,7 @@
 
 ### Тут вы можете ознакомится с некоторыми моими работами.
 
-[Finnkoti](https://lunyak.github.io/Finnkoti "6")*
+[Finnkoti](https://lunyak.github.io/Finnkoti/ "6")*
 Лендинг: Jq. Адаптивная верстка. Слайдеры.
 Навигационное меню. Анимация. Burger. Forma под фильтры.
 
