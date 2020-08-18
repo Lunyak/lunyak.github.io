@@ -1,0 +1,319 @@
+.team {
+    padding-top: 80px;
+    @media (max-width: 1300px) {
+        padding-top: 62px;
+    }
+    @media (max-width: 570px) {
+    }
+}
+
+.team-title {
+    h2 {
+        font-family: SF UI Display;
+        font-size: 36px;
+        line-height: 115%;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+    p {
+        font-family: SF UI Display;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+        max-width: 580px;
+        display: block;
+        color: rgba(0, 0, 0, 0.514);
+        margin: 0 auto;
+        font-weight: 400;
+    }
+}
+
+.team-title h2 {
+    @media (max-width: 570px) {
+        font-size: 24px;
+    }
+}
+.team-title p {
+    @media (max-width: 570px) {
+        font-size: 14px;
+        padding: 0 0px;
+        max-width: 95%;
+    }
+}
+
+
+.team-item-wrap {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 1300px) {
+        padding: 0 20px;
+        justify-content: center;
+    }
+    @media (max-width: 570px) {
+        padding: 0;
+    }
+}
+
+// обертка картинки
+.team-item-img-wrap {
+    margin-right: 20px;
+    @media (max-width: 1300px) {
+        width: 104px;
+        height: 142px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    @media (max-width: 570px) {
+    }
+}
+// картинка
+.team-item-img {
+    @media (max-width: 1300px) {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+    }
+    @media (max-width: 570px) {
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.team-item-discription-profissions-wrap .profession-name {
+    @media (max-width: 1300px) {
+        margin-bottom: 5px;
+    }
+}
+
+.profession-name span {
+    @media (max-width: 1300px) {
+        display: none;
+    }
+    @media (max-width: 570px) {
+    }
+}
+
+.experience {
+    display: none;
+    @media (max-width: 1300px) {
+        display: block;
+        font-size: 14px;
+    }
+    @media (max-width: 570px) {
+    }
+}
+
+.team-item-discription-profissions-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-item-img-wrap-head .team-item-discription-profissions-wrap {
+    display: none;
+    @media (max-width: 1300px) {
+        display: block;
+    }
+    @media (max-width: 570px) {
+    }
+}
+
+.team-item-discription .team-item-discription-profissions-wrap {
+    // display: none;
+    @media (max-width: 1300px) {
+        display: none;
+    }
+    @media (max-width: 570px) {
+    }
+}
+
+.team-item-img-wrap-head {
+    h3 {
+        font-size: 24px;
+        line-height: 150%;
+        margin-bottom: 6px;
+    }
+    p {
+        margin-bottom: 20px;
+        font-family: SF UI Display;
+        font-size: 14px;
+        line-height: 150%;
+        color: rgba(0, 0, 0, 0.425);
+        font-weight: 400;
+    }
+    @media (max-width: 1300px) {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    @media (max-width: 570px) {
+        padding: 0 10px;
+        margin-bottom: 10px;
+        justify-content: flex-start;
+        display: flex;
+        max-width: 95%;
+        // margin: 0 auto;
+    }
+}
+
+.team-item-discription-wrap {
+    @media (max-width: 1300px) {
+        margin-bottom: 30px;
+    }
+    @media (max-width: 570px) {
+        margin-bottom: 10px;
+        max-width: 95%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+.team-item {
+    margin-top: 57px;
+    margin-left: 47px;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 1300px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 40px;
+    }
+    @media (max-width: 570px) {
+        margin: 10px 0;
+        margin-top: 30px;
+    }
+}
+
+.team-item:nth-child(1n){
+    margin-left: 0px;
+}
+
+.team-item:nth-child(2n){
+    margin-left: 0px;
+    @media (max-width: 1300px) {
+        margin-right: 0px;
+    }
+    @media (max-width: 570px) {
+    }
+}
+
+.team-item-discription {
+    width: 349px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 570px) {
+        width: 100%;
+    }
+}
+
+.team-item-discription-profissions-wrap h3 {
+    @media (max-width: 570px) {
+        font-size: 16px;
+    }
+}
+.team-item-discription-wrap h3 {
+    font-family: SF UI Display;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 6px;
+    @media (max-width: 570px) {
+        font-size: 16px;
+    }
+}
+
+.team-item-discription-wrap p {
+    margin-bottom: 20px;
+    font-family: SF UI Display;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.425);
+    font-weight: 400;
+}
+
+.team-item-discription-wrap span {
+    font-family: SF UI Display;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.btn-simple {
+    padding: 12px 36px;
+    max-width: 183px;
+    background: #4479BC;
+    border-radius: 50px;
+    border: none;
+
+    font-family: SF UI Display;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    @media (max-width: 1300px) {
+        padding: 12px 60px;
+        max-width: 100%;
+    }
+}
+
+.team-learn-more  {
+    @media (max-width: 570px) {
+        margin: 0 auto;
+    }
+}
+
+
+.team-learn-more p {
+    margin-bottom: 14px;
+    max-width: 400px;
+    display: block;
+    font-family: SF UI Display;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.3);
+    @media (max-width: 1300px) {
+        margin-bottom: 20px;
+    }
+    @media (max-width: 570px) {
+        display: none;
+    }
+}
+
+
+
+
+
+.team-item-discription-wrap .team-item-discription-profissions-info {
+    @media (max-width: 570px) {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// .team-item-discription-profissions-wrap {
+//     display: flex;
+// }
+
+

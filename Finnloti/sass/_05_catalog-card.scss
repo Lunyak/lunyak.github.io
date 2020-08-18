@@ -1,0 +1,174 @@
+.catalog-card-wrap {
+    padding: 0 60px;
+    text-decoration: none;
+    color: #000;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1400px) {
+        flex-wrap: wrap;
+    }
+    @media (max-width: 1300px) {
+        justify-content: space-between;
+        padding: 0 0px;
+    }
+    @media (max-width: 1110px) {
+        justify-content: center;
+        padding: 0 0px;
+    }
+    @media (max-width: 848px) {
+        padding: 0 0px;
+    }
+}
+
+.catalog-card {
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // width: 417px;
+    // min-width: 417px;
+    min-height: 391px;
+    background: #ffffff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+
+    hr {
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0.15);
+        color: rgba(0, 0, 0, 0.15);
+        border: none;
+        height: 1px;
+    }
+    @media (max-width: 1300px) {
+        margin-right: 0px;
+        // width: 100%;
+        // min-width: 100%;
+    }
+    @media (max-width: 1110px) {
+        margin-right: 10px;
+        // width: 100%;
+        // min-width: 100%;
+    }
+    @media (max-width: 570px) {
+       margin: 10px 0;
+    }
+}
+
+.catalog-card:nth-child(2n) {
+    @media (max-width: 1400px) {
+        margin-right: 0px;
+    }
+}
+.catalog-card-img-wrap {
+    width: 100%;
+    img {
+        width: 417px;
+        height: auto;
+    }
+}
+
+.catalog-card-img-wrap img {
+    @media (max-width: 1400px) {
+        width: 354px;
+        height: auto;
+    }
+    @media (max-width: 570px) {
+       
+    }
+}
+
+
+
+.catalog-card-info {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+        font-family: SF UI Display;
+        font-size: 20px;
+        line-height: 150%;
+    }
+    p {
+        font-family: SF UI Display;
+        font-size: 14px;
+        line-height: 150%;
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.catalog-card-price {
+    font-family: SF UI Display;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.5);
+    span {
+        padding: 0 4px;
+        font-size: 20px;
+        line-height: 150%;
+        color: #000000;
+    }
+}
+
+.catalog-card-price span {
+    @media (max-width: 540px) {
+        font-size: 14px;
+    }
+}
+
+.catalog-card-specifications {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalog-card-specifications p {
+    @media (max-width: 540px) {
+        font-size: 12px;
+    }
+}
+
+.catalog-form-look-more {
+    text-align: center;
+    margin: 0 auto;
+    padding: 12px 36px;
+    background: #4479bc;
+    border-radius: 50px;
+    border: none;
+    font-family: SF UI Display;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.catalog-card-size {
+    display: flex;
+    svg {
+        margin-right: 12px;
+    }
+}
+.catalog-card-flat {
+    display: flex;
+    svg {
+        margin-right: 12px;
+    }
+}
+.catalog-card-count {
+    display: flex;
+    svg {
+        margin-right: 12px;
+    }
+}
+
+.catalog-card-dicription {
+    h3 {
+        font-size: 14px;
+    }
+}

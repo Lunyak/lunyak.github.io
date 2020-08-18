@@ -461,51 +461,7 @@ $(document).ready(function () {
 
 //   четвертая карточка  //
 
-let linkFore = true;
 
-$(document).ready(function () {
-  $(".learn__more-fore").on("click", function () {
-    if (linkFore) {
-      $(".toggle__img-fore").removeClass("fore"); // меняем цифру на картинку
-      $(".toggle__img-fore").addClass("img__up"); // меняем цифру на картинку
-      $(".img__up").show();
-      $(".card").css({
-        "margin-right": "80px",
-      });
-      $(".transform__fore").css({
-        "padding-left": "70px",
-      });
-      $(".new").css({
-        // new
-        left: "185px",
-      });
-      $(".text__h2-fore").text("Search Data");
-      $(".text__paragrath-fore").text(
-        "Each time she picked one she thought that she could see an even more beautiful one a little way off, and she ran after it, going further and further into the woods."
-      );
-      linkFore = false;
-    } else {
-      $(".toggle__img-fore").removeClass("img__up"); // меняем цифру на картинку
-      $(".toggle__img-fore").addClass("fore"); // меняем цифру на картинку
-      $(".img__up").hide();
-      $(".card").css({
-        "margin-right": "150px",
-      });
-      $(".transform__fore").css({
-        "padding-left": "0px",
-      });
-      $(".new").css({
-        // new
-        left: "115px",
-      });
-      $(".text__h2-fore").text("Second Feature");
-      $(".text__paragrath-fore").text(
-        "SDon’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time."
-      );
-      linkFore = true;
-    }
-  });
-});
 
 $(window).resize(function () {
   const windowWidth = $(window).width();
@@ -541,5 +497,12 @@ $(document).ready(function(){
           location.reload();
       }
   });
+
+
+
+
+
+
+
 
 });
