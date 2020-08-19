@@ -369,15 +369,15 @@
     display: block;
     min-width: 229px;
     margin-left: 0;
-    @media (max-width: 1400px) {
-        // display: none;
-    }
+    background-color: #fff;
     @media (max-width: 768px) {
-       width: 100%;
-       padding: 0 10px;
-       margin: 0 auto;
+        width: 100%;
+        padding: 0 0px;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 }
+
 .drop-checked .form-control-flat {
     display: block;
     min-width: 229px;
@@ -385,7 +385,7 @@
         // display: none;
     }
     @media (max-width: 768px) {
-       width: 100%;
+        width: 100%;
     }
 }
 .drop-checked .form-control-rooms {
@@ -596,36 +596,33 @@
 }
 
 .checkselect-flat label {
-	// margin: 5px 0;
 	position: relative;
 	display: block;
-	// padding: 4px 6px 4px 45px;
 	font-weight: normal;
 	font-size: 1em;
 	line-height: 1.1;
-	cursor: pointer;
+    cursor: pointer;
+    background-color: #fff;
 }
 
 .checkselect-rooms label {
-	// margin: 5px 0;
 	position: relative;
 	display: block;
-	// padding: 4px 6px 4px 45px;
 	font-weight: normal;
 	font-size: 1em;
 	line-height: 1.1;
-	cursor: pointer;
+    cursor: pointer;
+    background-color: #fff;
 }
 
 .checkselect-square label {
-	// margin: 5px 0;
 	position: relative;
 	display: block;
-	// padding: 4px 6px 4px 45px;
 	font-weight: normal;
 	font-size: 1em;
 	line-height: 1.1;
-	cursor: pointer;
+    cursor: pointer;
+    background-color: #fff;
 }
 
 .checkselect-popup-flat input {
@@ -1054,7 +1051,7 @@ input::-webkit-inner-spin-button {
 
 .catalog-form-wrap-drop select {
   @media (max-width: 768px) {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 }
 

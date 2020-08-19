@@ -1,5 +1,5 @@
 
-// slider - custom //
+// main-slide //
 $(document).ready(function () {
   $(".main-slider").slick({
   slidesToShow: 1,
@@ -22,7 +22,7 @@ $(document).ready(function () {
   });
 });
 
-// slider - material //
+// material-slider //
 $(document).ready(function () {
   $(".material-slider").slick({
   slidesToShow: 1,
@@ -59,21 +59,14 @@ $(document).ready(function () {
     settings: {
     arrows: false,
     slidesToShow: 2,
-    vertical: false
+    vertical: false,
+    verticalSwiping: false,
+    variableWidth: false,
     },
     }
   ],
   });
 });
-
-
-
-
-
-
-
-
-
 
 
 // slider - rewiews //
@@ -86,8 +79,6 @@ $(document).ready(function () {
   fade: true
   });
 });
-
-
 
 $(document).ready(function () {
   $(".work-slider").slick({
@@ -293,13 +284,6 @@ $('.checkselect-square').checkselect();
 
 
 
-
-
-
-
-
-
-
 $(document).ready(function(){
   let catalogSelecArrowFlat = false;
 	$(".checkselect-control-flat").click(function(){
@@ -367,42 +351,77 @@ $('.dropdown-menu li').click(function () {
 });
 
 
-$(document).ready(function(){
+
+
+
+$(document).ready(function () {
   let headerTechnologyArrow = false;
-	$(".technology").hover(function(){
+    var cur_width = $(window).width();
+    if (cur_width >= 570) {
+      $(".technology").hover( function () {
+        onOffLinksTechnology();
+      });
+    } else if (cur_width <= 570) {
+      $(".technology").on("click", function () {
+        onOffLinksTechnology();
+      });
+    }
+})
+
+function onOffLinksTechnology(){
     $(".header-technology-arrow").toggleClass("rotate");
     $(".link-list-drop-technology").toggleClass("display-flex");
-    // $(".link-list-drop-technology").fadeIn() || $(".link-list-drop-technology").fadeOut();
     headerTechnologyArrow = true;
     return false;
-	});
-});
+};
 
-$(document).ready(function(){
-  let headerTechnologyArrow = false;
-	$(".services").hover(function(){
+
+
+
+
+$(document).ready(function () {
+  let headerServicesArrow = false;
+    var cur_width = $(window).width();
+    if (cur_width >= 570) {
+      $(".services").hover( function () {
+        onOffLinksServices();
+      });
+    } else if (cur_width <= 570) {
+      $(".services").on("click", function () {
+        onOffLinksServices();
+      });
+    }
+})
+
+function onOffLinksServices(){
     $(".header-services-arrow").toggleClass("rotate");
     $(".link-list-drop-services").toggleClass("display-flex");
-    // $(".link-list-drop-technology").fadeIn() || $(".link-list-drop-technology").fadeOut();
-    headerTechnologyArrow = true;
+    headerServicesArrow = true;
     return false;
-	});
-});
+};
 
-$(document).ready(function(){
-  let headerTechnologyArrow = false;
-	$(".company").hover(function(){
+
+
+$(document).ready(function () {
+  let headerCompanyArrow = false;
+    var cur_width = $(window).width();
+    if (cur_width >= 570) {
+      $(".company").hover( function () {
+        onOffLinksCompany();
+      });
+    } else if (cur_width <= 570) {
+      $(".company").on("click", function () {
+        onOffLinksCompany();
+      });
+    }
+})
+
+function onOffLinksCompany(){
     $(".header-company-arrow").toggleClass("rotate");
     $(".link-list-drop-company").toggleClass("display-flex");
-    // $(".link-list-drop-technology").fadeIn() || $(".link-list-drop-technology").fadeOut();
-    headerTechnologyArrow = true;
+    headerCompanyArrow = true;
     return false;
-	});
-});
-
-
-
-
+};
 
 
  /*fixed Header */

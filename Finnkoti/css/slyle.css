@@ -270,7 +270,7 @@ body {
     width: 100%;
     height: 100vh;
     position: absolute;
-    top: 92px;
+    top: 91px;
     left: 0;
     background-color: #fff;
     -webkit-transition: .0s;
@@ -2629,13 +2629,15 @@ body {
   display: block;
   min-width: 229px;
   margin-left: 0;
+  background-color: #fff;
 }
 
 @media (max-width: 768px) {
   .drop-checked {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 0px;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -2887,6 +2889,7 @@ body {
   font-size: 1em;
   line-height: 1.1;
   cursor: pointer;
+  background-color: #fff;
 }
 
 .checkselect-rooms label {
@@ -2896,6 +2899,7 @@ body {
   font-size: 1em;
   line-height: 1.1;
   cursor: pointer;
+  background-color: #fff;
 }
 
 .checkselect-square label {
@@ -2905,6 +2909,7 @@ body {
   font-size: 1em;
   line-height: 1.1;
   cursor: pointer;
+  background-color: #fff;
 }
 
 .checkselect-popup-flat input {
@@ -3405,7 +3410,7 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 768px) {
   .catalog-form-wrap-drop select {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 }
 
