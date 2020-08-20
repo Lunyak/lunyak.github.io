@@ -1128,6 +1128,10 @@ body {
 }
 
 .footer__inner {
+  padding: 0 24px;
+}
+
+.footer__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1169,6 +1173,7 @@ body {
 }
 
 .footer__link {
+  padding-right: 24px;
   width: 317px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1204,7 +1209,7 @@ body {
   width: 2px;
   height: 100px;
   top: -40px;
-  right: -40px;
+  right: 0px;
   background: url(../img/footer-decorsvg.svg) no-repeat;
 }
 
@@ -1217,7 +1222,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 541px;
+}
+
+.social {
+  padding-left: 24px;
 }
 
 .social img {

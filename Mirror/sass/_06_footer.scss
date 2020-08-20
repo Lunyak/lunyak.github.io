@@ -8,6 +8,10 @@
 }
 
 .footer__inner {
+  padding: 0 24px;
+}
+
+.footer__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,6 +41,7 @@
 }
 
 .footer__link {
+  padding-right: 24px;
   width: 317px;
   display: flex;
   justify-content: space-between;
@@ -61,7 +66,7 @@
   width: 2px;
   height: 100px;
   top: -40px;
-  right: -40px;
+  right: 0px;
   background: url(../img/footer-decorsvg.svg) no-repeat;
 }
 
@@ -70,10 +75,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 541px;
+  // width: 541px;
 }
 
 .social {
+  padding-left: 24px;
   img {
     margin-right: 18px;
 
