@@ -91,7 +91,6 @@
   position: absolute;
   bottom: 136px;
   left: 30%;
-  // z-index: 20;
 }
 
 .main__decor-circle::after {
@@ -132,4 +131,21 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.main__decor-text {
+  width: 595px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(56px);
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2px;
+
+color: #FFFFFF;
 }

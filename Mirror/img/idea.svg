@@ -1,0 +1,14 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32 18V18C37.5228 18 42 22.4772 42 28V28" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<mask id="path-2-inside-1" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M40 44.129C45.9269 41.1836 50 35.0674 50 28C50 18.0589 41.9411 10 32 10C22.0589 10 14 18.0589 14 28C14 35.0674 18.0731 41.1836 24 44.129V46C24 48.2091 25.7909 50 28 50H36C38.2091 50 40 48.2091 40 46V44.129Z"/>
+</mask>
+<path d="M40 44.129L38.2199 40.5469L36 41.6501V44.129H40ZM24 44.129H28V41.6501L25.7801 40.5469L24 44.129ZM46 28C46 33.491 42.8394 38.2512 38.2199 40.5469L41.7801 47.711C49.0144 44.1159 54 36.6438 54 28H46ZM32 14C39.732 14 46 20.268 46 28H54C54 15.8497 44.1503 6 32 6V14ZM18 28C18 20.268 24.268 14 32 14V6C19.8497 6 10 15.8497 10 28H18ZM25.7801 40.5469C21.1606 38.2512 18 33.491 18 28H10C10 36.6438 14.9856 44.1159 22.2199 47.711L25.7801 40.5469ZM28 46V44.129H20V46H28ZM28 46H20C20 50.4183 23.5817 54 28 54V46ZM36 46H28V54H36V46ZM36 46V54C40.4183 54 44 50.4183 44 46H36ZM36 44.129V46H44V44.129H36Z" fill="white" mask="url(#path-2-inside-1)"/>
+<path d="M28 54H36" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M28 60H36" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M32 4V6" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M55 29H57" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M7 29H9" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M11.293 10.293L12.7072 11.7072" stroke="white" stroke-width="4" stroke-linecap="round"/>
+<path d="M52.707 10.293L51.2928 11.7072" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</svg>

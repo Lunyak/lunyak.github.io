@@ -29,7 +29,7 @@
   }
   h2 {
     margin-bottom: 40px;
-    width: 720px;
+    width: 730px;
     font-size: 56px;
     line-height: 64px;
     letter-spacing: 2px;
@@ -74,7 +74,7 @@
 .about__content-bottom::before {
   content: '';
   position: absolute;
-  background: url(../img/Ellipse.svg) no-repeat;
+  background: url(../img/ellipse.svg) no-repeat;
   top: 50%;left: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: 520px;
