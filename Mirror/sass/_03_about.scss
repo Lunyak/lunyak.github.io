@@ -1,0 +1,131 @@
+.about {
+  
+  position: relative;
+  min-height: 820px;
+  max-height: 100%;
+  background-color: #282828;
+}
+.about:after {
+  position: absolute;
+  content: '';
+  width: 202px;
+  height: 147px;
+  bottom: 0;
+  left: 0%;
+  background: url(../img/01.svg) no-repeat;
+}
+
+.about__inner {
+  padding: 120px 100px 100px 100px;
+}
+
+.about__content-top {
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #828282;
+  }
+  h2 {
+    margin-bottom: 40px;
+    width: 720px;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+  }
+  span {
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 2px;
+    color: #886BD9;
+  }
+}
+
+.about__content-top .about-text-down {
+  margin-bottom: 15px;
+  width: 351px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+}
+
+.about__content-bottom {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 759px;
+  height: 378px;
+}
+.about__content-bottom::after {
+  content: '';
+  position: absolute;
+  background: url(../img/about-chest.svg) no-repeat;
+  top: 0;left: 0;
+  width: 759px;
+  height: 378px;
+}
+.about__content-bottom::before {
+  content: '';
+  position: absolute;
+  background: url(../img/Ellipse.svg) no-repeat;
+  top: 50%;left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 520px;
+  height: 520px;
+
+}
+
+.about__content-card {
+    display: flex;
+    align-items: center;
+    padding-left: 58px;
+    max-width: 50%;
+    max-height: 189px;
+    width: 49%;
+    height: 50%;
+  img {
+    margin-right: 16px;
+  }
+}
+
+.about__content-card-wrap {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+}
+
+.about__content-card-text {
+
+  h3 {
+    width: 95px;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+
+    color: #FFFFFF;
+  }
+  p {
+    font-weight: 800;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #828282;
+  }
+}
+
+

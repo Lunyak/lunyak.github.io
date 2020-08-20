@@ -1,0 +1,127 @@
+.best {
+  position: relative;
+  min-height: 820px;
+  max-height: 100%;
+  background-color: #282828;
+  z-index: 0;
+}
+
+.best::before {
+  position: absolute;
+  content: '';
+  width: 202px;
+  height: 147px;
+  bottom: 0;
+  left: 0%;
+  background: url(../img/02.svg) no-repeat;
+}
+
+.best::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0%;
+  background: linear-gradient(252.52deg, #4F4F4F -12.68%, rgba(54, 54, 54, 0.4) 61.53%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  z-index: -1;
+}
+
+.best__inner {
+  padding: 120px 100px 100px 100px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  height: 820px;
+  z-index: 0;
+}
+
+
+
+.best__content-top {
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #828282;
+  }
+  h2 {
+    margin-bottom: 40px;
+    width: 720px;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+  }
+}
+
+
+.best__bestlist {
+  h2 {
+    padding-right: 30px;
+    padding-bottom: 20px;
+    position: relative;
+    padding-left: 10px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: 0.6px;
+    background: linear-gradient(110.2deg, #886BD9 -6.47%, #A84DDC 111.04%);
+    color: #FFFFFF;
+  }
+  p {
+    padding-left: 10px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+
+    color: #828282;
+  }
+  span {
+    padding-right: 5px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 34px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+
+    color: #BB6BD9;
+  }
+}
+
+.best__bestlist li {
+  margin-bottom: 56px;
+}
+
+.best__bestlist h2::before {
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 4px;
+  background: url(../img/Line.svg) no-repeat;
+}
+
+.best__bestlist > li:nth-child(1) {
+  padding-left: 40px;
+}
+.best__bestlist > li:nth-child(2) {
+  padding-left: 140px;
+}
+.best__bestlist > li:nth-child(3) {
+  padding-left: 260px;
+}

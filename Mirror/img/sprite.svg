@@ -1,0 +1,68 @@
+<svg display="none" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+
+
+
+
+
+
+<!-- сумочка в header - покупки -->
+
+   <symbol id="busket" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" >
+      <path d="M3.41107 4.72237H16.5889C17.0276 4.72237 17.3912 5.06252 17.4203 5.50027L18.2166 17.4447C18.2487 17.9257 17.8672 18.3335 17.3852 18.3335H2.61478C2.13272 18.3335 1.75122 17.9257 1.78329 17.4447L2.57958 5.50027C2.60877 5.06252 2.97235 4.72237 3.41107 4.72237Z" stroke="white" stroke-width="1.66667"/>
+      <path d="M6.24996 7.50007V2.50007C6.24996 1.5796 6.99615 0.833405 7.91663 0.833405H12.0833C13.0038 0.833405 13.75 1.5796 13.75 2.50007V7.50007" stroke="white" stroke-width="1.66667" stroke-linecap="round"/>
+   </symbol>
+
+
+
+
+
+<!-- ЛОГОТИП -->
+
+   <symbol id="logo" width="42" height="25" viewBox="0 0 42 25" fill="none" xmlns="http://www.w3.org/2000/svg" >
+      <path d="M10.0912 0H18.6687L8.57751 24.8495H0L10.0912 0Z" fill="#BB6BD9"/>
+      <path d="M21.507 0H30.0845L19.9933 24.8495H11.4158L21.507 0Z" fill="#BB6BD9"/>
+      <path d="M32.9225 0H41.5L31.4088 24.8495H22.8313L32.9225 0Z" fill="#BB6BD9"/>
+   </symbol>
+
+
+
+
+<!-- Кругм для главной страницы -->
+
+   <symbol id="main-decor-circle" width="161" height="161" viewBox="0 0 161 161" fill="none" xmlns="http://www.w3.org/2000/svg" >
+      <circle opacity="0.1" cx="80.5" cy="80.5" r="80" stroke="white"/>
+      <circle opacity="0.2" cx="80.5" cy="80.5" r="57" stroke="white"/>
+      <circle opacity="0.7" cx="80.5" cy="80.5" r="33" stroke="white"/>
+   </symbol>
+
+
+
+
+<!-- Метка в круге - для главной страницы -->
+
+   <symbol id="main-decor-circle-mark" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" >
+      <path d="M14.6474 9.40206H24V14.6969H14.6474V24H9.35258V14.6969H0V9.40206H9.35258V0H14.6474V9.40206Z" fill="white"/>
+   </symbol>
+
+
+
+
+
+<!-- Метка в круге - для главной страницы -->
+
+   <symbol id="main-decor-arrows-top" width="2" height="80" viewBox="0 0 2 80" xmlns="http://www.w3.org/2000/svg" >
+      <path d="M1 80V0" stroke="url(#paint0_linear)"/>
+      <defs>
+         <linearGradient id="paint0_linear" x1="1.5" y1="80" x2="1.5" y2="0" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white"/>
+            <stop offset="1" stop-color="white" stop-opacity="0"/>
+         </linearGradient>
+      </defs>
+   </symbol>
+
+
+
+
+
+</svg>
