@@ -8,9 +8,10 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
-    @media (max-width: 1440px) {
-    }
-    @media (max-width: 570) {
+    @media (max-width: 320px) {
+        // height: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 }
 
@@ -32,13 +33,48 @@
     text-transform: uppercase;
     color: #FFFFFF;
     }
+    @media (max-width: 900px) {
+        display: flex;
+        margin-left: auto;
+        margin-right: 50px;
+    }
+    @media (max-width: 370px) {
+        transform: scale(.8);
+        margin-right: 30px;
+    }
+    img {
+        @media (max-width: 370px) {
+            transform: scale(1.3);
+            // align-self: center;
+        }
+    }
 }
 
+.burger-logo {
+    display: none;
+}
 
 .header__inner {
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1440px) {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    @media (max-width: 800px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    @media (max-width: 800px) {
+        // height: auto;
+        align-items: end;
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
 }
 
 
@@ -47,6 +83,17 @@
     align-items: center;
     justify-content: space-between;
     margin-right: auto;
+    @media (max-width: 900px) {
+        padding-top: 48px;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        align-items: start;
+        background-color: #282828;
+        display: none;
+    }
 }
 
 
@@ -56,6 +103,18 @@
     justify-content: space-between;
     max-width: 480px;
     width: 480px;
+    @media (max-width: 900px) {
+        width: 100%;
+        padding-left: 18px;
+        left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #282828;
+    } li {
+        @media (max-width: 900px) {
+            margin-bottom: 40px;
+        }
+    }
 }
 
 
@@ -89,6 +148,17 @@
 }
 
 .header__phone {
+    @media (max-width: 1225px) {
+        display: none;
+    }
+    @media (max-width: 1225px) {
+        display: block;
+        position: absolute;
+        width: 250px;
+        left: 16px;
+        bottom: 0;
+        display: none;
+    }
     a {
     margin-right: 40px;
     font-style: normal;
@@ -105,13 +175,122 @@
         font-weight: 900;
         font-size: 18px;
         color: #fff;
+        transition: .5s;
     }
 }
 
-.header__phone a:hover {
+.header__phone:hover {
+    a {
     color: #BB6BD9;
+    }
+    span {
+    color: #BB6BD9;
+    }
 }
 
 .header__buy-icon {
     cursor: pointer;
+    position: relative;
+    @media (max-width: 900px) {
+        position: absolute;
+        right: 33px;
+        transform: scale(1.3);
+    }
+    @media (max-width: 450px) {
+        position: absolute;
+        right: 33px;
+        top: 34px;
+        transform: scale(1);
+    }
+    @media (max-width: 320px) {
+        top: 24px;
+    }
 }
+
+.header-buy-count {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 8px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.header-circle-buy-count {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: #EB5757;
+    border-radius: 50%;
+    span {
+        position: absolute;
+        bottom: 1%;
+        left: 50%;
+        transform: translate(-49%, -47%);
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 8px;
+        letter-spacing: 0.15px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.header-burder {
+    display: none;
+    @media (max-width: 900px) {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        z-index: 0;
+    }
+    @media (max-width: 320px) {
+        align-self: end;
+    }
+}
+
+.header-burder-close {
+    display: none;
+    @media (max-width: 900px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 30px;
+        height: 30px;
+        display: block;
+        transform: scale(.7);
+        display: none;
+    }
+}
+
+.header-burder-open {
+    display: none;
+    @media (max-width: 900px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 30px;
+        height: 30px;
+        display: flex;
+    }
+    @media (max-width: 320px) {
+        transform: scale(.9);
+    }
+}
+
+
+
+
