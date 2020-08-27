@@ -16,6 +16,10 @@
   @media (max-width: 900px) {
     bottom: 35px;
   }
+  @media (max-width: 550px) {
+    bottom: 10%;
+    height: 80px;
+  }
 }
 
 .cd-scroll-down-text {
@@ -36,7 +40,6 @@
   text-indent: initial !important;
   z-index: 20;
   cursor: pointer;
- 
 }
 
 .cd-scroll-down::after {
@@ -73,11 +76,9 @@
   z-index: 6;
   @media (max-width: 1440px) {
     right: 4%;
-    // top: 50%;
   }
-  @media (max-width: 950px) {
-    // right: 0%;
-    // top: 50%;
+  @media (max-width: 900px) {
+    display: none;
   }
 }
 .no-touch #cd-vertical-nav li {

@@ -36,7 +36,7 @@ jQuery(document).ready(function ($) {
 
 	const a1 = 'a1'
 	const a2 = 'a2'
-	
+
 	const aaa = a1 + ' 111 ' + a2 + ' 222'
 	const bbb = `${a1} 111 ${a2} 222`
 
@@ -138,7 +138,7 @@ $(".header-burder-close").on("click", function () {
 		top: 32,
 	});
 	$('.logo__wrap').css({
-		"margin-right": "30px",
+		"margin-right": "50px",
 	});
 	$('.logo__wrap h2').css({
 		"color": "#fff",
