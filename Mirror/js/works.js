@@ -43,6 +43,17 @@ $(".btn-arrow-left").on("click", function () {
 
 
 
+// $(".btn-slider-next").on("click", function () {
+//   $(".slick-slide").click("slick-current");
+// });
+
+// $(".btn-arrow-left").on("click", function () {
+//   $(".works__slider-img > .slick-prev.slick-arrow").click();
+// });
+
+
+
+
 
 
 

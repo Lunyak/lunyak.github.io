@@ -58,11 +58,18 @@
 }
 
 
+.works__slider {
+height: 400px;
+}
+
 .works__slider-table {
   max-width: 560px;
   width: 560px;
   color: #FFFFFF;
 }
+
+
+
 
 
 .works .works__slider-table {
@@ -111,6 +118,7 @@
 }
 
 .works__slider-item {
+
   display: flex;
   @media (max-width: 1000px) {
     flex-direction: column-reverse;
@@ -299,9 +307,26 @@
 }
 
 
-.works__slider-img .slick-slide:first-child {
-  position: relative;
-  min-width: 450px;
+// .works__slider-img .slick-slide:first-child {
+//   position: relative;
+//   min-width: 450px;
+//   img{
+//     width: 450px;
+//     height: 376px;
+//     @media (max-width: 1250px) {
+//       width: 351px;
+//       height: 293px;
+//     }
+//     @media (max-width: 450px) {
+//       width: 288px;
+//       height: 240px;
+//     }
+//   }
+// }
+
+
+
+.slick-slide + .slick-current {
   img{
     width: 450px;
     height: 376px;
@@ -316,20 +341,53 @@
   }
 }
 
-.slick-slide > .works__slider-img-item {
+.works__slider-img .slick-slide {
+  
+}
+
+
+.works__slider-img .slick-slide:nth-child(2) {
+  img {
+    width: 110px;
+    height: 92px;
+  }
+
+}
+
+.slick-current ~ .slick-slide {
+  // background-color: #fff;
+  width: 100px;
+  height: 100px;
   position: relative;
   img {
-  width: 110px;
-  min-height: 92px;
-    @media (max-width: 1250px) {
-    width: 77px;
-    min-height: 64px;
-    }
-    @media (max-width: 450px) {
-    width: 76px;
-    min-height: 63px;
-    }
+    width: 110px;
+    height: 92px;
   }
+}
+
+.slick-slide:nth-child(2n) {
+  // background-color: #fff;
+  img {
+    // width: 110px;
+    // height: 92px;
+  }
+}
+
+.slick-current ~ .slick-slide:before {
+  position: absolute;
+  content: '';
+  width: 110px;
+  height: 92px;
+  border-radius: 8px;
+  top: 0;
+  left: 0;
+  max-width: 110px;
+  background-color: rgba(0, 0, 0, 0.493);
+  z-index: 5;
+}
+
+.slick-slide > .works__slider-img-item {
+  position: relative;
 }
 .works__slider-img .slick-slide:nth-child(2) {
   transform: translateX(-20%);
@@ -360,18 +418,18 @@
 
 
 
-.slick-slide .works__slider-img-item::before {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 97%;
-  border-radius: 8px;
-  top: 0;
-  left: 0;
-  max-width: 110px;
-  background-color: rgba(0, 0, 0, 0.493);
-  z-index: 5;
-}
+// .slick-slide .works__slider-img-item::before {
+//   position: absolute;
+//   content: '';
+//   width: 100%;
+//   height: 97%;
+//   border-radius: 8px;
+//   top: 0;
+//   left: 0;
+//   max-width: 110px;
+//   background-color: rgba(0, 0, 0, 0.493);
+//   z-index: 5;
+// }
 
 
 .slick-active > .works__slider-img-item::before {
