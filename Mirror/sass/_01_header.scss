@@ -8,11 +8,6 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
-    @media (max-width: 320px) {
-        // height: 100%;
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
 }
 
 
@@ -41,6 +36,8 @@
     @media (max-width: 370px) {
         transform: scale(.8);
         margin-right: 30px;
+        margin-right: auto;
+        margin-left: 0;
     }
     img {
         @media (max-width: 370px) {
@@ -202,9 +199,6 @@
         top: 34px;
         transform: scale(1);
     }
-    @media (max-width: 320px) {
-        top: 24px;
-    }
 }
 
 .header-buy-count {
@@ -232,7 +226,7 @@
     border-radius: 50%;
     span {
         position: absolute;
-        bottom: 1%;
+        bottom: 8%;
         left: 50%;
         transform: translate(-49%, -47%);
         font-weight: bold;
@@ -290,6 +284,7 @@
         transform: scale(.9);
     }
 }
+
 
 
 

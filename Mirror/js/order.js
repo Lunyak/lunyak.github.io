@@ -15,6 +15,8 @@ $('#catalog-btn-basket').on('click', function(){
   $(".order-popup-formalized").css("display", "flex").hide().fadeIn();
 });
 
+
+
 $('.close-popup').on('click', function(){
   $(".order-popup-formalized").css("display", "flex").show().fadeOut();
 });
@@ -24,6 +26,9 @@ $('.order-product-popup-close').on('click', function(){
 });
 $('.order-item-close img').on('click', function(){
   $(".order-product-popup").css("display", "flex").hide().fadeIn();
+});
+$('#remove-delet').on('click', function(){
+  $(".order-product-popup").css("display", "flex").show().fadeOut();
 });
 
 // перемещаю номер телефона и корзинку на высоту равную блоку навигации

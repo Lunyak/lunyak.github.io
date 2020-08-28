@@ -1,6 +1,5 @@
 // добавляем и убираем активные состояние у меню навигации
 $(".nav ul li a").click(function (e) {
-  e.preventDefault();
   $(".nav ul li a").removeClass("nav__links-active");
   $(this).addClass("nav__links-active");
 });
@@ -91,29 +90,35 @@ $(function () {
 
 // перемещаю номер телефона и корзинку на высоту равную блоку навигации
 let widthNav = $(".nav").height();
-console.log(widthNav);
 $(".header__phone").css({
   top: widthNav,
 });
+
+let widthHeader = $(".logo__wrap").height();
+
 
 
 
 // BURGER
 
+// $(".header-burder-open").on("click", function () {
+// 	$(".header__buy-icon").css({
+// 		top: widthNav,
+// 	});
+// });
 
+// $(".header-burder-close").on("click", function () {
 
 
 $(".header-burder-open").on("click", function () {
 	$(".nav").fadeIn();
 	$(this).fadeOut();
-	$(".header-burder-close").fadeIn();
-	$(".header__buy-icon").css({
-		top: widthNav,
-	});
+  $(".header-burder-close").fadeIn();
+
 	$(".header__phone").fadeIn();
-	$('.logo__wrap').css({
-		"margin-right": "0",
-	});
+  $(".header__buy-icon").css({
+    top: widthNav,
+    });
 	$('.logo__wrap h2').css({
 		"color": "#3F3F3F",
 	});
@@ -126,6 +131,9 @@ $(".header-burder-open").on("click", function () {
 	$('.header').css({
 		"background": "#282828",
 	});
+	$('.header-burder').css({
+		marginRight: 30,
+	});
 });
 
 
@@ -133,13 +141,10 @@ $(".header-burder-close").on("click", function () {
 	$(".nav").fadeOut();
 	$(this).fadeOut();
 	$(".header-burder-open").fadeIn();
-	$(".header__phone").fadeOut();
-	$(".header__buy-icon").css({
-		top: 32,
-	});
-	$('.logo__wrap').css({
-		"margin-right": "50px",
-	});
+  $(".header__phone").fadeOut();
+  $(".header__buy-icon").css({
+    top: 35,
+    });
 	$('.logo__wrap h2').css({
 		"color": "#fff",
 	});
@@ -151,6 +156,35 @@ $(".header-burder-close").on("click", function () {
 	});
 		$('.header').css({
 		"background": "#28282800",
+  });
+  $('.header-burder').css({
+		marginRight: 0,
 	});
 });
 
+// (function($){
+//   $.fn.extend({
+//       center: function () {
+//           return this.each(function() {
+//               // var top = ($(window).height() - $(this).outerHeight()) / 3;
+//               var left = ($(window).width() - $(this).outerWidth()) / 7;
+//               // $(this).css({position:'absolute', margin:0, top: (top > 0 ? top : 0)+'px', left: (left > 0 ? left : 0)+'px'});
+//               $(this).css({position:'absolute', margin:0, left: (left > 0 ? left : 0)+'px'});
+//           });
+//       }
+//   });
+// })(jQuery);
+
+// $('.main__decor-circle').center();
+
+$(document).ready(function () {
+  $(".header-wrap-burger").on("click", function () {
+    // let width = $(window).width();
+    var cur_width = $(window).width();
+    if (cur_width >= 900) {
+      navBig();
+    } else if (cur_width <= 570) {
+      navMin();
+    }
+  })
+});

@@ -56,6 +56,9 @@ $('.tipe-mail').focus(function(){
 	$('.tipe-mail').attr("placeholder", "");
 	$(".label-mail").addClass('label-mail-active');
 });
+$('.field btn-contacts').focus(function(){
+	preventDefault();
+});
 
 
 

@@ -51,6 +51,9 @@
   }
 }
 
+
+
+
 .order-form {
   max-width: 694px;
   @media (max-width: 1160px) {
@@ -124,11 +127,12 @@
 .order .input-form {
   width: 100%;
   margin-bottom: 24px;
-  color: #828282;
+  color: #ffffff;
 }
 
 .input-form[type="time"]::-webkit-clear-button {
   display: none;
+  color: #fff;
 }
 
 .order-product {
@@ -416,6 +420,7 @@
   padding-left: 134+26+24px;
   position: relative;
   flex-direction: column;
+  display: none;
   @media (max-width: 1160px) {
     padding-left: 16px;
   }
@@ -584,7 +589,7 @@
   @media (max-width: 1000px) {
     position: inherit;
   }
-  @media (max-width: 850px) {
+  @media (max-width: 1000px) {
     flex-direction: row;
     align-self: center;
     flex-direction: row;
@@ -768,18 +773,40 @@
   width: 213px;
 }
 
+.order-popup-formalized-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: 520px) {
+    margin-bottom: auto;
+  }
+}
+
+
 .order-popup-formalized {
   padding: 64px 24px 40px;
   width: 640px;
   height: 300px;
   background-color: #363636;
-  left: -20%;
-  position: absolute;
-  // display: flex;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   border-radius: 8px;
+  z-index: 500;
+  box-shadow: 0px 8px 24px #282828;
+  @media (max-width: 700px) {
+    width: 100%;
+    height: 400px;
+  }
+  @media (max-width: 510px) {
+    height: 100vh;
+    padding: 120px 16px 70px;
+  }
   h2 {
     font-weight: bold;
     font-size: 24px;
@@ -789,6 +816,12 @@
     text-align: center;
     letter-spacing: 1px;
     color: #ffffff;
+    @media (max-width: 510px) {
+      font-size: 16px;
+      line-height: 24px;
+      justify-content: start;
+      margin-bottom: 24px;
+    }
   }
   p {
     font-weight: bold;
@@ -799,9 +832,13 @@
     text-align: center;
     letter-spacing: 1px;
     color: #bb6bd9;
+    margin-bottom: 10px;
+    @media (max-width: 510px) {
+      // margin-bottom: auto;
+    }
   }
   span {
-    width: 85%;
+    width: 80%;
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
@@ -809,6 +846,17 @@
     text-transform: none;
     text-align: center;
     color: #ffffff;
+    @media (max-width: 510px) {
+      width: 100%;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    @media (max-width: 350px) {
+      // width: 90%;
+    }
+    @media (max-width: 320px) {
+      width: 100%;
+    }
   }
 }
 
@@ -829,14 +877,30 @@
   cursor: pointer;
 }
 
+.order-product-popup .button-form {
+  @media (max-width: 700px) {
+    flex-direction: column-reverse;
+  }
+  @media (max-width: 450px) {
+    margin-bottom: 72px;
+  }
+  button {
+    @media (max-width: 700px) {
+      width: 288px;
+      margin-top: 24px;
+    }
+  }
+}
+
 .order-product-popup {
-  padding: 64px 24px 40px;
   width: 640px;
   height: 258px;
+  padding: 64px 24px 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #363636;
-  position: absolute;
-  top: 0;
-  right: -50%;
+  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -845,6 +909,19 @@
   z-index: 50;
   border-radius: 8px;
   display: none;
+  box-shadow: 0px 8px 24px #282828;
+  @media (max-width: 700px) {
+    height: 450px;
+    width: 100%;
+  }
+  @media (max-width: 450px) {
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 120px 16px 72px;
+    transform: translate(0%, 0%);
+  }
   h2 {
     font-weight: bold;
     font-size: 24px;
@@ -853,6 +930,11 @@
     align-items: center;
     text-align: center;
     letter-spacing: 1px;
+    @media (max-width: 450px) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 17px;
+    }
   }
   p {
     width: 60%;
@@ -864,7 +946,15 @@
     text-align: center;
     letter-spacing: 0.2px;
     text-transform: none;
+    @media (max-width: 450px) {
+      width: 115%;
+      font-weight: normal;
+      font-size: 12px;
+      width: 100%;
+      margin-bottom: auto;
+    }
   }
+
 }
 
 .order-product-popup-close {
@@ -880,6 +970,7 @@
       margin-bottom: 16px;
       width: 351px;
     }
+
   }
   @media (max-width: 1164px) {
     flex-direction: column-reverse;

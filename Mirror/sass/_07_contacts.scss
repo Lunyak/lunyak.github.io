@@ -30,7 +30,7 @@
   background: url(../img/map.svg) no-repeat;
   z-index: -3;
   @media (max-width: 1024px) {
-    right: -200px;
+    right: -230px;
     top: -100px;
     transform: scale(1.3);
   }
@@ -55,9 +55,12 @@
   z-index: -2;
   @media (max-width: 1024px) {
     right: -200px;
-    top: 25px;
     top: -100px;
     transform: scale(1.1);
+  }
+  @media (max-width: 1024px) {
+    top: -25px;
+
   }
   @media (max-width: 580px) {
     top: 200px;
@@ -286,7 +289,7 @@ form .slide .field select {
 }
 
 form .slide .btn-contacts {
-  top: 50%;
+  top: 64%;
   right: 40px;
   position: absolute !important;
   width: 40px !important;

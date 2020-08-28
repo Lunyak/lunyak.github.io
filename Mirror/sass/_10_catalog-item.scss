@@ -447,7 +447,13 @@
   }
 }
 
+.contant-item-aside .catalog__sidebar-item-wrap {
+  padding: 22px 0;
+}
+
+
 .catalog__sidebar-item-wrap {
+
   @media (max-width: 1350px) {
     width: 351px;
   }

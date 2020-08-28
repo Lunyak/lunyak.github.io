@@ -89,6 +89,7 @@ border-spacing: 0;
 body {
   font-family: 'Noto Sans', sans-serif;
   background-color: #282828;
+  // overflow: hidden;
 }
 
 .page {
@@ -180,6 +181,7 @@ body {
 
 .btn-border:hover {
   background-color: #BB6BD9;
+  box-shadow: 0px 8px 24px #282828
 }
 .btn-border:active {
   background-color: #A84DDC;
@@ -212,10 +214,16 @@ body {
 
 .btn-opacity:hover {
   background-color: #bc6bd900;
+  box-shadow: 0px 8px 24px #282828
 }
 .btn-opacity:active {
   background: rgba(187, 107, 217, 0.08);
 }
+
+.no-wrap {
+  white-space: nowrap;
+}
+
 
 .btn-arrow-right {
   padding: 0;
@@ -304,10 +312,21 @@ body {
   transition: .3s;
   border: 2px solid #4f4f4f;
   z-index: 0;
+  appearance: none;
+}
+
+.input-form::-webkit-outer-spin-button,
+.input-form::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.input-form[type='number'] {
+    -moz-appearance: textfield;
 }
 
 .input-form[type='number'] {
   -moz-appearance: textfield;
+  appearance: none;
 }
 
 .display-none {
@@ -338,12 +357,10 @@ body {
   font-weight: 800;
   font-size: 12px;
   line-height: 16px;
-
   display: flex;
   align-items: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-
   color: #828282;
 }
 
@@ -419,8 +436,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .btn-math:hover {
   background: rgba(187, 107, 217, 0.08);
+}
 
+
+.position-inherit {
+  position: absolute;
+}
+.position-absolute {
+  position: inherit;
 }

@@ -36,35 +36,54 @@
 					<img class="header-burder-open" src="img/burger.svg" alt="burger">
 					<img class="header-burder-close" src="img/close.svg" alt="close">
 				</div>
-        <a href="#" class="logo__wrap">
+        <a href="index.html" class="logo__wrap">
 					<img src="img/logo.svg" alt="logo">
 					<img class="burger-logo" src="img/logo-gray.svg" alt="logo">
           <h2>студия зеркал</h2>
         </a>
-				<nav class="nav">
-					<ul class="nav__linklist">
-						<li><a href="#" class="nav__links">конструктор</a></li>
-						<li><a href="#" class="nav__links">каталог</a></li>
-						<li><a href="#" class="nav__links">наши работы</a></li>
-						<li><a href="#" class="nav__links">контакты</a></li>
-					</ul>
-				</nav>
+        <nav class="nav">
+          <ul class="nav__linklist">
+            <li><a href="#" class="nav__links">конструктор</a></li>
+            <li><a href="catalog.html" class="nav__links">каталог</a></li>
+            <li><a href="works.html" class="nav__links">наши работы</a></li>
+            <a href="contacts.html" class="nav__links">контакты</a>
+          </ul>
+        </nav>
 				<div class="header__contant">
 					<div class="header__phone">
 						<a href="+7 (000) 000 00 00">+7 (000)<span> 000 00 00</span></a>
 					</div>
-					<div class="header__buy-icon">
+					<a href="order.html" class="header__buy-icon">
 						<div class="header-circle-buy-count"><span>2</span></div>
-						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<use xlink:href="img/sprite.svg#busket"></use> <!-- img gurger -->
-						</svg>
-					</div>
+						<img src="img/busket.svg" alt="busket">
+					</a>
 				</div>
 			</div>
 		</div>
 	</header>
 
+	<div class="order-product-popup">
+		<img class="order-product-popup-close" src="img/close.svg" alt="close">
+		<h2>Удаление товаров</h2>
+		<p>Вы точно хотите удалить выбранные товары?
+			Отменить действие будет невозможно</p>
+			<div class="button-form">
+				<button id="remove-delet" class="btn-opacity">Отмена</button>
+				<button class="btn-border">Удалить</button>
+			</div>
+	</div>
 
+		<!-- POPUP -->
+	<div class="order-popup-formalized display-none">
+		<img class="close-popup-order-formalized close-popup" src="img/close.svg" alt="chest">
+		<h2>Заказ успешно оформлен</h2>
+		<div class="order-popup-formalized-text">
+			<p># AM-00015</p>
+			<span>На указанную почту <span class="popup-mail-client">info@mail.ru</span> отправлено письмо.
+			<span class="no-wrap">Мы свяжемся</span>с вами в ближайшее время для уточнения заказа.</span>
+		</div>
+			<button class="btn-border close-popup">КЛАСС</button>
+	</div>
 
 	<section class="order">
 		<div class="container">
@@ -164,16 +183,6 @@
 	
 							<!-- ПРОДУКТ -->
 							<div class="order-product">
-								<div class="order-product-popup">
-									<img class="order-product-popup-close" src="img/close.svg" alt="close">
-									<h2>Удаление товаров</h2>
-									<p>Вы точно хотите удалить выбранные товары?
-										Отменить действие будет невозможно</p>
-										<div class="button-form">
-											<button class="btn-opacity">Отмена</button>
-											<button class="btn-border">Удалить</button>
-										</div>
-								</div>
 								<div class="order-product-header flex">
 									<h2>Товар</h2>
 									<div class="order-product-header-wrap flex">
@@ -237,7 +246,7 @@
 
 						</div>
 						<div class="order-aside">
-							<a class="order-link" href="#">к списку товаров</a>
+							<a href="basket.html" class="order-link" href="#">к списку товаров</a>
 							<div class="catalog-item__mounting">
 								<div class="catalog-item__mounting-title">
 									<h2>Стоимость монтажа +15% от стоимости зеркала,
@@ -299,7 +308,7 @@
 							<div class="order-aside-pay">
 
 									<div class="catalog-item__order-price">
-									
+
 										<h2>Итого:</h2>
 										<p>2 500<span>.00 ₽</span></p>
 									</div>
@@ -310,15 +319,7 @@
 
 
 
-									<!-- POPUP -->
-									<div class="order-popup-formalized display-none">
-										<img class="close-popup-order-formalized close-popup" src="img/close.svg" alt="chest">
-										<h2>Заказ успешно оформлен</h2>
-										<p># AM-00015</p>
-										<span>На указанную почту <span class="popup-mail-client">info@mail.ru</span> отправлено письмо. <br>
-											Мы свяжемся с вами в ближайшее время для уточнения заказа.</span>
-											<button class="btn-border close-popup">КЛАСС</button>
-									</div>
+								
 
 						</div>
 
