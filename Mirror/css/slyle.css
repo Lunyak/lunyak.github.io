@@ -8252,6 +8252,17 @@ a.control_next {
   color: #4f4f4f;
 }
 
+.input-form[type="time"]::-webkit-clear-button {
+  display: none;
+  color: #4f4f4f;
+}
+
+.order .input-form {
+  width: 100%;
+  margin-bottom: 24px;
+  color: #747373;
+}
+
 @media (max-width: 1000px) {
   .order-form-adress {
     display: -webkit-box;
@@ -8263,17 +8274,6 @@ a.control_next {
             flex-direction: column;
     width: 288px;
   }
-}
-
-.order .input-form {
-  width: 100%;
-  margin-bottom: 24px;
-  color: #ffffff;
-}
-
-.input-form[type="time"]::-webkit-clear-button {
-  display: none;
-  color: #fff;
 }
 
 .order-product {
