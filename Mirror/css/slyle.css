@@ -3500,7 +3500,7 @@ form .slide .btns .nextBtn.next {
 }
 
 #catalog {
-  background-color: #3F3F3F;
+  background-color: #3f3f3f;
 }
 
 .catalog__inner {
@@ -3541,7 +3541,7 @@ form .slide .btns .nextBtn.next {
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 2px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media (max-width: 550px) {
@@ -3630,7 +3630,7 @@ form .slide .btns .nextBtn.next {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.2px;
-  color: #FFFFFF;
+  color: #ffffff;
   z-index: 20;
 }
 
@@ -3679,8 +3679,8 @@ form .slide .btns .nextBtn.next {
   letter-spacing: 1px;
   background-color: #282828;
   color: #828282;
-  -webkit-transition: .7s;
-  transition: .7s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   z-index: 20;
 }
 
@@ -3705,7 +3705,7 @@ form .slide .btns .nextBtn.next {
 }
 
 /* Firefox */
-#number-item[type=number] {
+#number-item[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -3716,7 +3716,7 @@ form .slide .btns .nextBtn.next {
 }
 
 /* Firefox */
-#form-item[type=number] {
+#form-item[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -3769,7 +3769,7 @@ form .slide .btns .nextBtn.next {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.2px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media (max-width: 800px) {
@@ -3785,8 +3785,8 @@ form .slide .btns .nextBtn.next {
 .catalog .filter-btn {
   width: 40px;
   height: 40px;
-  background: #BB6BD9;
-  border: 1px solid #BB6BD9;
+  background: #bb6bd9;
+  border: 1px solid #bb6bd9;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 48px;
@@ -3796,7 +3796,7 @@ form .slide .btns .nextBtn.next {
 }
 
 .catalog .filter-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 24px;
   height: 24px;
@@ -3956,7 +3956,7 @@ form .slide .btns .nextBtn.next {
   line-height: 16px;
   text-align: center;
   letter-spacing: 1px;
-  color: #FFFFFF;
+  color: #ffffff;
   position: absolute;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -3967,7 +3967,7 @@ form .slide .btns .nextBtn.next {
   text-transform: uppercase;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  background: linear-gradient(91.58deg, #F2994A 8.5%, #BB6BD9 109.38%);
+  background: linear-gradient(91.58deg, #f2994a 8.5%, #bb6bd9 109.38%);
 }
 
 @media (max-width: 1024px) {
@@ -3984,7 +3984,7 @@ form .slide .btns .nextBtn.next {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0.2px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .catalog__card-price span {
@@ -4000,7 +4000,7 @@ form .slide .btns .nextBtn.next {
   line-height: 20px;
   letter-spacing: 0.2px;
   overflow: hidden;
-  color: #FFFFFF;
+  color: #ffffff;
   text-overflow: ellipsis;
 }
 
@@ -4037,7 +4037,7 @@ form .slide .btns .nextBtn.next {
           justify-content: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .checkselect-number {
@@ -4059,7 +4059,7 @@ form .slide .btns .nextBtn.next {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.2px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .checkselect-category,
@@ -4070,8 +4070,8 @@ form .slide .btns .nextBtn.next {
   padding: 9px 53px 9px 20px;
   display: inline-block;
   background-color: #fff;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   position: relative;
   font-size: 14px;
   color: #000000;
@@ -4083,8 +4083,8 @@ form .slide .btns .nextBtn.next {
   color: #ffffff;
   background: rgba(40, 40, 40, 0.4);
   position: relative;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   border: 1px solid #4f4f4f;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -4099,8 +4099,8 @@ form .slide .btns .nextBtn.next {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 1300px) {
@@ -4158,8 +4158,8 @@ form .slide .btns .nextBtn.next {
   font-size: 14px;
   color: #888;
   cursor: pointer;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   line-height: 20px;
   width: 100%;
 }
@@ -4202,7 +4202,7 @@ form .slide .btns .nextBtn.next {
   width: 100%;
   max-height: 120px;
   position: absolute;
-  background-color: #3F3F3F;
+  background-color: #3f3f3f;
   top: 42px;
   left: 0;
   margin-top: 0px;
@@ -4234,8 +4234,8 @@ form .slide .btns .nextBtn.next {
 .checkselect-category .dropdown-menu li,
 .checkselect-number .dropdown-menu li {
   padding: 10px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
@@ -4247,12 +4247,12 @@ form .slide .btns .nextBtn.next {
 
 .checkselect-category .dropdown-menu li:hover,
 .checkselect-number .dropdown-menu li:hover {
-  background-color: #4F4F4F;
+  background-color: #4f4f4f;
 }
 
 .checkselect-category .dropdown-menu li:active,
 .checkselect-number .dropdown-menu li:active {
-  background-color: #4F4F4F;
+  background-color: #4f4f4f;
   color: #fff;
 }
 
