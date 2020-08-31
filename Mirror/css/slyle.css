@@ -3499,6 +3499,10 @@ form .slide .btns .nextBtn.next {
   visibility: visible;
 }
 
+#catalog {
+  background-color: #3F3F3F;
+}
+
 .catalog__inner {
   min-height: 650px;
   padding: 56px 100px;
