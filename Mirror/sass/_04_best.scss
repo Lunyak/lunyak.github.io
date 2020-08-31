@@ -6,7 +6,12 @@
   z-index: 0;
 }
 
-.best::before {
+.best .container {
+  position: relative;
+}
+
+
+.best .container::before {
   position: absolute;
   content: '';
   width: 202px;

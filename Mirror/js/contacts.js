@@ -59,6 +59,12 @@ $('.tipe-mail').focus(function(){
 $('.field btn-contacts').focus(function(){
 	preventDefault();
 });
+$('.btn-contacts').click(function(){
+	preventDefault();
+});
 
 
+$('.field btn-contacts').click(function () {
+	preventDefault();
+});
 
