@@ -12,6 +12,7 @@
 
 
 .logo__wrap {
+    min-width: 228px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -255,6 +256,7 @@
 }
 
 .header-burder-close {
+    cursor: pointer;
     display: none;
     @media (max-width: 900px) {
         position: absolute;
@@ -271,6 +273,7 @@
 
 .header-burder-open {
     display: none;
+    cursor: pointer;
     @media (max-width: 900px) {
         position: absolute;
         top: 0;
@@ -288,4 +291,9 @@
 
 
 
-
+#form input:focus {
+        border: 1px solid #828282;
+}
+#form textarea:focus {
+        border: 1px solid #828282;
+}

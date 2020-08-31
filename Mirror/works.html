@@ -43,10 +43,10 @@
         </a>
         <nav class="nav">
           <ul class="nav__linklist">
-            <li><a href="#" class="nav__links">конструктор</a></li>
+            <li><a href="#" class="nav__links ">конструктор</a></li>
             <li><a href="catalog.html" class="nav__links">каталог</a></li>
-            <li><a href="works.html" class="nav__links">наши работы</a></li>
-            <a href="contacts.html" class="nav__links">контакты</a>
+            <li><a href="works.html" class="nav__links nav__links-active">наши работы</a></li>
+            <li><a href="contacts.html" class="nav__links">контакты</a></li>
           </ul>
         </nav>
 				<div class="header__contant">
@@ -72,10 +72,10 @@
 						<p>Что мы уже сделали</p>
 						<h2>Наши работы</h2>
 					</div>
-					<div class="works__slider-img-arrow">
+					<!-- <div class="works__slider-img-arrow">
 						<button id="works-next-img" class="works-next-img btn-arrow-right"></button>
-						<button class="works-prev-img btn-arrow-left"></button>
-					</div>
+						<button id="works-prev-img" class="works-prev-img btn-arrow-left"></button>
+					</div> -->
 					<div class="works__slider">
 
 
@@ -98,36 +98,27 @@
 									<div class="works__slider-table-link"><p>Узор:</p><span>по спец. заказу</span></div>
 									<div class="works__slider-table-link"><p>Опции:</p><span>ИК нагреватель, Электронные часы, Цветовая подсветка RGB, Выключатель, сенсор прикосновения форма ромб</span></div>
 								</div>
-								<div class="works__slider-data">июль. 2019</div>
+								<div class="works__slider-data"> <span>июль.</span>2019</div>
 							</div>
-							<div class="works__slider-img">
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img2.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img3.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img.jpg" alt="mirror">
-									</div>
-								</div>
 
+							<div id="slider" class="slider-first">
+								<div class="works__slider-img-arrow">
+									<button id="works-next-first" class="works-next-img btn-arrow-right"></button>
+									<button id="works-prev-first" class="works-prev-img btn-arrow-left"></button>
+								</div>
+								<ul class="slider-item">
+
+									<li class=""><img src="img/work/img.jpg" alt=""></li>
+									<li class="active"><img src="img/work/img.jpg" alt=""></li>
+									<li class=""><img src="img/work/img2.jpg" alt=""></li>
+									<li class=""><img src="img/work/img3.jpg" alt=""></li>
+									<li class=""><img src="img/work/img.jpg" alt=""></li>
+									<li class=""><img src="img/work/img.jpg" alt=""></li>
+								</ul>
 							</div>
+
+
+
 
 						</div>
 						<div class="works__slider-item">
@@ -145,36 +136,27 @@
 									<div class="works__slider-table-link"><p>Узор:</p><span>по спец. заказу</span></div>
 									<div class="works__slider-table-link"><p>Опции:</p><span>ИК нагреватель, Электронные часы, Цветовая подсветка RGB, Выключатель, сенсор прикосновения форма ромб</span></div>
 								</div>
-								<div class="works__slider-data">июль. 2019</div>
+								<div class="works__slider-data"> <span>июль.</span>2019</div>
 							</div>
-							<div class="works__slider-img">
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img.jpg" alt="mirror">
-									</div>
+
+							<div id="slider" class="slider-second">
+								<div class="works__slider-img-arrow">
+									<button id="works-next-second" class="works-next-img btn-arrow-right"></button>
+									<button id="works-prev-second" class="works-prev-img btn-arrow-left"></button>
 								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img2.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img3.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img.jpg" alt="mirror">
-									</div>
-								</div>
-								
+								<ul class="slider-item">
+
+									<li class=""><img src="img/work/img.jpg" alt=""></li>
+									<li class="active"><img src="img/work/img.jpg" alt=""></li>
+									<li class=""><img src="img/work/img2.jpg" alt=""></li>
+									<li class=""><img src="img/work/img3.jpg" alt=""></li>
+									<li class=""><img src="img/work/img.jpg" alt=""></li>
+									<li class=""><img src="img/work/img.jpg" alt=""></li>
+								</ul>
 							</div>
+
+
+
 
 						</div>
 						<div class="works__slider-item">
@@ -192,127 +174,30 @@
 									<div class="works__slider-table-link"><p>Узор:</p><span>по спец. заказу</span></div>
 									<div class="works__slider-table-link"><p>Опции:</p><span>ИК нагреватель, Электронные часы, Цветовая подсветка RGB, Выключатель, сенсор прикосновения форма ромб</span></div>
 								</div>
-								<div class="works__slider-data">июль. 2019</div>
+								<div class="works__slider-data"> <span>июль.</span>2019</div>
 							</div>
-							<div class="works__slider-img">
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img.jpg" alt="mirror">
-									</div>
+
+							<div id="slider" class="slider-third">
+								<div class="works__slider-img-arrow">
+									<button id="works-next-third" class="works-next-img btn-arrow-right"></button>
+									<button id="works-prev-third" class="works-prev-img btn-arrow-left"></button>
 								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img2.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img3.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img.jpg" alt="mirror">
-									</div>
-								</div>
+								<ul class="slider-item">
+
+									<li class=""><img src="img/work/img.jpg" alt=""></li>
+									<li class="active"><img src="img/work/img.jpg" alt=""></li>
+									<li class=""><img src="img/work/img2.jpg" alt=""></li>
+									<li class=""><img src="img/work/img3.jpg" alt=""></li>
+									<li class=""><img src="img/work/img.jpg" alt=""></li>
+									<li class=""><img src="img/work/img.jpg" alt=""></li>
+								</ul>
 							</div>
+
+
+
 
 						</div>
-						<div class="works__slider-item">
-
-							<div class="works__slider-item-discription">
-								<div class="works__adress">
-									<h2>Санкт-Петербург</h2>
-									<p>ул. Казанская д.42, оф. 7, БЦ "Выборгский"</p>
-								</div>
-								<div class="works__slider-table">
-									<div class="works__slider-table-link"><p>Форма:</p><span>круглая</span></div>
-									<div class="works__slider-table-link"><p>Размер:</p><span>100 х 100</span></div>
-									<div class="works__slider-table-link"><p>Рама:</p><span>алюминий, цвет жёлтый</span></div>
-									<div class="works__slider-table-link"><p>Подсветка:</p><span>Интерьерная, с отступом, цвет нейтральный</span></div>
-									<div class="works__slider-table-link"><p>Узор:</p><span>по спец. заказу</span></div>
-									<div class="works__slider-table-link"><p>Опции:</p><span>ИК нагреватель, Электронные часы, Цветовая подсветка RGB, Выключатель, сенсор прикосновения форма ромб</span></div>
-								</div>
-								<div class="works__slider-data">июль. 2019</div>
-							</div>
-							<div class="works__slider-img">
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img2.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img3.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img.jpg" alt="mirror">
-									</div>
-								</div>
-								
-							</div>
-
-						</div>
-						<div class="works__slider-item">
-
-							<div class="works__slider-item-discription">
-								<div class="works__slider-table">
-									<div class="works__slider-table-link"><p>Форма:</p><span>круглая</span></div>
-									<div class="works__slider-table-link"><p>Размер:</p><span>100 х 100</span></div>
-									<div class="works__slider-table-link"><p>Рама:</p><span>алюминий, цвет жёлтый</span></div>
-									<div class="works__slider-table-link"><p>Подсветка:</p><span>Интерьерная, с отступом, цвет нейтральный</span></div>
-									<div class="works__slider-table-link"><p>Узор:</p><span>по спец. заказу</span></div>
-									<div class="works__slider-table-link"><p>Опции:</p><span>ИК нагреватель, Электронные часы, Цветовая подсветка RGB, Выключатель, сенсор прикосновения форма ромб</span></div>
-								</div>
-								<div class="works__slider-data">июль. 2019</div>
-							</div>
-							<div class="works__slider-img">
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img2.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img3.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img.jpg" alt="mirror">
-									</div>
-								</div>
-								<div>
-									<div class="works__slider-img-item">
-										<img src="img/work/img.jpg" alt="mirror">
-									</div>
-								</div>
-								
-							</div>
-
-						</div>
+					
 
 
 

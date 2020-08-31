@@ -46,23 +46,84 @@ $('#catalog__sidebar-width-end').focus(function(){
 
 
 
-$('.catalog__sidebar-close').on('click', function(){
-	$('.catalog__sidebar').fadeOut();
-});
-$('.catalog__form-filter-btn').on('click', function(){
-	$('.catalog__sidebar').fadeIn();
-});
-
-
-
-$('.catalog__form-filter-btn').on('click', function(){
-	$('body').css({
-		"overflow": "hidden",
+$('#catalog-filter').on('click', function(){
+	$('.catalog__sidebar').addClass("translate");
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $("#catalog-sidebar"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			div.removeClass("translate"); // скрываем его
+		}
 	});
 });
+
 $('.catalog__sidebar-close').on('click', function(){
-	$('body').css({
-		"overflow": "auto",
+	$('.catalog__sidebar').removeClass("translate");
+});
+
+
+
+
+
+$('.checkselect-number').click(function () {
+	$(this).attr('tabindex', 1).focus();
+	$(this).toggleClass('active');
+	$(this).find('.dropdown-menu').slideToggle(300);
+	$(this).find('.arrow-select').toggleClass('active');
+});
+
+
+
+$('.checkselect-number .dropdown-menu li').click(function () {
+	$(this).parents('.checkselect-number').find('span').text($(this).text());
+	$(this).parents('.checkselect-number').find('input').attr('value', $(this).attr('id'));
+});
+
+
+jQuery(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".checkselect-number"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			$(".checkselect-number").removeClass('active');
+			$('#dropdown-menu-number').css({"display": "none"});
+			$(this).find('.arrow-select').removeClass('active');
+		}
+	});
+});
+
+
+
+
+
+
+
+
+$('.checkselect-category').click(function () {
+	$(this).attr('tabindex', 1).focus();
+	$(this).toggleClass('active');
+	$(this).find('.dropdown-menu').slideToggle(300);
+	$(this).find('.arrow-select').toggleClass('active');
+	$(this).find('.checkselect-category-text').css({
+		opacity: 1
+	});
+});
+
+$('.checkselect-category .dropdown-menu li').click(function () {
+	$(this).parents('.checkselect-category').find('span').text($(this).text());
+	$(this).parents('.checkselect-category').find('input').attr('value', $(this).attr('id'));
+});
+
+
+jQuery(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".checkselect-category"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			$(".checkselect-number").removeClass('active');
+			$(this).find('.dropdown-menu').css({"display": "none"});
+			$(this).find('.arrow-select').removeClass('active');
+		}
 	});
 });
 

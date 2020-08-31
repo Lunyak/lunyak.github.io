@@ -172,15 +172,6 @@ $.fn.checkselect = function() {
 
 $('.checkselect-flat').checkselect();
 
-// $(document).ready(function(){
-//   let catalogSelecArrow = false;
-// 	$(".checkselect-control-flat").click(function(){
-//     $(".catalog-select-arrow-flat").toggleClass("catalog-select-arrow-rotate");
-//     catalogSelecArrow = true;
-//     return false;
-// 	});
-// });
-
 
 
 // checkselect - rooms

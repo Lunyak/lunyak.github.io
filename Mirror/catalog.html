@@ -6,7 +6,7 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/slyle.css"> <!-- Resource style -->
-	<!-- <script src="js/modernizr.js"></script> -->
+	<link rel="stylesheet" href="/path/to/jquery.mCustomScrollbar.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>ALMA</title>
@@ -30,9 +30,9 @@
         <nav class="nav">
           <ul class="nav__linklist">
             <li><a href="#" class="nav__links">конструктор</a></li>
-            <li><a href="catalog.html" class="nav__links">каталог</a></li>
+            <li><a href="catalog.html" class="nav__links nav__links-active">каталог</a></li>
             <li><a href="works.html" class="nav__links">наши работы</a></li>
-            <a href="contacts.html" class="nav__links">контакты</a>
+            <li><a href="contacts.html" class="nav__links">контакты</a></li>
           </ul>
         </nav>
         <div class="header__contant">
@@ -55,7 +55,7 @@
 
 
 	<section class="catalog">
-		<aside class="catalog__sidebar">
+		<aside id="catalog-sidebar" class="catalog__sidebar">
 			<!-- Закрытие SIDEBARE -->
 			<img class="catalog__sidebar-close" src="img/catalog-aside/chest.svg" alt="chest">
 			<!-- FORM SIDEBARE -->
@@ -282,27 +282,60 @@
 
 					<!-- ФИЛЬТРЫ -->
 					<div class="catalog__form">
-						<form action="#" class="catalog__form-inner">
+						<form action="#" class="catalog-form">
 							<div class="catalog__form-item-wrap">
 
-							<!-- ПОКАЗАТЬ ПО НОМЕРУ -->
-							<div class="catalog__number-item">
-								<label for="number-item">Показывать по</label>
-								<input class="btn-simple btn-catalog-number" id="number-item" type="number" placeholder="0">
-							</div>
+								<!-- ПОКАЗАТЬ ПО НОМЕРУ -->
+									<div class="select-filter-number">
+										<p>Показывать по</p>
+										<div class="checkselect-number">
+											<div class="checkselect-number-select">
+												<img class="arrow-select" src="img/arrow-select.svg" alt="arrow">
+												<span>12</span>
+												<i class="fa fa-chevron-left"></i>
+											</div>
+											<input id="number-item" type="hidden" name="number">
+											<!-- mCustomScrollbar -->
+											<ul id="dropdown-menu-number" class="dropdown-menu">
+												<li id="1">1</li>
+												<li id="2">2</li>
+												<li id="3">3</li>
+												<li id="4">4</li>
+												<li id="5">5</li>
+												<li id="6">6</li>
+												<li id="7">7</li>
+												<li id="8">8</li>
+												<li id="9">9</li>
+												<li id="10">10</li>
+												<li id="11">11</li>
+												<li id="12">12</li>
+											</ul>
+										</div>
+									</div>
 
-							<!-- ПОКАЗАТЬ ПО ПОПУЛЯРНОСТИ -->
-							<div class="catalog__option-item">
-								<label for="form-item">Сортировать по</label>
-								<select class="btn btn-simple btn-catalog-option" id="form-item" type="" placeholder="Сортировать по">
-									<option value="Популярности">Популярности</option>
-									<option value="Цене">Цене</option>
-								</select>
-							</div>
+
+								<!-- ПОКАЗАТЬ ПО ПОПУЛЯРНОСТИ -->
+								<div class="select-filter-category">
+									<div class="checkselect-category">
+										<div class="checkselect-category-select">
+											<img class="arrow-select" src="img/arrow-select.svg" alt="arrow">
+											<p class="checkselect-category-text">Сортировать по</p>
+											<span>Сортировать по</span>
+											<i class="fa fa-chevron-left"></i>
+										</div>
+										<input id="category-item" type="hidden" name="category">
+										<!-- mCustomScrollbar -->
+										<ul class="dropdown-menu">
+											<li id="1">Популярности</li>
+											<li id="2">По стоимости</li>
+
+										</ul>
+									</div>
+								</div>
 							</div>	<!-----catalog__form-item-wrap----- -->
 							<div class="catalog__form-filter">
 								<label for="catalog-filter">Настроить фильтры</label>
-								<button class="catalog__form-filter-btn" id="catalog-filter"></button>
+								<button class="filter-btn" id="catalog-filter"></button>
 							</div>
 						</form>
 					</div>
@@ -643,9 +676,7 @@
 
 
 <script src="js/jquery-2.1.1.js"></script>
-<script>
-	document.documentElement.setAttribute('data-theme','dark')
-</script>
-<script src="js/catalog.js"></script> <!-- Resource jQuery -->
+<script src="/path/to/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/catalog.js"></script>
 </body>
 </html>

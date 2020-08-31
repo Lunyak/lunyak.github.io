@@ -29,9 +29,9 @@
         <nav class="nav">
           <ul class="nav__linklist">
             <li><a href="#" class="nav__links">конструктор</a></li>
-            <li><a href="catalog.html" class="nav__links">каталог</a></li>
+            <li><a href="catalog.html" class="nav__links nav__links-active">каталог</a></li>
             <li><a href="works.html" class="nav__links">наши работы</a></li>
-            <a href="contacts.html" class="nav__links">контакты</a>
+            <li><a href="contacts.html" class="nav__links">контакты</a></li>
           </ul>
         </nav>
         <div class="header__contant">
@@ -68,15 +68,15 @@
 						<!-- TABS -->
 						<div class="catalog__tabs">
 							<nav class="tabs__items">
-								<a href="#tab_01" class="tabs__item"><span>Описание</span></a>
-								<a href="#tab_02" class="tabs__item"><span>Подробные характеристики</span></a>
+								<div class="tabs__item tabs__left active"><span>Описание</span></div>
+								<div class="tabs__item tabs__right"><span>Подробные характеристики</span></div>
 							</nav>
 
 							<div class="tabs__body">
-								<div id="tab_01" class="tabs__block">
+								<div id="tab_01" class="tabs__block tabs__block-left active">
 									Модель Victoria Extra может стать выдающимся украшением ванной или любой другой комнаты, интерьер которой оформлен в классическом стиле. Это зеркало состоит из девяти частей полотна, обработанных фацетом со всех сторон. Victoria Extra обладает встроенной интерьерной подсветкой, которая сможет подчеркнуть элегантный силуэт изделия и сделать акцент на необычном рельефе плитки или декоративной штукатурки.
 								</div>
-								<div id="tab_02" class="tabs__block">
+								<div id="tab_02" class="tabs__block tabs__block-right">
 									Вторая вкладка. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim laudantium esse modi aut in recusandae explicabo, doloremque animi sapiente hic nobis ducimus minima distinctio deleniti tempora deserunt cumque amet consequatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim laudantium esse modi aut in recusandae explicabo, doloremque animi sapiente hic nobis ducimus minima distinctio deleniti tempora deserunt cumque amet consequatur.
 								</div>
 							</div>
@@ -142,12 +142,12 @@
 							<!-- РАЗМЕР -->
 							<div class="catalog__sidebar-price-item-wrap">
 								<!-- ШИРИНА -->
-								<div class="catalog__sidebar-price-start">
+								<div class="input-size-start">
 									<input class="input-form" id="catalog-item-width" type="number" placeholder="Ширина">
 									<label for="catalog-item-width">Ширина</label>
 								</div>
 								<!-- ВЫСОТА -->
-								<div class="catalog__sidebar-price-end">
+								<div class="input-size-end">
 									<input class="input-form" id="catalog-item-hight" type="number" placeholder="Высота">
 									<label for="catalog-item-hight">Высота</label>
 								</div>
@@ -162,7 +162,7 @@
 
 								<!-- КНОПКА ФОРМА ЗЕРКАЛ -->
 								<div class="catalog__sidebar-mirror-item">
-									<div class="sidebar-mirror-img-wrap">
+									<div class="mirror-size active">
 										<input class="custom-checkbox-mirror" name="mirror-item" type="radio" id="mirror-size100x200">
 										<label for="mirror-size100x200">
 											<p>100 x 200</p>
@@ -172,7 +172,7 @@
 
 								<!-- КНОПКА ФОРМА ЗЕРКАЛ -->
 								<div class="catalog__sidebar-mirror-item">
-									<div class="sidebar-mirror-img-wrap">
+									<div class="mirror-size">
 										<input class="custom-checkbox-mirror" name="mirror-item" type="radio" id="mirror-size400x400">
 										<label for="mirror-size400x400">
 											<p>400 x 300</p>
@@ -182,7 +182,7 @@
 
 								<!-- КНОПКА ФОРМА ЗЕРКАЛ -->
 								<div class="catalog__sidebar-mirror-item">
-									<div class="sidebar-mirror-img-wrap">
+									<div class="mirror-size in-active">
 										<input class="custom-checkbox-mirror" name="mirror-item" type="radio" id="mirror-size500x600">
 										<label for="mirror-size500x600">
 											<p>500 x 600</p>
@@ -192,7 +192,7 @@
 
 								<!-- КНОПКА ФОРМА ЗЕРКАЛ -->
 								<div class="catalog__sidebar-mirror-item">
-									<div class="sidebar-mirror-img-wrap">
+									<div class="mirror-size in-active">
 										<input class="custom-checkbox-mirror" name="mirror-item" type="radio" id="mirror-size500x6002">
 										<label for="mirror-size500x6002">
 											<p>500 x 600</p>
@@ -201,7 +201,7 @@
 								</div>
 								<!-- ФОРМА ЗЕРКАЛ -->
 								<div class="catalog__sidebar-mirror-item">
-									<div class="sidebar-mirror-img-wrap">
+									<div class="mirror-size in-active">
 										<input class="custom-checkbox-mirror" name="mirror-item" type="radio" id="mirror-size800x1200">
 										<label for="mirror-size800x1200">
 											<p>800 x 1200</p>
@@ -237,12 +237,32 @@
 						</div>
 
 						<!--  ПОДТВЕРЖДЕНИЕ ЗАКАЗА -->
-						<div class="catalog-item__order">
-							<!-- <h2>Количесство зеркал</h2> -->
-							<div class="catalog-item__order-input">
-								<input class="btn-simple catalog-btn-aside" id="catalog-item-order" type="number" placeholder="1">
-								<label for="catalog-item-width">Количество зеркал</label>
+						<div class="select-filter-count">
+							<p>Количество зеркал</p>
+							<div class="checkselect-count">
+								<div class="checkselect-count-select">
+									<img class="arrow-select" src="img/arrow-select.svg" alt="arrow">
+									<span>1</span>
+									<i class="fa fa-chevron-left"></i>
+								</div>
+								<input id="count-item" type="hidden" name="number">
+								<!-- mCustomScrollbar -->
+								<ul id="dropdown-menu-count" class="dropdown-menu">
+									<li id="1">1</li>
+									<li id="2">2</li>
+									<li id="3">3</li>
+									<li id="4">4</li>
+									<li id="5">5</li>
+									<li id="6">6</li>
+									<li id="7">7</li>
+									<li id="8">8</li>
+									<li id="9">9</li>
+									<li id="10">10</li>
+									<li id="11">11</li>
+									<li id="12">12</li>
+								</ul>
 							</div>
+						</div>
 							<div class="catalog-item__order-price">
 								<h2>Итого:</h2>
 								<p>15 500<span>.00 &#x20bd</span></p>
