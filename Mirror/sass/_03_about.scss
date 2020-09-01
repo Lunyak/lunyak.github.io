@@ -209,6 +209,9 @@
 
 .about .container {
   position: relative;
+  @media (max-width: 1024px) {
+    position: initial;
+  }
 }
 
 .about .container:before {
@@ -219,14 +222,14 @@
   bottom: 0;
   left: 0%;
   background: url(../img/01.svg) no-repeat;
-  // @media (max-width: 450px) {
-  //   transform: scale(.6);
-  //   bottom: -30px;
-  //   left: -10%;
-  // }
-  // @media (max-width: 320px) {
-  //   transform: scale(.6);
-  //   bottom: -30px;
-  //   left: -13%;
-  // }
+  @media (max-width: 450px) {
+    transform: scale(.6);
+    bottom: -30px;
+    left: -10%;
+  }
+  @media (max-width: 320px) {
+    transform: scale(.6);
+    bottom: -30px;
+    left: -13%;
+  }
 }

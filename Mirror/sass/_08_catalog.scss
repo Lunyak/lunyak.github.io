@@ -373,6 +373,8 @@
   }
 }
 
+
+
 .select-filter-number {
   display: flex;
   align-items: center;
@@ -461,9 +463,13 @@
   }
 }
 
+
+
+
 .checkselect-category,
 .select-filter-category {
   width: 289px;
+  z-index: 2;
   @media (max-width: 1024px) {
     width: 226px;
   }

@@ -198,3 +198,31 @@
   background-color: red;
   z-index: 20;
 }
+
+
+.input-name,
+.input-phone {
+  position: relative;
+  label {
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #828282;
+    background-color: #332d2dc9;
+    opacity: 0;
+    transition: .8s;
+  }
+}
+.input-name.active,
+.input-phone.active {
+  position: relative;
+  label {
+    opacity: 1;
+  }
+}
