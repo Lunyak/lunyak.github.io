@@ -1,5 +1,5 @@
 #catalog {
-  background-color: #3f3f3f;
+  background-color: #3c3c3c;
 }
 
 .catalog__inner {
@@ -18,6 +18,9 @@
 .catalog__content-title {
   position: relative;
   margin-bottom: 82px;
+  @media (max-width: 1024px) {
+    margin-bottom: 40px;
+  }
   @media (max-width: 550px) {
     width: 288px;
     margin: 0 auto;
@@ -59,44 +62,6 @@
   }
 }
 
-.catalog__form-item-wrap {
-  display: flex;
-  @media (max-width: 800px) {
-    flex-direction: column;
-  }
-}
-
-.catalog__number-item {
-  margin-right: 24px;
-  @media (max-width: 800px) {
-    width: 282px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-  @media (max-width: 550px) {
-    width: 215px;
-    margin: 0 0;
-    margin-right: auto;
-  }
-  label {
-    margin-right: 34px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: #ffffff;
-    z-index: 20;
-    @media (max-width: 550px) {
-      margin-right: 14px;
-      font-size: 12px;
-      line-height: 18px;
-      align-items: center;
-      display: flex;
-    }
-  }
-}
 
 .catalog .catalog__number-item input {
   width: 134px;
@@ -209,6 +174,15 @@
   cursor: pointer;
   position: relative;
   outline: none;
+  @media (max-width: 800px) {
+    top: -108px;
+    right: 197px;
+  }
+  @media (max-width: 550px) {
+    position: absolute;
+    top: 4px;
+    right: 0;
+  }
 }
 
 .catalog .filter-btn::after {
@@ -238,7 +212,7 @@
     max-width: 925px;
   }
   @media (max-width: 1024px) {
-    max-width: 745px;
+    max-width: 1924px;
     max-height: 1151px;
   }
   @media (max-width: 970px) {
@@ -387,25 +361,47 @@
   justify-content: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-
   color: #ffffff;
 }
 
-.checkselect-number {
+.checkselect-category, .checkselect-number {
   margin-right: 24px;
+  @media (max-width: 1025px) {
+    margin-bottom: 0;
+    margin-right: 0px;
+    margin-top: 0;
+  }
 }
 
 .select-filter-number {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0;
+  @media (max-width: 800px) {
+    margin-bottom: 24px;
+    width: 247px;
+  }
   P {
+    align-items: center;
     margin-right: 24px;
     font-weight: 500;
     font-size: 16px;
-    // line-height: 24px;
     letter-spacing: 0.2px;
     color: #ffffff;
+    // @media (max-width: 800px) {
+    //   min-width: 124px;
+    //   margin-right: 24px;
+    //   padding-left: 10px;
+    // }
+    @media (max-width: 800px) {
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      color: #FFFFFF;
+      margin-right: 0;
+      padding-left: 10px;
+    }
   }
 }
 
@@ -441,10 +437,10 @@
     transition: 0.5s;
   }
   @media (max-width: 1300px) {
-    margin-bottom: 19px;
+    // margin-bottom: 19px;
   }
-  @media (max-width: 774px) {
-    margin-bottom: 19px;
+  @media (max-width: 1024px) {
+    margin-bottom: 0px;
   }
   @media (max-width: 774px) {
     width: 100%;
@@ -457,9 +453,24 @@
   }
 }
 
+.checkselect-number {
+  @media (max-width: 1024px) {
+    width: 86px;
+    margin-top: 0;
+    margin-right: 24px;
+  }
+}
+
 .checkselect-category,
 .select-filter-category {
   width: 289px;
+  @media (max-width: 1024px) {
+    width: 226px;
+  }
+  @media (max-width: 800px) {
+    margin-top: 0;
+    width: 100%;
+  }
 }
 
 .checkselect-category:hover,
@@ -578,10 +589,51 @@
   line-height: 16px;
   letter-spacing: 1px;
   color: #828282;
-  background-color: #282828;
+  background-color: #3a3838b4;
   opacity: 0;
 }
 
 .checkselect-category-text.active {
   opacity: 1;
+}
+
+
+.catalog__form-item-wrap {
+  display: flex;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    width: 288px;
+  }
+}
+
+.catalog__number-item {
+  margin-right: 24px;
+  @media (max-width: 800px) {
+    width: 282px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  @media (max-width: 550px) {
+    width: 215px;
+    margin: 0 0;
+    margin-right: auto;
+  }
+  label {
+    margin-right: 34px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    z-index: 20;
+    @media (max-width: 550px) {
+      margin-right: 14px;
+      font-size: 12px;
+      line-height: 18px;
+      align-items: center;
+      display: flex;
+    }
+  }
 }

@@ -311,6 +311,15 @@
   transition: .7s;
   z-index: -1;
 }
+.catalog__sidebar-width-end label:hover,
+.catalog__sidebar-width-start label:hover,
+.catalog__sidebar-lenght-start label:hover,
+.catalog__sidebar-lenght-end label:hover,
+.catalog__sidebar-price-start label:hover,
+.catalog__sidebar-price-end label:hover {
+  width: 100%;
+  height: 100%;
+}
 
 
 
@@ -342,12 +351,18 @@
   height: 40px;
   appearance: none;
   border: 2px solid #BB6BD9 !important;
+  @media (max-width: 1010px) {
+    width: 135px;
+  }
 }
 .catalog-btn-aside:hover {
   width: 189px;
   height: 40px;
   appearance: none;
   border: 2px solid #828282;
+  @media (max-width: 1010px) {
+    width: 135px;
+  }
 }
 
 

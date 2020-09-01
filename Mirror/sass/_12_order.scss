@@ -51,7 +51,6 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
-
     color: #828282;
   }
 }
@@ -61,11 +60,9 @@
 
 .order-form {
   max-width: 694px;
-
   @media (max-width: 1160px) {
     max-width: 577px;
   }
-
   @media (max-width: 1000px) {
     max-width: 288px;
     margin: 0 auto;
@@ -75,12 +72,16 @@
 .order-form-contact,
 .order-form-delivery {
   display: flex;
-
   @media (max-width: 1000px) {
     flex-direction: column;
     width: 288px;
   }
 }
+.order__order-input {
+  position: relative;
+}
+
+
 
 .order-form-item-text {
   align-self: start;
@@ -92,19 +93,39 @@
 
 .order-form-contact-input,
 .order-form-delivery-input {
+  position: relative;
   label {
-    display: none;
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: -8px;
+    left: 25px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #828282;
+    background-color: #33303098;
+    opacity: 0;
+    transition: .5s;
   }
-
   width: 378px;
-
   @media (max-width: 1160px) {
     width: 327px;
   }
-
   @media (max-width: 1000px) {
     width: 288px;
   }
+}
+
+.order-name label.active,
+.order-mail label.active,
+.order-phone label.active,
+.order-city label.active,
+.order-street label.active,
+.order-house label.active,
+.order-flat label.active {
+  opacity: 1;
 }
 
 .order__order-input-wrap,
@@ -115,6 +136,7 @@
   color: #4f4f4f;
 
   input {
+    position: relative;
     width: 177px !important;
 
     @media (max-width: 1160px) {
@@ -127,13 +149,17 @@
   }
 }
 
-.input-form[type="time"]::-webkit-calendar-picker-indicator {
-  background: none;
-  color: #4f4f4f;
+.order__order-input {
+  margin-bottom: 24px;
 }
 
 
 
+
+.input-form[type="time"]::-webkit-calendar-picker-indicator {
+  background: none;
+  color: #4f4f4f;
+}
 
 
 .input-form[type="time"]::-webkit-clear-button {
@@ -143,8 +169,16 @@
 
 .order .input-form {
   width: 100%;
-  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+.order  .order-form-delivery-input .input-form {
+  width: 100%;
   color: #747373;
+}
+
+.order-form-contact-input .order__order-input {
+  position: relative;
 }
 
 .order-form-adress {

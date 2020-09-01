@@ -131,9 +131,9 @@ $(".header-burder-open").on("click", function () {
 	$('.header').css({
 		"background": "#282828",
 	});
-	$('.header-burder').css({
-		marginRight: 30,
-	});
+	// $('.header-burder').css({
+	// 	marginRight: 30,
+	// });
 });
 
 
@@ -157,9 +157,9 @@ $(".header-burder-close").on("click", function () {
 		$('.header').css({
 		"background": "#28282800",
   });
-  $('.header-burder').css({
-		marginRight: 0,
-	});
+  // $('.header-burder').css({
+	// 	marginRight: 0,
+	// });
 });
 
 // (function($){

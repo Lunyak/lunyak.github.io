@@ -11,10 +11,55 @@ $('.close-drop-discription').on('click', function(){
 
 
 
+
+
+
+// кнопки формы Имя
+$('#order-input-na(function(){
+	$('.order-name label').addClass('active');
+	$('#order-input-name').attr("placeholder", "");
+});
+// кнопки формы mail
+$('#order-input-mail').focus(function(){
+	$('.order-mail label').addClass('active');
+	$('#order-input-mail').attr("placeholder", "");
+});
+// кнопки формы phone
+$('#order-input-phone').focus(function(){
+	$('.order-phone label').addClass('active');
+	$('#order-input-phone').attr("placeholder", "");
+});
+// кнопки формы city
+$('#order-input-city').focus(function(){
+	$('.order-city label').addClass('active');
+	$('#order-input-city').attr("placeholder", "");
+});
+// кнопки формы street
+$('#order-input-street').focus(function(){
+	$('.order-street label').addClass('active');
+	$('#order-input-street').attr("placeholder", "");
+});
+// кнопки формы house
+$('#order-input-house').focus(function(){
+	$('.order-house label').addClass('active');
+	$('#order-input-house').attr("placeholder", "");
+});
+// кнопки формы flat
+$('#order-input-flat').focus(function(){
+	$('.order-flat label').addClass('active');
+	$('#order-input-flat').attr("placeholder", "");
+});
+
+
+
+
+
+
+
+
 $('#catalog-btn-basket').on('click', function(){
   $(".order-popup-formalized").css("display", "flex").hide().fadeIn();
 });
-
 
 
 $('.close-popup').on('click', function(){
@@ -53,9 +98,9 @@ $(".header-burder-open").on("click", function () {
 		top: widthNav,
 	});
 	$(".header__phone").fadeIn();
-	$('.logo__wrap').css({
-		"margin-right": "0",
-	});
+	// $('.logo__wrap').css({
+	// 	"margin-right": "0",
+	// });
 	$('.logo__wrap h2').css({
 		"color": "#3F3F3F",
 	});
@@ -79,9 +124,9 @@ $(".header-burder-close").on("click", function () {
 	$(".header__buy-icon").css({
 		top: 32,
 	});
-	$('.logo__wrap').css({
-		"margin-right": "30px",
-	});
+	// $('.logo__wrap').css({
+	// 	"margin-right": "30px",
+	// });
 	$('.logo__wrap h2').css({
 		"color": "#fff",
 	});

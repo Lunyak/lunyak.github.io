@@ -91,3 +91,16 @@ $('.checkselect-count .dropdown-menu li').click(function () {
 });
 
 
+
+// закрываем при клике на не раблчую область select count
+jQuery(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".checkselect-count"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			$(".checkselect-count").removeClass('active');
+			$('#dropdown-menu-count').css({"display": "none"});
+			$(this).find('.arrow-select').removeClass('active');
+		}
+	});
+});

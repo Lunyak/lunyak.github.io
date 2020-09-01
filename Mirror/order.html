@@ -105,22 +105,24 @@
 									</div>
 									<div class="order-form-contact-input">
 										<!-- NAME -->
-										<div class="order__order-input">
+										<div class="order__order-input order-name">
 											<input class="input-form" id="order-input-name" type="text" placeholder="Имя *">
 											<label for="order-input-name">Имя</label>
 										</div>
 										<!-- ЭЛЕКТРОННАЯ ПОЧТА -->
-										<div class="order__order-input">
+										<div class="order__order-input order-mail">
 											<input class="input-form" id="order-input-mail" type="text" placeholder="Электронная почта *">
 											<label for="order-input-mail">Электронная почта</label>
 										</div>
 										<!-- НОМЕР ТЕЛЕФОНА -->
-										<div class="order__order-input">
+										<div class="order__order-input order-phone">
 											<input class="input-form" id="order-input-phone" type="number" placeholder="Номер телефона *">
 											<label for="order-input-phone">Номер телефона</label>
 										</div>
 									</div>
 								</div>
+
+
 								<!-- ВРЕМЯ ДОСТАВКИ -->
 								<div class="order-form-delivery flex">
 									<div class="order-form-item-text">
@@ -132,45 +134,47 @@
 										<!-- С 00:00 -->
 										<div class="order__order-input">
 											<input class="input-form" id="order-input-delivery-on" type="time" value="00:00" placeholder="с 00:00">
-											<label for="order-input-delivery-on">Имя</label>
+											<label for="order-input-delivery-on"></label>
 										</div>
 										<!-- по 00:00 -->
 										<div class="order__order-input">
 											<input class="input-form" id="order-input-mail" type="time" value="00:00" placeholder="по 00:00">
-											<label for="order-input-mail">Электронная почта</label>
+											<label for="order-input-mail"></label>
 										</div>
-	
+
 									</div>
 								</div>
+
+
 								<!-- АДРЕС -->
 								<div class="order-form-adress flex">
 									<div class="order-form-item-text">
 										<p class="text-gray">АДРЕС</p>
 									</div>
-	
+
 									<!-- С 00:00 ПО 00:00 -->
 									<div class="order-form-adress-input">
 										<!-- С 00:00 -->
 										<div class="order-form-contact-input">
 										<!-- ГОРОД -->
-										<div class="order__order-input">
-											<input class="input-form" id="order-input-name" type="text" placeholder="Город *">
-											<label for="order-input-name">Город</label>
+										<div class="order__order-input order-city">
+											<input class="input-form" id="order-input-city" type="text" placeholder="Город *">
+											<label for="order-input-city">Город</label>
 										</div>
 										<!-- УЛИЦА -->
-										<div class="order__order-input">
-											<input class="input-form" id="order-input-mail" type="text" placeholder="Улица *">
-											<label for="order-input-mail">Улица</label>
+										<div class="order__order-input order-street">
+											<input class="input-form" id="order-input-street" type="text" placeholder="Улица *">
+											<label for="order-input-street">Улица</label>
 										</div>
 										<!-- ДОМ - КВАРТИРА -->
 										<div class="order__order-input-wrap">
 											<!-- ДОМ -->
-											<div class="order__order-input">
+											<div class="order__order-input order-house">
 												<input class="input-form" id="order-input-house" type="number" placeholder="Дом *">
 												<label for="order-input-house">Улица</label>
 											</div>
 											<!-- КВАРТИРА -->
-											<div class="order__order-input">
+											<div class="order__order-input order-flat">
 												<input class="input-form" id="order-input-flat" type="text" placeholder="Квартира *">
 												<label for="order-input-flat">Улица</label>
 											</div>
