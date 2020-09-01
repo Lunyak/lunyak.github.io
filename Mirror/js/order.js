@@ -15,7 +15,7 @@ $('.close-drop-discription').on('click', function(){
 
 
 // кнопки формы Имя
-$('#order-input-na(function(){
+$('#order-input-name').focus(function(){
 	$('.order-name label').addClass('active');
 	$('#order-input-name').attr("placeholder", "");
 });
