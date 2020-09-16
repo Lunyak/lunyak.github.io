@@ -1,3 +1,35 @@
+
+/* raleway-300 - cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/raleway-v17-cyrillic-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/raleway-v17-cyrillic-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-v17-cyrillic-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-v17-cyrillic-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/raleway-v17-cyrillic-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-v17-cyrillic-300.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+/* raleway-700 - cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/raleway-v17-cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/raleway-v17-cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-v17-cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-v17-cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/raleway-v17-cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-v17-cyrillic-700.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -121,7 +153,7 @@ body {
   right: -115px;
   width: 673px;
   height: 758px;
-  background: url(../img/broccoly.png) no-repeat;
+  background: url(../img/broccoly-min.png) no-repeat;
 }
 .container::before {
   position: absolute;
@@ -130,7 +162,7 @@ body {
   right: -115px;
   width: 673px;
   height: 758px;
-  background: url(../img/broccoly.png) no-repeat;
+  background: url(../img/broccoly-min.png) no-repeat;
 }
 
 
