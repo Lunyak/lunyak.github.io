@@ -1,0 +1,31 @@
+
+.section__inner {
+  padding: 70px 0;
+}
+
+.section__head {
+  margin-left: 258px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.section__title {
+  margin-bottom: 35px;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #393e6b;
+}
+
+.section__subtitle {
+  margin-bottom: 60px;
+  width: 617px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #74757b;
+}
+
+

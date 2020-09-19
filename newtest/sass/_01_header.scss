@@ -1,0 +1,56 @@
+
+.header {
+    padding: 0 70px;
+    height: 100%;
+    position: relative;
+    box-shadow: 1px -6px 13px 0px #000;
+    z-index: 0;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 680px;
+        height: 98px;
+        background: url(../img/header-fon.jpg) no-repeat;
+        z-index: -1;
+    }
+    // .header__inner
+    &__inner {
+        padding: 34px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    // .header__content
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.header a {
+    text-transform: uppercase;
+    color: #393e6b;
+}
+
+.sing {
+
+}
+.sing a:first-child {
+    margin-right: 35px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlist {
+    margin-right: 25px;
+    width: 475px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

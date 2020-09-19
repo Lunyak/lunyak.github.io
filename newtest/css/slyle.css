@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1680px;
+}
+
+/* ubuntu-300 - cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/ubuntu-v15-cyrillic-300.eot");
+  /* IE9 Compat Modes */
+  src: local("Ubuntu Light"), local("Ubuntu-Light"), url("../fonts/ubuntu-v15-cyrillic-300.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-v15-cyrillic-300.woff2") format("woff2"), url("../fonts/ubuntu-v15-cyrillic-300.woff") format("woff"), url("../fonts/ubuntu-v15-cyrillic-300.ttf") format("truetype"), url("../fonts/ubuntu-v15-cyrillic-300.svg#Ubuntu") format("svg");
+  /* Legacy iOS */
+}
+
+/* ubuntu-regular - cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ubuntu-v15-cyrillic-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Ubuntu Regular"), local("Ubuntu-Regular"), url("../fonts/ubuntu-v15-cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-v15-cyrillic-regular.woff2") format("woff2"), url("../fonts/ubuntu-v15-cyrillic-regular.woff") format("woff"), url("../fonts/ubuntu-v15-cyrillic-regular.ttf") format("truetype"), url("../fonts/ubuntu-v15-cyrillic-regular.svg#Ubuntu") format("svg");
+  /* Legacy iOS */
+}
+
+/* ubuntu-700 - cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ubuntu-v15-cyrillic-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Ubuntu Bold"), local("Ubuntu-Bold"), url("../fonts/ubuntu-v15-cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-v15-cyrillic-700.woff2") format("woff2"), url("../fonts/ubuntu-v15-cyrillic-700.woff") format("woff"), url("../fonts/ubuntu-v15-cyrillic-700.ttf") format("truetype"), url("../fonts/ubuntu-v15-cyrillic-700.svg#Ubuntu") format("svg");
+  /* Legacy iOS */
+}
+
+.section__inner {
+  padding: 70px 0;
+}
+
+.section__head {
+  margin-left: 258px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section__title {
+  margin-bottom: 35px;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #393e6b;
+}
+
+.section__subtitle {
+  margin-bottom: 60px;
+  width: 617px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #74757b;
+}
+
+.header {
+  padding: 0 70px;
+  height: 100%;
+  position: relative;
+  -webkit-box-shadow: 1px -6px 13px 0px #000;
+          box-shadow: 1px -6px 13px 0px #000;
+  z-index: 0;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 680px;
+  height: 98px;
+  background: url(../img/header-fon.jpg) no-repeat;
+  z-index: -1;
+}
+
+.header__inner {
+  padding: 34px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header a {
+  text-transform: uppercase;
+  color: #393e6b;
+}
+
+.sing a:first-child {
+  margin-right: 35px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navlist {
+  margin-right: 25px;
+  width: 475px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main {
+  background-color: #eff4f4;
+  position: relative;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  top: 35px;
+  right: 20%;
+  width: 551px;
+  height: 452px;
+  background: url(../img/card.png) no-repeat;
+}
+
+.btn__green {
+  margin-right: 20px;
+  padding: 18px;
+  font-size: 14px;
+  background-color: #2cd3b8;
+  color: #eff4f4;
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn__white {
+  width: 257px;
+  padding: 18px 30px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #000;
+  border-radius: 30px;
+  border: 1px solid #000;
+  outline: none;
+  font-weight: 700;
+  cursor: pointer;
+}
