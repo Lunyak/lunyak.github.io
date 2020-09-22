@@ -15,7 +15,7 @@
 
 .footer__logo {
   margin-right: 200px;
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     margin-right: 40px;
   }
   img {
@@ -60,10 +60,9 @@
   margin-bottom: 30px;
   font-size: 22px;
   color: #fff;
-  @media (max-width: 1024px) {
+  @media (max-width: 1200px) {
     margin-left: 50px;
   }
-  
   p {
     margin-top: 8px;
     color: #adb0c2;

@@ -1435,7 +1435,7 @@ button {
       flex-wrap: wrap;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .links .section__linklist .section__link {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -1490,7 +1490,7 @@ button {
   margin-right: 200px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .footer__logo {
     margin-right: 40px;
   }
@@ -1550,7 +1550,7 @@ button {
   color: #fff;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .footer__phone {
     margin-left: 50px;
   }
