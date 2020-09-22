@@ -1,0 +1,29 @@
+.code {
+  background-color: #eff4f4;
+}
+
+.code .section__content {
+  margin-left: 40px;
+  @media (max-width: 650px) {
+    margin-left: 27px;
+  }
+}
+
+.code .section__title {
+  @media (max-width: 870px) {
+    width: 230px;
+  }
+}
+
+.code .section__link a {
+  width: 80%;
+  text-decoration: underline;
+  transition: .5s;
+}
+
+.code .section__link a::before {
+  display: none;
+}
+.code .section__link a:hover {
+  text-decoration: none;
+}
