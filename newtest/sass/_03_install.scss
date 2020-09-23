@@ -67,9 +67,11 @@
   color: #e1e2e9;
 }
 .install .install__number p a {
-
+  @media (min-width: 870px) {
+    // width: 160px;
+  }
   @media (max-width: 870px) {
-    width: 160px;
+    
   }
   font-size: 26px;
 }
@@ -85,14 +87,16 @@
   width: 142px;
   height: 2px;
   bottom: -56px;
-  @media (min-width: 870px) {
+  @media (min-width: 1200px) {
     display: none;
   }
 
 }
 .install .install__number p:last-child a {
-  top: 151px;
-  width: 144px;
+  @media (max-width: 1200px) {
+    width: 144px;
+    top: 151px;
+  }
 }
 
 .instal__link {

@@ -1084,12 +1084,6 @@ button {
   font-size: 26px;
 }
 
-@media (max-width: 870px) {
-  .install .install__number p a {
-    width: 160px;
-  }
-}
-
 .install .install__number p:last-child::after {
   content: '';
   height: 2px;
@@ -1104,15 +1098,17 @@ button {
   bottom: -56px;
 }
 
-@media (min-width: 870px) {
+@media (min-width: 1200px) {
   .install .install__number p:last-child::after {
     display: none;
   }
 }
 
-.install .install__number p:last-child a {
-  top: 151px;
-  width: 144px;
+@media (max-width: 1200px) {
+  .install .install__number p:last-child a {
+    width: 144px;
+    top: 151px;
+  }
 }
 
 .instal__link span {
@@ -1665,4 +1661,16 @@ button {
 
 .callback circle {
   stroke: #393e6b;
+}
+
+.footer .section__inner {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+@media (max-width: 1200px) {
+  .footer .section__inner {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }

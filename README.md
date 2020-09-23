@@ -59,6 +59,9 @@
 [Promises](https://lunyak.github.io/Love "3")*
 Анимация. Адаптивная верстка. Немного Jq. Простой слайдер.
 
+[Test](https://lunyak.github.io/newtest "n")*
+За день сверстанный лендинг с адаптацией
+
 [ActiveBox](https://lunyak.github.io/ActiveBox "4")*
 Немного Jq. Панель навигации при скроле. Простой сладер.
 Адаптивная верстка.*
