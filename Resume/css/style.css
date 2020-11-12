@@ -212,6 +212,11 @@ h1,h2,h3,h4,h5,h6,label,p{
 	padding: 0em 0 0;
 	width: 39%;
 }
+.banner-matter h1{
+	color: #a2a3a3;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 3em;
+}
 .banner-matter h2{
 	color:#fff;
 	font-family: 'PT Sans Narrow', sans-serif;
@@ -1156,7 +1161,7 @@ ul.box-in {
 	padding: 1.5em 0;
 }
 #portfoliolist .portfolio {
-	width: 48%;
+	width: 100%;
 	margin: 3% 3% 0% 0;
 }
 #portfoliolist .portfolio:nth-child(3)  {
@@ -1229,6 +1234,7 @@ p.info{
 .port, #filters {
    margin-bottom: 0.3em;
 }	
+
 }
 @media(max-width:320px){
 .banner-matter {
@@ -1479,6 +1485,9 @@ a.read {
 
 .info h1 {
 	margin-bottom: 40px;
+	color: #a2a3a3;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 3em;
 }
 .info p {
 	margin-bottom: 40px;
@@ -1544,6 +1553,7 @@ a.read {
 		height: 250px;
 	}
 }
+
 @media (max-width:500px){
 	.banner .foto {
 		width: 200px;
@@ -1557,6 +1567,14 @@ a.read {
 	}
 	.info p {
 		width: 92%;
+	}
+}
+@media (max-width:480px){
+	.header-bottom {
+		width: 90%;
+	}
+	.portfolio-wrapper  {
+	max-height: 100%;
 	}
 }
 @media (max-width:320px){
@@ -1580,7 +1598,7 @@ a.read {
 
 .footer {
 	padding: 0;
-	height: 98px;
+	height: 80px;
 }
 
 .contact-inline {
@@ -1593,4 +1611,8 @@ a.read {
 .contact-form {
 	width: 80%;
 	margin: 0 auto;
+}
+
+.contact-non {
+	margin-bottom: 40px;
 }
