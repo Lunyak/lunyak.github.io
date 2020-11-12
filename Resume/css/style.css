@@ -238,12 +238,13 @@ h1,h2,h3,h4,h5,h6,label,p{
 	color:#a2a3a3;
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-size:3em;
+	padding-left: 110px;
 }
 .works,.service,.meet {
 	border-top: 1px solid #E0E0E0;
 }
 .works{
-	padding: 3em 0 2em;
+	padding: 40px 0 2em;
 }
 #filters {
 	list-style: none;
@@ -284,13 +285,13 @@ h1,h2,h3,h4,h5,h6,label,p{
 	display: none;
 	float: left;
 	overflow: hidden;
-	margin: 3% 6% 3% 0;
+	margin: 0% 6% 3% 0;
 }
 #portfoliolist .portfolio:nth-child(3),#portfoliolist .portfolio:nth-child(6){
 	margin-right:0;
 }
 div#portfoliolist {
-	padding: 0px 0px;
+	padding: 40px 0px;
 }	
 .portfolio-wrapper {
 	overflow:hidden;
@@ -1260,7 +1261,7 @@ p.info{
 .banner {
 	padding: 1em 0;
 }
-.port, .ser, .team {
+.ser, .team {
 	font-size: 1.4em;
 }
 #filters li span {
@@ -1421,9 +1422,7 @@ a.read {
 .artical-content p {
   font-size: 0.95em;
 }
-.port{
-	margin-bottom:0.5em;
-}
+
 }
 .banner .skills {
   text-align: right;
@@ -1509,7 +1508,6 @@ a.read {
 	.banner-matter h1 {
 		text-align: center;
 		margin-bottom: 20px;
-
 	}
 	.banner .skils-wrap {
 		width: 100%;
@@ -1529,6 +1527,11 @@ a.read {
 		
     width: 70%;
 	}
+	.port {
+		float: none;
+		text-align: center;
+		padding: 0;
+	}
 }
 @media (max-width:991px){
 	.banner-matter {
@@ -1541,16 +1544,41 @@ a.read {
 	.banner .skils-title {
 		position: static; 
 		color: #000;
+		transform: translateY(0%);
 	}
 	.banner .skils-wrap {
 		display: flex;
 	}
+
 }
 
+
+@media (max-width:736px){
+	.info h1,
+	.banner-matter h1 {
+		font-size: 2.5em;
+	}
+}
+@media (max-width:400px){
+	.info h1,
+	.banner-matter h1 {
+		font-size: 2em;
+	}
+}
 @media (max-width:650px){
 	.banner .foto {
 		width: 250px;
 		height: 250px;
+	}
+	.info h1,
+	.banner-matter h1 {
+		font-size: 2em;
+	}
+}
+@media (max-width:667px){
+	.info h1,
+	.banner-matter h1 {
+		font-size: 2em;
 	}
 }
 
@@ -1576,6 +1604,37 @@ a.read {
 	.portfolio-wrapper  {
 	max-height: 100%;
 	}
+}
+@media (max-width:400px){
+	.banner-matter {
+		padding-top: 30px;
+	}
+	.banner .banner-matter h1 {
+		margin-bottom: 30px;
+	}
+	.banner {
+		padding-bottom: 30px;
+	}
+	.info {
+		margin-bottom: 30px;
+	}
+	.info  h1{
+		margin-bottom: 30px;
+	}
+	.works {
+		padding-top: 30px;
+		padding-bottom: 0;
+	}
+	.works .port{
+		margin: 0px;
+	}
+	div#portfoliolist {
+		padding: 30px 0;
+	}
+	#portfoliolist .portfolio {
+    width: 100%;
+    margin: 3% 0;
+}
 }
 @media (max-width:320px){
 	.header-bottom {
