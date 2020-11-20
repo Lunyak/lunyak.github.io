@@ -1,0 +1,130 @@
+.aplication .section__title {
+  margin-bottom: 25px;
+
+  @media (max-width: 870px) {
+    width: 482px;
+    text-align: left;
+    line-height: 52px;
+    margin-bottom: 52px;
+  }
+
+  @media (max-width: 670px) {
+    max-width: 368px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 520px) {
+    line-height: 32px;
+    font-size: 24px;
+  }
+
+  @media (max-width: 370px) {
+    line-height: 24px;
+    font-size: 18px;
+    width: 80%;
+  }
+}
+
+.aplication .section__subtitle {
+  @media (max-width: 870px) {
+    font-size: 24px;
+    width: 454px;
+    margin-bottom: 85px;
+  }
+
+  @media (max-width: 670px) {
+    max-width: 275px;
+    font-size: 18px;
+    
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  @media (max-width: 370px) {
+    max-width: 235px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.aplication .section__content {
+  margin-left: 40px;
+
+  @media (max-width: 650px) {
+    margin-left: 20px;
+  }
+  @media (max-width: 520px) {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+  @media (max-width: 370px) {
+    max-width: 250px;
+  }
+}
+
+.aplication .section__content p {
+
+  // line-height: 24px;
+  @media (max-width: 670px) {
+    font-size: 18px;
+  }
+}
+
+.aplication .section__subtitle {
+  width: 100%;
+
+  @media (max-width: 870px) {
+    width: 80%;
+  }
+}
+
+
+
+.aplication .section__link a {
+  width: 80%;
+  text-decoration: underline;
+  transition: .5s;
+
+  @media (max-width: 680px) {
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 1px;
+    height: 80px
+  }
+}
+
+.aplication .section__link a::before {
+  display: none;
+}
+
+.aplication .section__link a:hover {
+  text-decoration: none;
+}
+
+.aplication .section__link-wrap {
+  @media (max-width: 870px) {
+    max-width: 79%;
+  }
+  @media (max-width: 670px) {
+    max-width: 90%;
+  }
+}
+
+.aplication .section__link p {
+  line-height: 20px;
+  @media (max-width: 870px) {
+    margin-top: 40px;
+    line-height: 32px;
+  }
+  @media (max-width: 670px) {
+    margin-top: 20px;
+    line-height: 24px;
+  }
+  @media (max-width: 370px) {
+    margin-top: 15px;
+    line-height: 18px;
+    font-size: 14px;
+  }
+}

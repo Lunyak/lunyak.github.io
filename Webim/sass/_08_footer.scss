@@ -1,0 +1,179 @@
+.footer {
+  background-color: #393e6b; 
+  position: relative;
+}
+
+.footer .section__inner {
+  padding: 50px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  @media (max-width: 650px) {
+    padding: 20px 0;
+  }
+}
+
+.footer__logo {
+  margin-right: 200px;
+  @media (max-width: 1200px) {
+    margin-right: 40px;
+  }
+  img {
+    @media (max-width: 870px) {
+      display: none;
+    }
+  }
+}
+
+
+.footer__logo-text {
+  margin-top: 20px;
+  color: #adb0c2;
+  @media (max-width: 870px) {
+    margin-top: 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+  }
+  @media (max-width: 650px) {
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+  @media (max-width: 520px) {
+    font-size: 14px;
+  }
+  @media (max-width: 570px) {
+    font-size: 12px;
+  }
+  p:last-child {
+    margin-top: 10px;
+  }
+}
+
+.footer__content {
+  margin-right: auto;
+  @media (max-width: 870px) {
+    display: none;
+  }
+}
+
+.footer__phone-big {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 26px;
+  svg {
+    margin-right: 12px;
+  }
+}
+
+.footer__phone {
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #fff;
+  @media (max-width: 1200px) {
+    margin-left: 50px;
+  }
+  p {
+    margin-top: 8px;
+    color: #adb0c2;
+    font-size: 16px;
+    @media (max-width: 1024px) {
+      width: 260px;
+    }
+  }
+}
+
+.footer__phone:last-child {
+  margin-bottom: 0px;
+}
+
+.footer__contacts {
+  color: #fff;
+  @media (max-width: 1024px) {
+    width: 180px;
+    @media (max-width: 870px) {
+      display: none;
+    }
+  }
+  a {
+    display: block;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: .025em;
+  }
+
+  p {
+    margin-top: 15px;
+    color: #c0c3d4;
+  }
+}
+
+.footer__social {
+  width: 140px;
+  margin-top: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vk {
+  width: 22px;
+  height: 24px;
+}
+.twit {
+  width: 22px;
+  height: 24px;
+}
+.face {
+  width: 20px;
+  height: 18px;
+}
+.sky {
+  width: 20px;
+  height: 24px;
+}
+
+
+
+
+.footer a:hover {
+  color: #2cd3b8;
+  cursor: pointer;
+}
+.footer svg {
+  transition: .5s;
+  fill:#adb0c2;
+}
+
+.footer svg:hover {
+  fill: #2cd3b8;
+  cursor: pointer;
+}
+
+.callback {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  fill: #393e6b;
+  @media (max-width: 870px) {
+    display: none;
+  }
+
+}
+
+.callback circle {
+  stroke: #393e6b;
+}
+
+.footer .section__inner {
+  padding-right: 40px;
+  padding-left: 40px;
+  @media (max-width: 1200px) {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

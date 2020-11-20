@@ -1,0 +1,131 @@
+.later {
+  background-color: #eff4f4;
+}
+
+.later .section__title {
+  @media (max-width: 870px) {
+    width: 80%;
+    text-align: left;
+    line-height: 52px;
+  }
+  @media (max-width: 670px) {
+    width: 100%;
+    text-align: center;
+  }
+  @media (max-width: 520px) {
+    width: 80%;
+    line-height: 32px;
+  }
+  @media (max-width: 370px) {
+    line-height: 24px;
+  }
+}
+.later .section__subtitle {
+  width: 100%;
+  @media (max-width: 870px) {
+    width: 83%;
+    font-size: 24px;
+    margin-bottom: 80px;
+  }
+  @media (max-width: 670px) {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+  @media (max-width: 520px) {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 18px;
+    text-align: center;
+  }
+  @media (max-width: 370px) {
+    width: 90%;
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+
+.later .section__content {
+  @media (max-width: 520px) {
+    max-width: 305px;
+    margin: 0 auto;
+  }
+  @media (max-width: 370px) {
+    max-width: 250px;
+    line-height: 18px;
+  }
+  & li {
+    display: flex;
+    align-items: center;
+    max-width: 752px;
+    position: relative;
+    margin-bottom: 30px;
+    @media (max-width: 370px) {
+      margin-bottom: 20px;
+    }
+  }
+  & li:last-child {
+    margin-bottom: 70px;
+  }
+  & li::before {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: -30px;
+    width: 8px;
+    height: 8px;
+    background-color: #3b4269;
+    border-radius: 50%;
+  }
+  & p {
+    margin-top: 0px;
+    margin-left: 40px;
+    color: #74757b;
+    font-size: 24px;
+    font-weight: 700;
+    color: #393e6b;
+    @media (max-width:520px) {
+      font-size: 18px;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 20px;
+      @media (max-width: 650px) {
+        margin-top: 10px;
+        font-size: 14px;
+        display: block;
+      }
+    }
+  }
+  & a {
+    font-size: 24px;
+  }
+}
+
+
+.later .section__content li::before {
+    display: none;
+}
+
+.later .section__link p {
+  @media (max-width: 870px) {
+    width: 64%;
+    margin-left: 20px;
+  }
+}
+
+.later .section__icon svg {
+  @media (max-width:520px) {
+    transform: scale(.8);
+  }
+}
+
+
+.later .btn__green {
+  @media (max-width:520px) {
+    width: 100%;
+  }
+}
