@@ -18,7 +18,9 @@
          linear-gradient(to top, #ffffff 0%, #fff9df 100%);
    }
 
-   @media (max-width: 360px) {}
+   @media (max-width: 360px) {
+
+   }
 }
 
 
@@ -443,12 +445,16 @@
    top: 30%;
    right: 12%;
    transform: rotateZ(30deg);
+
+
    animation: loader 8s infinite ease-in-out;
 }
 
+
+
 @keyframes loader {
 from { transform: rotate(0deg) translateX(30px) rotate(0deg); }
-to   {  transform: rotate(-360deg) translateX(30px) rotate(360deg); }
+to { transform: rotate(-360deg) translateX(30px) rotate(360deg); }
 }
 
 @keyframes loader2 {

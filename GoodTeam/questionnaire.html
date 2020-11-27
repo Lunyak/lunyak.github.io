@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/slyle.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <title>Гросс Маркет</title>
+  </head>
+  <body>
+    <header class="header"> 
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="logo">
+            <img src="img/logo.svg" alt="logo" />
+          </a>
+          <div class="header__info">
+            <a href="index.html">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.8976 23.0959C24.4809 22.5074 24.4765 21.5573 23.8877 20.9742L16.8362 13.991C16.2474 13.4079 16.243 12.4579 16.8263 11.8693L23.8061 4.82645C24.3893 4.23807 24.385 3.28837 23.7967 2.70521L23.0958 2.01051C22.5072 1.42715 21.5571 1.43157 20.974 2.02038L13.9955 9.06723C13.4126 9.65588 12.4628 9.66049 11.8742 9.07751L4.82462 2.09557C4.23802 1.51459 3.29221 1.51687 2.70842 2.10066L2.01935 2.78973C1.43173 3.37736 1.43384 4.33073 2.02405 4.91574L9.0751 11.9046C9.66329 12.4876 9.66771 13.437 9.08496 14.0254L2.09534 21.0835C1.51441 21.6701 1.51672 22.6158 2.10049 23.1996L2.78967 23.8888C3.37727 24.4764 4.3306 24.4743 4.91562 23.8841L11.911 16.8274C12.4942 16.239 13.4439 16.2349 14.0323 16.8181L21.0816 23.806C21.67 24.3893 22.6198 24.3851 23.203 23.7967L23.8976 23.0959Z" fill="black"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="questionnaire">
+      <div class="container">
+        <div class="questionnaire__inner">
+          <div class="questionnaire__title">
+            <h2>Работа твоей мечты</h2>
+          </div>
+          <div action="#" class="questionnaire__content">
+            <div class="questionnaire__form-wrap">
+              <form id="form" class="form">
+
+                <!-- Выбор профессии -->
+                <div class="form-control">
+                  <div class="custom-select-wrapper">
+                    <div class="form__input-title">
+                      <h4>Вакансия *</h4>
+                      <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 5.5L3.76768 8.9963C4.17134 9.50623 4.94668 9.50124 5.34375 8.98615L11.5 1" stroke="#10C300" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <div class="custom-select">
+                        <div class="custom-select__trigger"><span>вакансия</span>
+                            <div class="arrow">
+                              <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.86601 9.5C6.48111 10.1667 5.51886 10.1667 5.13396 9.5L0.803833 2C0.418933 1.33333 0.900059 0.5 1.66986 0.5L10.3301 0.5C11.0999 0.5 11.581 1.33333 11.1961 2L6.86601 9.5Z" fill="black"/>
+                              </svg>
+                            </div>
+                        </div>
+                        <div class="custom-options open">
+                            <span class="custom-option selected" data-value="tesla">товаровед</span>
+                            <span class="custom-option" data-value="volvo">водитель</span>
+                            <span class="custom-option" data-value="mercedes">пекарь</span>
+                            <span class="custom-option" data-value="mercedes">кассир</span>
+                            <span class="custom-option" data-value="mercedes">продавец</span>
+                            <span class="custom-option" data-value="mercedes">повар</span>
+                            <span class="custom-option" data-value="mercedes">приёмщик</span>
+                        </div>
+                    </div>
+                  </div>
+                  <small>Error message</small>
+                </div>
+                <!-- Выбор профессии -->
+
+
+                <!-- Ф И О -->
+                <div class="form-control">
+                  <div class="form__input-title">
+                    <h4>ФИО *</h4>
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5.5L3.76768 8.9963C4.17134 9.50623 4.94668 9.50124 5.34375 8.98615L11.5 1" stroke="#10C300" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <input type="text" name="name" placeholder="Фамилия Имя Отчество" class="username" />
+                  <small>Error message</small>
+                </div>
+                <!-- Ф И О -->
+
+
+                <!-- блок другой ширины -->
+                <div class="form-control-wrap">
+
+
+                  <!-- Дата рождения -->
+                  <div class="form-control">
+                    <div class="form__input-title">
+                      <h4>Дата рождения *</h4>
+                      <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 5.5L3.76768 8.9963C4.17134 9.50623 4.94668 9.50124 5.34375 8.98615L11.5 1" stroke="#10C300" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <input type="text" placeholder="28.07.2002" class="form-date"/>
+                    <small>Error message</small>
+                  </div><!-- Дата рождения -->
+
+                  <!-- Выбор пола -->
+                  <div class="form-control ">
+                    <div class="form__input-title">
+                      <h4>Пол</h4>
+                      <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 5.5L3.76768 8.9963C4.17134 9.50623 4.94668 9.50124 5.34375 8.98615L11.5 1" stroke="#10C300" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                      <div class="gender">
+                        <div>
+                          <input class="gender__radio" name="gender" type="radio" id="male" value="male">
+                          <label for="male"></label>
+                          <span>мужской</span>
+                        </div>
+                      <div>
+                        <input class="gender__radio" name="gender" type="radio" id="famale" value="female">
+                        <label for="famale"></label>
+                        <span>женский</span>
+                      </div>
+
+                        <small>Error message</small>
+                    </div>
+                  </div><!-- Выбор пола -->
+
+                  <!-- Номер телефона -->
+                  <div class="form-control">
+                    <div class="form__input-title">
+                      <h4>Контактный телефон *</h4>
+                      <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 5.5L3.76768 8.9963C4.17134 9.50623 4.94668 9.50124 5.34375 8.98615L11.5 1" stroke="#10C300" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <input type="text" placeholder="+7 (" class="form-phone" id="form-phone" />
+                    <small>Error message</small>
+                  </div><!-- Номер телефона  -->
+
+                  <!-- Email -->
+                  <div class="form-control">
+                    <div class="form__input-title">
+                      <h4>Электронная почта</h4>
+                      <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 5.5L3.76768 8.9963C4.17134 9.50623 4.94668 9.50124 5.34375 8.98615L11.5 1" stroke="#10C300" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <input type="email" placeholder="" class="form-email" id="form-email"/>
+                    <small>Error message</small>
+                  </div><!-- Email  -->
+                </div>
+
+
+                <!-- Резюме  -->
+                <!-- в указано что должен быть input но он ограничен одной строк -->
+                <div class="form-control">
+                  <div class="form__input-title">
+                    <h4>Резюме</h4>
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 5.5L3.76768 8.9963C4.17134 9.50623 4.94668 9.50124 5.34375 8.98615L11.5 1" stroke="#10C300" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <textarea type="text" id="form-text" maxlength="120"></textarea>
+
+                  <div>
+                    <input class="form-radio" name="file" type="file" id="form-file">
+                    <label class="form-file" for="form-file">
+                      <span>
+                        <svg width="14" height="24" viewBox="0 0 14 24"  xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 5V17C12 19.757 9.757 22 7 22C4.243 22 2 19.757 2 17V5C2 3.346 3.346 2 5 2C6.654 2 8 3.346 8 5V14C8 14.551 7.551 15 7 15C6.449 15 6 14.551 6 14V6H4V14C4 15.657 5.343 17 7 17C8.657 17 10 15.657 10 14V5C10 2.239 7.761 0 5 0C2.239 0 0 2.239 0 5V17C0 20.866 3.134 24 7 24C10.866 24 14 20.866 14 17V5H12Z"/>
+                        </svg>
+                        выберете или перетащите файл
+                      </span>
+                    </label>
+                  </div>
+
+                  <small>Error message</small>
+                </div><!-- Резюме  -->
+
+
+
+                <!-- CAPTCHA  -->  
+                <div class="form-control-wrap">
+                  <div class="form-control">
+
+                    <div class="form__input-title">
+                      <h4>Капча</h4>
+                      <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 5.5L3.76768 8.9963C4.17134 9.50623 4.94668 9.50124 5.34375 8.98615L11.5 1" stroke="#10C300" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <!-- <div class="g-recaptcha" data-sitekey="6Lf9g-8ZAAAAANgqx5VqorWJ7JqdzzWi3toQg09b"></div> -->
+                  <div class="captha-wrap">
+                    <p>я не робот</p>
+                    <img src="img/caotcha.svg" alt="captcha">
+                    <label class="container forn-captcha">
+                      <input type="checkbox" id="forn-captcha">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                      
+                    <small>Error message</small>
+                  </div>
+                  <div class="form-control margin">
+                    <span>* поле для обязательного заполнения</span>
+                  </div>
+                </div>
+
+                <!-- Соглашение на персональные данные  --> 
+                <div class="linlk">
+                  <div class="agreement-wrap">
+                    <label class="container forn-agreement">
+                      <input type="checkbox" id="forn-agreement">
+                      <span class="agreement"></span>
+                    </label>
+                    
+                  </div>
+                  <a class="contract" href="#">я подтверждаю согласие на обработку персональных данных и принимаю условия рассмотрения обращений *<a>
+                </div>
+               
+                <button class="btn submit">отправить</button>
+              </form>
+            </div>
+
+            <div class="questionnaire__discription-wrap">
+              <div class="questionnaire__discription">
+                <h3>Наша суперцель</h3>
+                <p> — стать любимым магазином для каждой российской семьи.</p>
+                <p>Сотни тысяч наших сотрудников ежедневно работают над её достижением.</p>
+                <p>Мы уверены, что в ближайшие годы достигнем этого и будет здорово, если вместе с тобой.</p>
+                <div class="number">
+                  <a href="tel:+7 (926) 433-14-16">+7 (926) 433-14-16</a>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+      
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__content">
+            <div class="footer__logo">
+              <img src="img/logo.svg" alt="logo">
+            </div>
+            <div class="footer__link">
+              <h3>поделиться</h3>
+              <div class="footer__social">
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM15 8H13.65C13.112 8 13 8.221 13 8.778V10H15L14.791 12H13V19H10V12H8V10H10V7.692C10 5.923 10.931 5 13.029 5H15V8Z" fill="black"/>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM18.344 16.163H16.477C15.422 16.163 15.245 15.562 14.375 14.694C13.59 13.909 13.155 14.511 13.173 15.629C13.179 15.926 13.032 16.163 12.678 16.163C11.573 16.163 9.984 16.319 8.374 14.583C6.727 12.804 5 9.235 5 8.884C5 8.676 5.172 8.583 5.459 8.583H7.357C7.86 8.583 7.902 8.832 8.043 9.151C8.627 10.482 10.024 13.153 10.397 11.662C10.611 10.806 10.698 8.823 9.782 8.652C9.262 8.556 10.178 8 11.504 8C11.834 8 12.192 8.035 12.558 8.12C13.231 8.276 13.234 8.578 13.224 9.018C13.19 10.684 12.989 11.804 13.428 12.087C13.847 12.358 14.949 10.585 15.532 9.216C15.691 8.838 15.723 8.584 16.175 8.584H18.497C19.713 8.584 18.338 10.332 17.287 11.696C16.44 12.795 16.485 12.816 17.47 13.73C18.171 14.381 19 15.27 19 15.773C19 16.011 18.814 16.163 18.344 16.163Z" fill="black"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="footer__by">
+            <div class="footer__data"> <p>© Гросс маркет 2020</p> </div>
+            <div class="footer__coppy"> <p>Политика обработки персональных данных</p> </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <section class="personal">
+      <div class="personal__inner">
+        <div class="personal__contant">
+         
+          <div class="personal__title">
+            <div class="personal__close">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 3L3 21" stroke="black" stroke-width="2"/>
+                  <path d="M21 21L3 3" stroke="black" stroke-width="2"/>
+                </svg>
+            </div>
+            <h2>Обработка данных</h2>
+          </div>
+          <div class="personal__text">
+            <h3>1. Что регулирует настоящая политика конфиденциальности</h3>
+            <p>Настоящая политика конфиденциальности (далее — Политика) действует в отношении всей информации, включая персональные данные в понимании применимого законодательства (далее — «Персональная информация»), которую ООО «Гросс маркет» и/или его аффилированные лица, в том числе входящие в одну группу с ООО «Гросс маркет» (далее — «Гросс маркет»), могут получить о Вас в процессе использования Вами любых сайтов, программ, продуктов и/или сервисов Гросс маркет (далее вместе «Сервисы»), информацию о которых Гросс маркет может также получать Персональную информацию от своих партнеров (далее — «Партнеры»), сайты, программы, продукты или сервисы которых Вы используете (например, от рекламодателей Гросс маркет или службами такси). В таких случаях передача Персональной информации возможна только в случаях, установленных применимым законодательством, и осуществляется на основании специальных договоров между Гросс маркет и каждым из Партнеров. </p>
+            <span>Пожалуйста, обратите внимание, что использование любого из Сайтов и/или Сервисов может регулироваться дополнительными условиями, которые могут вносить в настоящую Политику изменения и/или дополнения, и/или иметь специальные условия в отношении персональной информации, размещенные в соответствующих разделах документов для таких Сайтов /или Сервисов. </span>
+            <h3>2. Кто обрабатывает информацию</h3>
+            <p>Для обеспечения использования Вами Сайтов и Сервисов Ваша Персональная информация собирается и используется Яндексом, в том числе включая общество с ограниченной ответственностью «Гросс маркет», юридическое лицо, созданное по законодательству Российской Федерации и зарегистрированное по адресу: 123351, Россия, Москва, ул. Гроссова, д. 12 (ООО «Гросс маркет»), или его аффилированным лицом, предоставляющим соответствующий Сервис в иных юрисдикциях. С информацией о том, какое лицо предоставляет тот или иной Сервис, Вы можете ознакомиться в условиях использования соответствующего Сервиса.</p>
+            <h3>3. Какова цель данной Политики</h3>
+            <p>Защита Вашей Персональной информации и Вашей конфиденциальности чрезвычайно важны для Гросс маркета. Поэтому при использовании Вами Сайтов и Сервисов Гросс маркет защищает и обрабатывает Вашу Персональную информацию в строгом соответствии с применимым законодательством.</p>
+            <h3>4. Какую Персональную информацию о Вас собирает Гросс маркет</h3>
+            <p>Для обеспечения использования Вами Сайтов и Сервисов Ваша Персональная информация собирается и используется Яндексом, в том числе включая общество с ограниченной ответственностью «Гросс маркет», юридическое лицо, созданное по законодательству Российской Федерации и зарегистрированное по адресу: 123351, Россия, Москва, ул. Гроссова, д. 12 (ООО «Гросс маркет»), или его аффилированным лицом, предоставляющим соответствующий Сервис в иных юрисдикциях. С информацией о том, какое лицо предоставляет тот или иной Сервис, Вы можете ознакомиться в условиях использования соответствующего Сервиса.</p>
+          </div>
+        
+        </div>
+      </div>
+    </section>
+
+    <section class="questionnaire">
+      <div class="container">
+        <div class="questionnaire__inner">
+          
+        </div>
+      </div>
+    </section>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,70 @@
+.card {
+  margin-top: 72px;
+  overflow: hidden;
+}
+.card .container {
+  display: flex;
+}
+
+.card__header {
+  max-width: 1110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.card__slider{
+  overflow: hidden;
+}
+.slider-item-wrap {
+  margin-right: 40px;
+  width: 350px;
+  height: 480px;
+  background-color: #F5F5F5;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: .4s;
+  position: relative;
+}
+.slider-item-wrap img {
+  transition: .4s;
+}
+.slider-item-wrap:hover {
+  background-color: #FFDF31;
+  img {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .card__discription {
+    opacity: 1;
+  }
+}
+
+.card .profession {
+  align-self: end;
+  margin-top: 24px;
+  margin-left: 24px;
+}
+.card__discription {
+  width: 290px;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000;
+  opacity: 0;
+  transition: .4s;
+}
+
+.card .slick-track {
+  display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+}
