@@ -228,6 +228,7 @@ validateSubmit = function () {
       submit.classList.add('active');
       submit.disabled = false;
     } else {
+      submit.disabled = true;
   }
 }
     // ------------- ВАЛИДАЦИЯ ---------------- //
