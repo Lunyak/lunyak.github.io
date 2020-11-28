@@ -196,27 +196,15 @@ let chbox;
 chbox1 = document.getElementById('forn-agreement');
 chbox2 = document.getElementById('forn-captcha');
 
-console.log(chbox1);
-console.log(chbox2);
-
 chbox1.onclick = function () {
   chbox = chbox1;
-  fun();
+  validateSubmit();
 };
+
 chbox2.onclick = function () {
-
   chbox = chbox1;
-  fun();
+  validateSubmit();
 };
-
-function fun() {
-  chbox.addEventListener('click', function () {
-    if (chbox.checked) {
-      validateSubmit();
-    } else {
-    }
-  });
-}
 
 let captcha = document.querySelector('.forn-captcha');
 let agree = document.querySelector('.forn-agreement');
@@ -231,6 +219,7 @@ validateSubmit = function () {
       submit.disabled = true;
   }
 }
+
     // ------------- ВАЛИДАЦИЯ ---------------- //
 
     // валидация Select
@@ -276,6 +265,18 @@ validateSubmit = function () {
       return regular.test(String(email).toLowerCase());
     }
 
+
+
+
+
+
+
+
+
+
+
+
+    
     $(function () {
       $(".form-date").mask("99.99.9999", {
         placeholder: "28.07.2002"

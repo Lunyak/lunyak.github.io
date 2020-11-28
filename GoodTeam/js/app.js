@@ -93,17 +93,12 @@ $(function () {
     }
   });
 
-
-
-
   //  выпадающая реклама
 });
 $(function () {
   let popup = $(".popup__wrap");
   let span = $(".popup");
   let scrollPos = 0;
-
-console.log(span);
 
   $(window).on("scroll resize", function () {
     scrollPos = $(this).scrollTop();
@@ -132,11 +127,4 @@ $(".footer__coppy").on("click", function () {
 $('.btn-group').on('click', '.btn', function () {
   $(this).addClass('active').siblings().removeClass('active');
 });
-
-
-
-
-
-
-
 
