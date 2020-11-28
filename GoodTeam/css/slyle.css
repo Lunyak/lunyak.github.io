@@ -2251,6 +2251,15 @@ h3 {
             justify-content: center;
     max-width: 345px;
     border-radius: 8px;
+    visibility: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .popup__wrap.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: visible;
   }
   .popup__wrap span {
     font-weight: 500;

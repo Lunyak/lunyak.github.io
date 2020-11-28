@@ -147,10 +147,7 @@ $(function () {
     }
   });
 
-
-
   //  выпадающая реклама
-
 
 });
 $(function () {
@@ -164,10 +161,10 @@ console.log(span);
     scrollPos = $(this).scrollTop();
 
     if (scrollPos > 800) {
-      popup.show(1000);
+      popup.addClass('active');
       span.addClass('active');
     } else {
-      popup.hide(1000);
+      popup.removeClass('active');
       span.removeClass('active');
     }
   });

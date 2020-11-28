@@ -41,33 +41,6 @@ $(".personal__close").on("click", function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // кастомизирую select
 
 document.querySelector('.custom-select-wrapper').addEventListener('click', function () {

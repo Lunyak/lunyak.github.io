@@ -665,8 +665,13 @@
         justify-content: center;
         max-width: 345px;
         border-radius: 8px;
+        visibility: hidden;
+        transition: .3s;
         // display: none;
-      
+      &.active {
+          display: flex;
+          visibility: visible;
+      }
         span {
           font-weight: 500;
           font-size: 18px;
