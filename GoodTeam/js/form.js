@@ -42,8 +42,33 @@ $(".personal__close").on("click", function () {
 
 
 
-let selectContent = '';
-// благодяря этой переменной мы будем проводить валидацию форму - был ли произведен выбор вакансии
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// кастомизирую select
 
 document.querySelector('.custom-select-wrapper').addEventListener('click', function () {
   this.querySelector('.custom-select').classList.toggle('open');
@@ -59,14 +84,6 @@ for (const option of document.querySelectorAll(".custom-option")) {
     }
   })
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -89,6 +106,8 @@ window.addEventListener('click', function (e) {
 
 
 
+let selectContent = '';
+// благодяря этой переменной мы будем проводить валидацию форму - был ли произведен выбор вакансии
 
 
 const form = document.querySelector('form');
