@@ -674,10 +674,12 @@ h3 {
 
 .instagram__item:nth-child(17) {
   margin-right: 0;
+  max-width: 100%;
 }
 
 .instagram__btn {
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .instagram__btn .btn-else {
@@ -1680,6 +1682,9 @@ h3 {
   }
   .prewiew__content-wrap {
     max-width: 1024px;
+  }
+  .instagram__btn {
+    max-width: 935px;
   }
   .instagram__inner h3 {
     margin-left: 40px;
