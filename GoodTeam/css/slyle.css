@@ -969,7 +969,7 @@ h3 {
   color: #0000007e;
 }
 
-.questionnaire__content {
+.blank__content {
   padding-bottom: 72px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -982,17 +982,17 @@ h3 {
           justify-content: space-between;
 }
 
-.questionnaire__form > div {
+.blank__form > div {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
 }
 
-.questionnaire__title {
+.blank__title {
   margin-bottom: 48px;
 }
 
-.questionnaire__form-wrap {
+.blank__form-wrap {
   max-width: 540px;
 }
 
@@ -1630,7 +1630,7 @@ h3 {
   height: 47px;
 }
 
-.questionnaire__discription-wrap {
+.blank__discription-wrap {
   margin-top: 17px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
@@ -1638,11 +1638,11 @@ h3 {
   max-width: 445px;
 }
 
-.questionnaire__discription h3 {
+.blank__discription h3 {
   margin-bottom: 24px;
 }
 
-.questionnaire__discription p {
+.blank__discription p {
   margin-bottom: 27px;
   font-weight: 500;
   font-size: 18px;
@@ -1808,7 +1808,7 @@ h3 {
   .card .slider__item-wrap img {
     width: inherit;
   }
-  .questionnaire__content {
+  .blank__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1820,26 +1820,26 @@ h3 {
         -ms-flex-align: center;
             align-items: center;
   }
-  .questionnaire__form-wrap {
+  .blank__form-wrap {
     margin-top: 72px;
     margin-bottom: 72px;
   }
-  .questionnaire__discription {
+  .blank__discription {
     max-width: 645px;
   }
-  .questionnaire__title {
+  .blank__title {
     max-width: 541px;
     margin: 0 auto;
   }
-  .questionnaire__discription,
-  .questionnaire__discription-wrap {
+  .blank__discription,
+  .blank__discription-wrap {
     max-width: 100%;
   }
-  .questionnaire__discription-wrap {
+  .blank__discription-wrap {
     max-width: 800px;
     margin: 0 39px;
   }
-  .questionnaire {
+  .blank {
     overflow: hidden;
   }
   .personal__inner {
@@ -1919,7 +1919,7 @@ h3 {
     display: flex;
     border-radius: 8px;
   }
-  .questionnaire__title h2 {
+  .blank__title h2 {
     font-size: 58px;
   }
 }
@@ -2171,10 +2171,10 @@ h3 {
   .header__info a:last-child {
     display: none;
   }
-  .questionnaire__title h2 {
+  .blank__title h2 {
     font-size: 48px;
   }
-  .questionnaire__inner {
+  .blank__inner {
     padding: 0 15px;
   }
   .form-control-wrap .form-control {
@@ -2186,10 +2186,10 @@ h3 {
   .header-form {
     margin-bottom: 48px;
   }
-  .questionnaire__content {
+  .blank__content {
     margin-top: 48px;
   }
-  .questionnaire__form-wrap {
+  .blank__form-wrap {
     margin: 0;
   }
   .gender {
@@ -2206,13 +2206,13 @@ h3 {
         -ms-grid-row-align: end;
         align-self: end;
   }
-  .questionnaire__form-wrap {
+  .blank__form-wrap {
     margin-bottom: 48px;
   }
-  .questionnaire__discription-wrap {
+  .blank__discription-wrap {
     margin: 0px 11px;
   }
-  .questionnaire__discription p:last-child {
+  .blank__discription p:last-child {
     margin-bottom: 0px;
   }
   .number {
@@ -2221,7 +2221,7 @@ h3 {
   .footer__content {
     margin: 0;
   }
-  .questionnaire__title h2 {
+  .blank__title h2 {
     padding: 0;
   }
   .personal__inner {
@@ -2425,7 +2425,7 @@ h3 {
     font-size: 36px;
     padding: 0 20px;
   }
-  .questionnaire__title h2 {
+  .blank__title h2 {
     font-size: 36px;
     padding: 0 20px;
   }

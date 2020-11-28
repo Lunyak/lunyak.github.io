@@ -1,20 +1,22 @@
-.questionnaire__content {
-    padding-bottom: 72px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
 
-.questionnaire__form>div {
-    flex: 0 0 50%;
-}
 
-.questionnaire__title {
-    margin-bottom: 48px;
-}
 
-.questionnaire__form-wrap {
-    max-width: 540px;
+.blank {
+    &__content {
+        padding-bottom: 72px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__form > div {
+        flex: 0 0 50%;
+    }
+    &__title {
+        margin-bottom: 48px;
+    }
+    &__form-wrap {
+        max-width: 540px;
+    }
 }
 
 
@@ -36,54 +38,48 @@
 
 
 
-
-.form {
-    // padding: 30px 40px;	
-}
-
 .form-control {
     margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative;
+
+    & input, 
+    & textarea {
+        width: 100%;
+        border-radius: 4px;
+        display: block;
+        padding: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000;
+        border: 2px solid #f0f0f0;
+        background-color: #F5F5F5;
+    }
+    & textarea {
+        resize: none;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000;
+        text-align: left;
+        background: #F5F5F5;
+        cursor: pointer;
+        border-radius: 8px;
+        border: none;
+        margin-bottom: 10px;
+    }
+    & input::-webkit-input-placeholder,
+    & input::-moz-placeholder,
+    & input:-moz-placeholder,
+    & input:-ms-input-placeholder {
+        color: rgba(0, 0, 0, 0.363);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+    } 
 }
 
-.form-control input,
-.form-control textarea {
-    width: 100%;
-    border-radius: 4px;
-    display: block;
-    padding: 10px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 23px;
-    color: #000000;
-    border: 2px solid #f0f0f0;
-    background-color: #F5F5F5;
-}
-
-.form-control textarea {
-    resize: none;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 23px;
-    color: #000000;
-    text-align: left;
-    background: #F5F5F5;
-    cursor: pointer;
-    border-radius: 8px;
-    border: none;
-    margin-bottom: 10px;
-}
-
-.form-control input::-webkit-input-placeholder,
-.form-control input::-moz-placeholder,
-.form-control input:-moz-placeholder,
-.form-control input:-ms-input-placeholder {
-    color: rgba(0, 0, 0, 0.363);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 23px;
-}
 
 
 .form-control input:focus {
@@ -627,13 +623,13 @@
 }
 
 
-.questionnaire__discription-wrap {
+.blank__discription-wrap {
     margin-top: 17px;
     flex: 0 0 50%;
     max-width: 445px;
 }
 
-.questionnaire__discription {
+.blank__discription {
     h3 {
         margin-bottom: 24px;
     }

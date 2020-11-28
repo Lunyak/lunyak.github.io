@@ -166,34 +166,34 @@
         }
     }
 
-    .questionnaire__content {
+    .blank__content {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .questionnaire__form-wrap {
+    .blank__form-wrap {
         margin-top: 72px;
         margin-bottom: 72px;
     }
 
-    .questionnaire__discription {
+    .blank__discription {
         max-width: 645px;
     }
 
-    .questionnaire__title {
+    .blank__title {
         max-width: 541px;
         margin: 0 auto;
     }
-    .questionnaire__discription,
-    .questionnaire__discription-wrap {
+    .blank__discription,
+    .blank__discription-wrap {
         max-width: 100%;
     }
-    .questionnaire__discription-wrap {
+    .blank__discription-wrap {
         max-width: 800px;
         margin: 0 39px;
     }
-    .questionnaire {
+    .blank {
         overflow: hidden;
     }
     .personal__inner {
@@ -275,7 +275,7 @@
             border-radius: 8px;
         }
     }
-    .questionnaire__title {
+    .blank__title {
         h2 {
             font-size: 58px;
         }
@@ -594,10 +594,10 @@
             display: none;
         }
     }
-    .questionnaire__title h2 {
+    .blank__title h2 {
         font-size: 48px;
     }
-    .questionnaire__inner {
+    .blank__inner {
         padding: 0 15px;
     }
     .form-control-wrap {
@@ -609,10 +609,10 @@
     .header-form {
         margin-bottom: 48px;
     }
-    .questionnaire__content {
+    .blank__content {
         margin-top: 48px;
     }
-    .questionnaire__form-wrap {
+    .blank__form-wrap {
         margin: 0;
     }
     .gender {
@@ -627,13 +627,13 @@
     .agreement-wrap {
         align-self: end;
     }
-    .questionnaire__form-wrap {
+    .blank__form-wrap {
         margin-bottom: 48px;
     }
-    .questionnaire__discription-wrap {
+    .blank__discription-wrap {
         margin: 0px 11px;
     }
-    .questionnaire__discription p:last-child {
+    .blank__discription p:last-child {
         margin-bottom: 0px;
     }
     .number {
@@ -642,7 +642,7 @@
     .footer__content {
         margin: 0;
     }
-    .questionnaire__title h2 {
+    .blank__title h2 {
         padding: 0;
     }
     .personal__inner {
@@ -892,7 +892,7 @@
         font-size: 36px;
         padding: 0 20px;
     }
-    .questionnaire__title h2 {
+    .blank__title h2 {
         font-size: 36px;
         padding: 0 20px;
     }
@@ -949,6 +949,6 @@
 
 
 
-// .header, .prewiew, .prewiew, .card, .instagram, .instagram, .map, .footer, .personal, .questionnaire {
+// .header, .prewiew, .prewiew, .card, .instagram, .instagram, .map, .footer, .personal, .blank {
 //     display: none;
 // }
