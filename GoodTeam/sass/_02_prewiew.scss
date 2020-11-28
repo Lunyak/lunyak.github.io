@@ -1,85 +1,61 @@
 
+
 .prewiew {
   background-color: #F5F5F5;
   overflow: hidden;
-}
 
-.prewiew__content-wrap {
-  max-width: 1110px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-height: 400px;
-  overflow: hidden;
+  &__content-wrap {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 400px;
+    overflow: hidden;
+  }
+  &__slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 400px;
+    overflow: hidden;
+  }
+  &__slide {
+    margin: 0 auto;
+    justify-content: center;
+    min-width: 100vw;
+  }
+  &__text {
+    margin-top: 48px;
+    margin-bottom: 62px;
+    max-width: 400px;
+  }
+  &__content {
+    align-self: start;
+  }
+  &__img {
+    width: 615px;
+    height: 615px;
+    max-width: 615px;
+    max-height: 615px;
+    border-top-right-radius: 20% 50%;
+    border-bottom-right-radius: 20% 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  &__img div {
+    visibility: hidden;
+    position: absolute;
+  }
 }
-
-.prewiew__slider {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-height: 400px;
-  overflow: hidden;
-}
-.prewiew__slide {
-  margin: 0 auto;
-  justify-content: center;
-  min-width: 100vw;
-}
-
-.prewiew__text {
-  margin-top: 48px;
-  margin-bottom: 62px;
-  max-width: 400px;
-}
-
-.prewiew__content {
-  align-self: start;
-}
-
-.prewiew__img {
-  width: 615px;
-  height: 615px;
-  max-width: 615px;
-  max-height: 615px;
-  border-top-right-radius: 20% 50%;
-  border-bottom-right-radius: 20% 50%;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.prewiew__img img {
-  width: 100%;
-}
-.prewiew__img div {
-  visibility: hidden;
-  position: absolute;
-}
-
-
-// img--info
-// .prewiew .name {
-//   position: absolute;
-//   bottom: 156px;
-//   left: 120px;
-//   z-index: 50;
-// }
-// .prewiew .profession {
-//   position: absolute;
-//   top: 152px;
-//   right: 120px;
-//   z-index: 50;
-// }
-
-
+// запускает flex-box для slider slick
 .prewiew .slick-track {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-

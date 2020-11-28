@@ -21,23 +21,10 @@ h3 {
   max-width: 1110px;
 }
 
-// .fixed {
-//   h2 {
-//     font-weight: 500;
-//     font-size: 24px !important;
-//     line-height: 30px;
-//   }
-//   margin-top: 0 !important;
-//   padding: 30px 95px;
-//   height: auto !important;
-//   position: fixed !important;
-//   width: 1110px;
-//   left: 50%;
-//   transform: translateX(-50%);
-//   top: 0;
-//   background-color: #fff;
+.close-page {
+  display: flex !important;
+}
 
-// }
 
 .no-wrap {
   white-space: nowrap;
@@ -71,6 +58,14 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color .5s;
+}
+
+.btn-yallow:hover {
+  background-color: #fff240;
+}
+.btn-yallow:active {
+  background-color: #fff9a8;
 }
 
 .bth-rigth {
@@ -160,7 +155,43 @@ h3 {
   visibility: visible;
 }
 
+.block__button {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 88px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    background-color: #F5F5F5;;
+  }
+}
 
 .block__button button {
   background-color: #fff;
+  svg {
+    fill: black;
+    opacity: 0.4;
+    transition: opacity .4s;
+  }
+  & button:hover svg {
+    opacity: 1;
+  }
+}
+.btn-next:hover svg {
+  opacity: 1;
+}
+.btn-prev:hover svg {
+  opacity: 1;
+}
+
+
+
+.close-page svg {
+  display: block !important;
 }

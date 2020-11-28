@@ -616,6 +616,14 @@
     color: #000000;
 }
 
+.submit.active {
+    background-color: #FFDF31;
+}
+.submit:disabled { 
+    background-color: #f4f4f4;
+    padding: 5px;
+}
+
 
 .questionnaire__discription-wrap {
     margin-top: 17px;

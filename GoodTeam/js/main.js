@@ -11,13 +11,10 @@ $(document).ready(function () {
     centerMode: true,
     autoplay: true,
     responsive: [{
-        settings: {},
-      },
-      {
+        breakpoint: 420,
         settings: {
-          centerMode: true,
-          slidesToShow: 1,
-        },
+          centerPadding: '20px',
+        }
       },
     ],
   });
@@ -30,18 +27,24 @@ $(document).ready(function () {
     slidesToShow: 5,
     slidesToScroll: 1,
     variableWidth: true,
+    touchTreshhold: 1,
+    autoplay: true,
     autoplaySpeed: 1000,
-    draggable: false,
-    swipe: false,
     dots: false,
     arrows: true,
     centerMode: false,
-    responsive: [],
-    autoplay: true,
+    responsive: [{
+      breakpoint: 550,
+      settings: {
+        centerMode: true,
+        slidesToShow: 1,
+        initialSlide: 3,
+    },
+    }],
   });
 });
 
-// т.к. не было ограничений в ТЗ
+
 // для удобстава сделал симулятор клика по кнопкам Skick js
 // можно стилизовать Skick.js, это не проблема, 
 // но мне удобнее этот метод.
@@ -66,21 +69,59 @@ $("a").click(function (event) {
 
 
 
+
+
 // увелиычиваю размер INSTAGRAM CONTANT
 
 $(".btn-else").on("click", function () {
-  if (!$(".instagram__contant").hasClass('active')) {
-    $(".instagram__contant").animate({
-      maxHeight: 1500
-    }, 1000);
-    $(".instagram__contant").addClass('active');
-    $('.btn-else').text('Скрыть');
-  } else if ($(".instagram__contant").hasClass('active')) {
-    $(".instagram__contant").animate({
-      maxHeight: 570
-    }, 1000);
-    $(".instagram__contant").removeClass('active');
-    $('.btn-else').text('Показать еще');
+
+  if ($(window).width() > 1190) {
+
+    if (!$(".instagram__contant").hasClass('active')) {
+      $(".instagram__contant").animate({
+        maxHeight: 1500
+      }, 1000);
+      $(".instagram__contant").addClass('active');
+      $('.btn-else').text('Скрыть');
+    } else if ($(".instagram__contant").hasClass('active')) {
+      $(".instagram__contant").animate({
+        maxHeight: 570
+      }, 1000);
+      $(".instagram__contant").removeClass('active');
+      $('.btn-else').text('Показать еще');
+    }
+
+  } else if ($(window).width() >= 767 && $(window).width() <= 1198) {
+
+    if (!$(".instagram__contant").hasClass('active')) {
+      $(".instagram__contant").animate({
+        maxHeight: 1560
+      }, 1000);
+      $(".instagram__contant").addClass('active');
+      $('.btn-else').text('Скрыть');
+    } else if ($(".instagram__contant").hasClass('active')) {
+      $(".instagram__contant").animate({
+        maxHeight: 600
+      }, 1000);
+      $(".instagram__contant").removeClass('active');
+      $('.btn-else').text('Показать еще');
+    }
+
+  } else {
+
+    if (!$(".instagram__contant").hasClass('active')) {
+      $(".instagram__contant").animate({
+        maxHeight: 6400
+      }, 1000);
+      $(".instagram__contant").addClass('active');
+      $('.btn-else').text('Скрыть');
+    } else if ($(".instagram__contant").hasClass('active')) {
+      $(".instagram__contant").animate({
+        maxHeight: 1789
+      }, 1000);
+      $(".instagram__contant").removeClass('active');
+      $('.btn-else').text('Показать еще');
+    }
   }
 });
 
@@ -105,6 +146,31 @@ $(function () {
       close.removeClass("fixed");
     }
   });
+
+
+
+  //  выпадающая реклама
+
+
+});
+$(function () {
+  let popup = $(".popup__wrap");
+  let span = $(".popup");
+  let scrollPos = 0;
+
+console.log(span);
+
+  $(window).on("scroll resize", function () {
+    scrollPos = $(this).scrollTop();
+
+    if (scrollPos > 800) {
+      popup.show(1000);
+      span.addClass('active');
+    } else {
+      popup.hide(1000);
+      span.removeClass('active');
+    }
+  });
 });
 
 //  выпадающее окно - open/close
@@ -118,7 +184,7 @@ $(".footer__coppy").on("click", function () {
 
 // даю активный класс кнопки по клику
 
-$('.btn-group').on('click', '.btn', function() {
+$('.btn-group').on('click', '.btn', function () {
   $(this).addClass('active').siblings().removeClass('active');
 });
 
@@ -382,7 +448,7 @@ function initMap() {
     ['9', 'Title 4', 55.741396, 37.652768, 'entity'],
   ];
 
-// отрисовываю компоненты при нажатии Физ лица 
+  // отрисовываю компоненты при нажатии Физ лица 
 
   buttonFiltersNatural.onclick = function () {
     render(template, document.querySelector('#map__render'));
@@ -390,7 +456,7 @@ function initMap() {
     containerMarks = neighborhoods.map(getGoogleObject);
   };
 
-// отрисовываю компоненты при нажатии Юр лица
+  // отрисовываю компоненты при нажатии Юр лица
 
   buttonFiltersEntity.onclick = function () {
     render(template, document.querySelector('#map__render'));
@@ -398,16 +464,16 @@ function initMap() {
     containerMarks = neighborhoods.map(getGoogleObject);
   };
 
-// отрисовываю компоненты при нажатии "все"
+  // отрисовываю компоненты при нажатии "все"
 
-buttonFiltersAll.onclick = function () {
-  render(template, document.querySelector('#map__render'));
-  containerMarks = neighborhoods.map(getGoogleObject);
-};
+  buttonFiltersAll.onclick = function () {
+    render(template, document.querySelector('#map__render'));
+    containerMarks = neighborhoods.map(getGoogleObject);
+  };
 
-// отрисовываю компоненты при закгрузке страницы
+  // отрисовываю компоненты при закгрузке страницы
 
-  window.onload = function() {
+  window.onload = function () {
     containerMarks = neighborhoods.map(getGoogleObject);
   };
 
@@ -426,7 +492,7 @@ buttonFiltersAll.onclick = function () {
   // let containerMarks = neighborhoods.map(getGoogleObject);
 
   function toggleFilter(category) {
-    neighborhoods = neighborhoods.filter(( neighborhood ) => {
+    neighborhoods = neighborhoods.filter((neighborhood) => {
       return neighborhood[4] === category || false;
     });
   }

@@ -9,16 +9,16 @@
     <title>Гросс Маркет</title>
   </head>
   <body>
-    <header class="header"> 
+    <header class="header header-form"> 
       <div class="container">
         <div class="header__inner">
           <a href="#" class="logo">
             <img src="img/logo.svg" alt="logo" />
           </a>
           <div class="header__info">
-            <a href="index.html">
+            <a class="close-page" href="index.html">
               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M23.8976 23.0959C24.4809 22.5074 24.4765 21.5573 23.8877 20.9742L16.8362 13.991C16.2474 13.4079 16.243 12.4579 16.8263 11.8693L23.8061 4.82645C24.3893 4.23807 24.385 3.28837 23.7967 2.70521L23.0958 2.01051C22.5072 1.42715 21.5571 1.43157 20.974 2.02038L13.9955 9.06723C13.4126 9.65588 12.4628 9.66049 11.8742 9.07751L4.82462 2.09557C4.23802 1.51459 3.29221 1.51687 2.70842 2.10066L2.01935 2.78973C1.43173 3.37736 1.43384 4.33073 2.02405 4.91574L9.0751 11.9046C9.66329 12.4876 9.66771 13.437 9.08496 14.0254L2.09534 21.0835C1.51441 21.6701 1.51672 22.6158 2.10049 23.1996L2.78967 23.8888C3.37727 24.4764 4.3306 24.4743 4.91562 23.8841L11.911 16.8274C12.4942 16.239 13.4439 16.2349 14.0323 16.8181L21.0816 23.806C21.67 24.3893 22.6198 24.3851 23.203 23.7967L23.8976 23.0959Z" fill="black"/>
+                <path  d="M23.8976 23.0959C24.4809 22.5074 24.4765 21.5573 23.8877 20.9742L16.8362 13.991C16.2474 13.4079 16.243 12.4579 16.8263 11.8693L23.8061 4.82645C24.3893 4.23807 24.385 3.28837 23.7967 2.70521L23.0958 2.01051C22.5072 1.42715 21.5571 1.43157 20.974 2.02038L13.9955 9.06723C13.4126 9.65588 12.4628 9.66049 11.8742 9.07751L4.82462 2.09557C4.23802 1.51459 3.29221 1.51687 2.70842 2.10066L2.01935 2.78973C1.43173 3.37736 1.43384 4.33073 2.02405 4.91574L9.0751 11.9046C9.66329 12.4876 9.66771 13.437 9.08496 14.0254L2.09534 21.0835C1.51441 21.6701 1.51672 22.6158 2.10049 23.1996L2.78967 23.8888C3.37727 24.4764 4.3306 24.4743 4.91562 23.8841L11.911 16.8274C12.4942 16.239 13.4439 16.2349 14.0323 16.8181L21.0816 23.806C21.67 24.3893 22.6198 24.3851 23.203 23.7967L23.8976 23.0959Z" fill="black"/>
               </svg>
             </a>
           </div>
@@ -143,7 +143,7 @@
                         <path d="M1 5.5L3.76768 8.9963C4.17134 9.50623 4.94668 9.50124 5.34375 8.98615L11.5 1" stroke="#10C300" stroke-width="2" stroke-linecap="round"/>
                       </svg>
                     </div>
-                    <input type="email" placeholder="" class="form-email" id="form-email"/>
+                    <input type="email" placeholder="example@mail.ru" class="form-email" id="form-email"/>
                     <small>Error message</small>
                   </div><!-- Email  -->
                 </div>
@@ -191,8 +191,8 @@
                   <div class="captha-wrap">
                     <p>я не робот</p>
                     <img src="img/caotcha.svg" alt="captcha">
-                    <label class="container forn-captcha">
-                      <input type="checkbox" id="forn-captcha">
+                    <label class="container forn-captcha" >
+                      <input type="checkbox" name="captcha" id="forn-captcha">
                       <span class="checkmark"></span>
                     </label>
                   </div>
@@ -208,15 +208,15 @@
                 <div class="linlk">
                   <div class="agreement-wrap">
                     <label class="container forn-agreement">
-                      <input type="checkbox" id="forn-agreement">
+                      <input type="checkbox" name="agreement" id="forn-agreement">
                       <span class="agreement"></span>
                     </label>
                     
                   </div>
                   <a class="contract" href="#">я подтверждаю согласие на обработку персональных данных и принимаю условия рассмотрения обращений *<a>
                 </div>
-               
-                <button class="btn submit">отправить</button>
+
+                <button type="submit" disabled class="btn submit">отправить</button>
               </form>
             </div>
 
@@ -225,7 +225,7 @@
                 <h3>Наша суперцель</h3>
                 <p> — стать любимым магазином для каждой российской семьи.</p>
                 <p>Сотни тысяч наших сотрудников ежедневно работают над её достижением.</p>
-                <p>Мы уверены, что в ближайшие годы достигнем этого и будет здорово, если вместе с тобой.</p>
+                <p>Мы уверены, что в ближайшие годы достигнем этого и будет здорово, <span class="no-wrap">если вместе с тобой.</span></p>
                 <div class="number">
                   <a href="tel:+7 (926) 433-14-16">+7 (926) 433-14-16</a>
                 </div>
@@ -273,7 +273,6 @@
     <section class="personal">
       <div class="personal__inner">
         <div class="personal__contant">
-         
           <div class="personal__title">
             <div class="personal__close">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
