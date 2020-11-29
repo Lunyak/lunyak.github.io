@@ -1,9 +1,10 @@
 # folder logs
 logs/
-
 # txt-files
 docs/*.txt
 1/*.json
-
-
-
+node_modules
+.eslintignore
+model
+.eslintrc.js
+gulpfile.js

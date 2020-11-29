@@ -1,4 +1,10 @@
 
+
+
+// кастомизирую select
+
+
+
 let map;
 let buttonFiltersNatural = document.querySelector('.natural');
 let buttonFiltersEntity = document.querySelector('.entity');

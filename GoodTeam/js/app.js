@@ -1,6 +1,3 @@
-
-
-
 // для удобстава сделал симулятор клика по кнопкам Skick js
 // можно стилизовать Skick.js, это не проблема, 
 // но мне удобнее этот метод.
@@ -127,4 +124,3 @@ $(".footer__coppy").on("click", function () {
 $('.btn-group').on('click', '.btn', function () {
   $(this).addClass('active').siblings().removeClass('active');
 });
-

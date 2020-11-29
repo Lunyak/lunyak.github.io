@@ -1,299 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/slyle.css" />
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpiF0mzhFuPq8oEdqqVf2Hsh9bfX-wLeQ&callback=initMap&libraries=&v=weekly" defer ></script>
-    <title>Гросс Маркет</title>
-  </head>
-  <body>
-    <header class="header ">
-      <div class="container">
-        <div class="header__inner">
-          <a href="index.html" class="logo">
-            <img src="img/logo.svg" alt="logo" />
-          </a>
-          <div class="header__info">
-            
-            <a href="tel:+79264331416">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="header-phone-svg" d="M20 22.621L16.479 15.826C16.471 15.83 14.505 16.796 14.415 16.837C12.175 17.923 7.61604 9.017 9.80604 7.843L11.889 6.817L8.39604 0L6.29004 1.039C-0.911963 4.794 10.523 27.021 17.89 23.654C18.011 23.599 19.992 22.625 20 22.621Z" fill="black"/>
-              </svg>
-            </a>
 
-            <a href="tel:+79264331416" class="header__phone">+7 (926) 433-14-16</a>
-            <a href="blank.html" class="btn btn-yallow">заполнить анкету</a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/slyle.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpiF0mzhFuPq8oEdqqVf2Hsh9bfX-wLeQ&callback=initMap&libraries=&v=weekly"
+  defer></script>
+  <title>Гросс Маркет</title>
+</head>
+
+<body>
+  <header class="header ">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" alt="logo" />
+        </a>
+        <div class="header__info">
+
+          <a href="tel:+79264331416">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="header-phone-svg" d="M20 22.621L16.479 15.826C16.471 15.83 14.505 16.796 14.415 16.837C12.175 17.923 7.61604 9.017 9.80604 7.843L11.889 6.817L8.39604 0L6.29004 1.039C-0.911963 4.794 10.523 27.021 17.89 23.654C18.011 23.599 19.992 22.625 20 22.621Z"
+              fill="black" />
+            </svg>
+          </a>
+
+          <a href="tel:+79264331416" class="header__phone">+7 (926) 433-14-16</a>
+          <a href="blank.html" class="btn btn-yallow">заполнить анкету</a>
         </div>
       </div>
+    </div>
 
-      <a href="blank.html" class="popup__wrap">
-        <span class="popup">
+    <a href="blank.html" class="popup__wrap">
+      <span class="popup">
           заполнить анкету
         </span>
-      </a>
+    </a>
 
-    </header>
+  </header>
 
-    <section class="prewiew">
+  <section class="prewiew">
 
-      <div class="prewiew__slide">
+    <div class="prewiew__slide">
 
-        <div class="prewiew__content-wrap">
-          <div class="prewiew__content">
-            <div class="prewiew__text">
-              <h2>У тебя к этому талант</h2>
-            </div>
-            <div class="block__button">
-              <button class="btn btn-prev">
-                <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                  <path d="M8.25 10.7632L0.75 6.43303C0.416667 6.24058 0.416667 5.75945 0.75 5.567L8.25 1.23688C8.58333 1.04442 9 1.28499 9 1.66989V10.3301C9 10.715 8.58333 10.9556 8.25 10.7632Z"  />
-                </svg>
-              </button>
-              <button class="btn btn-next">
-                <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.5 5.13399C10.1667 5.51889 10.1667 6.48114 9.5 6.86604L2 11.1962C1.33333 11.5811 0.5 11.0999 0.5 10.3301V1.66989C0.5 0.900087 1.33333 0.418962 2 0.803863L9.5 5.13399Z" />
-                </svg>
-              </button>
-            </div>
+      <div class="prewiew__content-wrap">
+        <div class="prewiew__content">
+          <div class="prewiew__text">
+            <h2>У тебя к этому талант</h2>
           </div>
-          <div class="prewiew__img info--line">
-            <img src="img/baker.jpg" alt="baker" />
-            <div class="profession">
-              <p>пекарь</p>
-            </div>
-            <div class="name">
-              <p>валентин</p>
-            </div>
+          <div class="block__button">
+            <button class="btn btn-prev">
+              <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.25 10.7632L0.75 6.43303C0.416667 6.24058 0.416667 5.75945 0.75 5.567L8.25 1.23688C8.58333 1.04442 9 1.28499 9 1.66989V10.3301C9 10.715 8.58333 10.9556 8.25 10.7632Z"
+                />
+              </svg>
+            </button>
+            <button class="btn btn-next">
+              <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.5 5.13399C10.1667 5.51889 10.1667 6.48114 9.5 6.86604L2 11.1962C1.33333 11.5811 0.5 11.0999 0.5 10.3301V1.66989C0.5 0.900087 1.33333 0.418962 2 0.803863L9.5 5.13399Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="prewiew__img info--line">
+          <img src="img/baker.jpg" alt="baker" />
+          <div class="profession">
+            <p>пекарь</p>
+          </div>
+          <div class="name">
+            <p>валентин</p>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="prewiew__slide">
-        
-        <div class="prewiew__content-wrap">
-          <div class="prewiew__content">
-            <div class="prewiew__text">
-              <h2>У тебя <span class="no-wrap">все под</span> контролем</h2>
-            </div>
-            <div class="block__button">
-              <button class="btn btn-prev">
-                <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                  <path d="M8.25 10.7632L0.75 6.43303C0.416667 6.24058 0.416667 5.75945 0.75 5.567L8.25 1.23688C8.58333 1.04442 9 1.28499 9 1.66989V10.3301C9 10.715 8.58333 10.9556 8.25 10.7632Z" fill="black" stroke="black" />
-                </svg>
-              </button>
-              <button class="btn btn-next">
-                <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.5 5.13399C10.1667 5.51889 10.1667 6.48114 9.5 6.86604L2 11.1962C1.33333 11.5811 0.5 11.0999 0.5 10.3301V1.66989C0.5 0.900087 1.33333 0.418962 2 0.803863L9.5 5.13399Z" fill="black" />
-                </svg>
-              </button>
-            </div>
+    <div class="prewiew__slide">
+
+      <div class="prewiew__content-wrap">
+        <div class="prewiew__content">
+          <div class="prewiew__text">
+            <h2>У тебя <span class="no-wrap">все под</span> контролем</h2>
           </div>
-          <div class="prewiew__img info--revers">
-            <img src="img/commodity.jpg" alt="commodity" />
-            <div class="profession">
-              <p>товаровед</p>
-            </div>
-            <div class="name">
-              <p>ксения</p>
-            </div>
+          <div class="block__button">
+            <button class="btn btn-prev">
+              <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.25 10.7632L0.75 6.43303C0.416667 6.24058 0.416667 5.75945 0.75 5.567L8.25 1.23688C8.58333 1.04442 9 1.28499 9 1.66989V10.3301C9 10.715 8.58333 10.9556 8.25 10.7632Z"
+                fill="black" stroke="black" />
+              </svg>
+            </button>
+            <button class="btn btn-next">
+              <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.5 5.13399C10.1667 5.51889 10.1667 6.48114 9.5 6.86604L2 11.1962C1.33333 11.5811 0.5 11.0999 0.5 10.3301V1.66989C0.5 0.900087 1.33333 0.418962 2 0.803863L9.5 5.13399Z"
+                fill="black" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="prewiew__img info--revers">
+          <img src="img/commodity.jpg" alt="commodity" />
+          <div class="profession">
+            <p>товаровед</p>
+          </div>
+          <div class="name">
+            <p>ксения</p>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- </div> container -->
-    </section>
+    <!-- </div> container -->
+  </section>
 
-    <section class="card">
-      <div class="container">
-        <div class="card__inner">
-          <div class="card__header">
-            <h3 class="card__title">вакансии в гросс маркете</h3>
-            <div class="block__button">
-              <button class="btn btn-prev">
-                <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg" >
-                  <path d="M8.25 10.7632L0.75 6.43303C0.416667 6.24058 0.416667 5.75945 0.75 5.567L8.25 1.23688C8.58333 1.04442 9 1.28499 9 1.66989V10.3301C9 10.715 8.58333 10.9556 8.25 10.7632Z" fill="black" stroke="black" />
-                </svg>
-              </button>
-              <button class="btn btn-next">
-                <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.5 5.13399C10.1667 5.51889 10.1667 6.48114 9.5 6.86604L2 11.1962C1.33333 11.5811 0.5 11.0999 0.5 10.3301V1.66989C0.5 0.900087 1.33333 0.418962 2 0.803863L9.5 5.13399Z" fill="black" />
-                </svg>
-              </button>
-            </div>
+  <section class="card">
+    <div class="container">
+      <div class="card__inner">
+        <div class="card__header">
+          <h3 class="card__title">вакансии в гросс маркете</h3>
+          <div class="block__button">
+            <button class="btn btn-prev">
+              <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.25 10.7632L0.75 6.43303C0.416667 6.24058 0.416667 5.75945 0.75 5.567L8.25 1.23688C8.58333 1.04442 9 1.28499 9 1.66989V10.3301C9 10.715 8.58333 10.9556 8.25 10.7632Z"
+                fill="black" stroke="black" />
+              </svg>
+            </button>
+            <button class="btn btn-next">
+              <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.5 5.13399C10.1667 5.51889 10.1667 6.48114 9.5 6.86604L2 11.1962C1.33333 11.5811 0.5 11.0999 0.5 10.3301V1.66989C0.5 0.900087 1.33333 0.418962 2 0.803863L9.5 5.13399Z"
+                fill="black" />
+              </svg>
+            </button>
           </div>
-          <div class="card__slider">
-            <div class="card__slider-item">
-              <a href="blank.html" class="slider__item-wrap">
-                <div class="profession">
-                  <p>товаровед</p>
-                </div>
+        </div>
+        <div class="card__slider">
+          <div class="card__slider-item">
+            <a href="blank.html" class="slider__item-wrap">
+              <div class="profession">
+                <p>товаровед</p>
+              </div>
 
-                <img src="img/commodity.png" alt="commodity">
-                <div class="card__discription">
-                  <p>
-                    Доставка товара <span>по магазинам </span> 
-                    <span>и гипермаркетам</span> компании в 
-                    обслуживаемом регионе
-                  </p>
-                </div>
-              </a>
-            </div>
-          
-         
-            <div class="card__slider-item">
-              <a href="blank.html" class="slider__item-wrap">
-                <div class="profession">
-                  <p>водитель</p>
-                </div>
+              <img src="img/commodity.png" alt="commodity">
+              <div class="card__discription">
+                <p>
+                  Доставка товара <span>по магазинам </span>
+                  <span>и гипермаркетам</span> компании в обслуживаемом регионе
+                </p>
+              </div>
+            </a>
+          </div>
 
-                <img src="img/driver.png" alt="driver">
-                <div class="card__discription">
-                  <p>
-                    Доставка товара <span>по магазинам </span> 
-                    <span>и гипермаркетам</span> компании в 
-                    обслуживаемом регионе
-                  </p>
-                </div>
-              </a>
-            </div>
-        
-          
-            <div class="card__slider-item">
-              <a href="blank.html" class="slider__item-wrap">
-                <div class="profession">
-                  <p>пекарь</p>
-                </div>
+          <div class="card__slider-item">
+            <a href="blank.html" class="slider__item-wrap">
+              <div class="profession">
+                <p>водитель</p>
+              </div>
 
-                <img src="img/baker.png" alt="baker">
-                <div class="card__discription">
-                  <p>
-                    Доставка товара <span>по магазинам </span> 
-                    <span>и гипермаркетам</span> компании в 
-                    обслуживаемом регионе
-                  </p>
-                </div>
-              </a>
-            </div>
-         
-         
-            <div class="card__slider-item">
-              <a href="blank.html" class="slider__item-wrap">
-                <div class="profession">
-                  <p>кассир</p>
-                </div>
+              <img src="img/driver.png" alt="driver">
+              <div class="card__discription">
+                <p>
+                  Доставка товара <span>по магазинам </span>
+                  <span>и гипермаркетам</span> компании в обслуживаемом регионе
+                </p>
+              </div>
+            </a>
+          </div>
 
-                <img src="img/cashier.png" alt="cashier">
-                <div class="card__discription">
-                  <p>
-                    Доставка товара <span>по магазинам </span> 
-                    <span>и гипермаркетам</span> компании в 
-                    обслуживаемом регионе
-                  </p>
-                </div>
-              </a>
-            </div>
-        
-         
-            <div class="card__slider-item">
-              <a href="blank.html" class="slider__item-wrap">
-                <div class="profession">
-                  <p>продавец</p>
-                </div>
+          <div class="card__slider-item">
+            <a href="blank.html" class="slider__item-wrap">
+              <div class="profession">
+                <p>пекарь</p>
+              </div>
 
-                <img src="img/seller.png" alt="seller">
-                <div class="card__discription">
-                  <p>
-                    Доставка товара <span>по магазинам </span> 
-                    <span>и гипермаркетам</span> компании в 
-                    обслуживаемом регионе
-                  </p>
-                </div>
-              </a>
-            </div>
-        
-        
-            <div class="card__slider-item">
-              <a href="blank.html" class="slider__item-wrap">
-                <div class="profession">
-                  <p>повар</p>
-                </div>
+              <img src="img/baker.png" alt="baker">
+              <div class="card__discription">
+                <p>
+                  Доставка товара <span>по магазинам </span>
+                  <span>и гипермаркетам</span> компании в обслуживаемом регионе
+                </p>
+              </div>
+            </a>
+          </div>
 
-                <img src="img/cook.png" alt="cook">
-                <div class="card__discription">
-                  <p>
-                    Доставка товара <span>по магазинам </span> 
-                    <span>и гипермаркетам</span> компании в 
-                    обслуживаемом регионе
-                  </p>
-                </div>
-              </a>
-            </div>
-         
+          <div class="card__slider-item">
+            <a href="blank.html" class="slider__item-wrap">
+              <div class="profession">
+                <p>кассир</p>
+              </div>
 
-            <div class="card__slider-item">
-              <a href="blank.html" class="slider__item-wrap">
-                <div class="profession">
-                  <p>приёмщик</p>
-                </div>
+              <img src="img/cashier.png" alt="cashier">
+              <div class="card__discription">
+                <p>
+                  Доставка товара <span>по магазинам </span>
+                  <span>и гипермаркетам</span> компании в обслуживаемом регионе
+                </p>
+              </div>
+            </a>
+          </div>
 
-                <img src="img/receiver.png" alt="receiver">
-                <div class="card__discription">
-                  <p>
-                    Доставка товара <span>по магазинам </span> 
-                    <span>и гипермаркетам</span> компании в 
-                    обслуживаемом регионе
-                  </p>
-                </div>
-              </a>
-            </div>
+          <div class="card__slider-item">
+            <a href="blank.html" class="slider__item-wrap">
+              <div class="profession">
+                <p>продавец</p>
+              </div>
+
+              <img src="img/seller.png" alt="seller">
+              <div class="card__discription">
+                <p>
+                  Доставка товара <span>по магазинам </span>
+                  <span>и гипермаркетам</span> компании в обслуживаемом регионе
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card__slider-item">
+            <a href="blank.html" class="slider__item-wrap">
+              <div class="profession">
+                <p>повар</p>
+              </div>
+
+              <img src="img/cook.png" alt="cook">
+              <div class="card__discription">
+                <p>
+                  Доставка товара <span>по магазинам </span>
+                  <span>и гипермаркетам</span> компании в обслуживаемом регионе
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card__slider-item">
+            <a href="blank.html" class="slider__item-wrap">
+              <div class="profession">
+                <p>приёмщик</p>
+              </div>
+
+              <img src="img/receiver.png" alt="receiver">
+              <div class="card__discription">
+                <p>
+                  Доставка товара <span>по магазинам </span>
+                  <span>и гипермаркетам</span> компании в обслуживаемом регионе
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="instagram">
-      <div class="container">
-        <div class="instagram__inner">
-          <h3>мы в инстаграме</h3>
-          <div class="instagram__contant">
+  <section class="instagram">
+    <div class="container">
+      <div class="instagram__inner">
+        <h3>мы в инстаграме</h3>
+        <div class="instagram__contant">
 
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"><img src="img/baker.jpg" alt="test"></a>
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"><img src="img/commodity.jpg" alt="test"></a>
-           
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test.png" alt="test"></a>
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/cook.png" alt="test"></a>
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/commodity.png" alt="test"></a>
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/commodity.jpg" alt="test"></a>
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test.png" alt="test"></a>
-         
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
-            <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
-            <div class="clearfix"></div>
-          </div>
-          <div class="instagram__btn" >
-            <button class="btn btn-else">показать ещё</button>
-          </div>
-         
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"><img src="img/baker.jpg" alt="test"></a>
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"><img src="img/commodity.jpg" alt="test"></a>
+
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test.png" alt="test"></a>
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/cook.png" alt="test"></a>
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/commodity.png" alt="test"></a>
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/commodity.jpg" alt="test"></a>
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test.png" alt="test"></a>
+
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
+          <a href="https://www.instagram.com/p/CH8UMGzHFQK/" class="instagram__item"> <img src="img/test3.png" alt="test"></a>
+          <div class="clearfix"></div>
         </div>
-      </div>
-    </section>
+        <div class="instagram__btn">
+          <button class="btn btn-else">показать ещё</button>
+        </div>
 
-    <section class="map" id="map-info">
-      <div class="container">
-        
-        <h3 >география</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="map" id="map-info">
+    <div class="container">
+
+      <h3>география</h2>
           <div class="map__render-wrap" >
             <div class="map__render" id="map__render" >
               <div id='map' class="google-map">
@@ -318,54 +315,95 @@
             </div>
             <div class="footer__link">
               <h3>поделиться</h3>
-              <div class="footer__social">
-                <a href="#">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM15 8H13.65C13.112 8 13 8.221 13 8.778V10H15L14.791 12H13V19H10V12H8V10H10V7.692C10 5.923 10.931 5 13.029 5H15V8Z" fill="black"/>
-                  </svg>
-                </a>
-                <a href="#">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM18.344 16.163H16.477C15.422 16.163 15.245 15.562 14.375 14.694C13.59 13.909 13.155 14.511 13.173 15.629C13.179 15.926 13.032 16.163 12.678 16.163C11.573 16.163 9.984 16.319 8.374 14.583C6.727 12.804 5 9.235 5 8.884C5 8.676 5.172 8.583 5.459 8.583H7.357C7.86 8.583 7.902 8.832 8.043 9.151C8.627 10.482 10.024 13.153 10.397 11.662C10.611 10.806 10.698 8.823 9.782 8.652C9.262 8.556 10.178 8 11.504 8C11.834 8 12.192 8.035 12.558 8.12C13.231 8.276 13.234 8.578 13.224 9.018C13.19 10.684 12.989 11.804 13.428 12.087C13.847 12.358 14.949 10.585 15.532 9.216C15.691 8.838 15.723 8.584 16.175 8.584H18.497C19.713 8.584 18.338 10.332 17.287 11.696C16.44 12.795 16.485 12.816 17.47 13.73C18.171 14.381 19 15.27 19 15.773C19 16.011 18.814 16.163 18.344 16.163Z" fill="black"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            
-          </div>
-          <div class="footer__by">
-            <div class="footer__data"> <p>© Гросс маркет 2020</p> </div>
-            <div class="footer__coppy"> <p>Политика обработки персональных данных</p> </div>
-          </div>
-        </div>
+      <div class="footer__social">
+        <a href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM15 8H13.65C13.112 8 13 8.221 13 8.778V10H15L14.791 12H13V19H10V12H8V10H10V7.692C10 5.923 10.931 5 13.029 5H15V8Z"
+            fill="black" />
+          </svg>
+        </a>
+        <a href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM18.344 16.163H16.477C15.422 16.163 15.245 15.562 14.375 14.694C13.59 13.909 13.155 14.511 13.173 15.629C13.179 15.926 13.032 16.163 12.678 16.163C11.573 16.163 9.984 16.319 8.374 14.583C6.727 12.804 5 9.235 5 8.884C5 8.676 5.172 8.583 5.459 8.583H7.357C7.86 8.583 7.902 8.832 8.043 9.151C8.627 10.482 10.024 13.153 10.397 11.662C10.611 10.806 10.698 8.823 9.782 8.652C9.262 8.556 10.178 8 11.504 8C11.834 8 12.192 8.035 12.558 8.12C13.231 8.276 13.234 8.578 13.224 9.018C13.19 10.684 12.989 11.804 13.428 12.087C13.847 12.358 14.949 10.585 15.532 9.216C15.691 8.838 15.723 8.584 16.175 8.584H18.497C19.713 8.584 18.338 10.332 17.287 11.696C16.44 12.795 16.485 12.816 17.47 13.73C18.171 14.381 19 15.27 19 15.773C19 16.011 18.814 16.163 18.344 16.163Z"
+            fill="black" />
+          </svg>
+        </a>
       </div>
+    </div>
+
+    </div>
+    <div class="footer__by">
+      <div class="footer__data">
+        <p>© Гросс маркет 2020</p>
+      </div>
+      <div class="footer__coppy">
+        <p>Политика обработки персональных данных</p>
+      </div>
+    </div>
+    </div>
+    </div>
     </footer>
-    
+
     <section class="personal">
       <div class="personal__inner">
         <div class="personal__contant">
-         
+
           <div class="personal__title">
             <div class="personal__close">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 3L3 21" stroke="black" stroke-width="2"/>
-                  <path d="M21 21L3 3" stroke="black" stroke-width="2"/>
-                </svg>
+                <path d="M21 3L3 21" stroke="black" stroke-width="2" />
+                <path d="M21 21L3 3" stroke="black" stroke-width="2" />
+              </svg>
             </div>
             <h2>Обработка данных</h2>
           </div>
+
           <div class="personal__text">
+         
             <h3>1. Что регулирует настоящая политика конфиденциальности</h3>
-            <p>Настоящая политика конфиденциальности (далее — Политика) действует в отношении всей информации, включая персональные данные в понимании применимого законодательства (далее — «Персональная информация»), которую ООО «Гросс маркет» и/или его аффилированные лица, в том числе входящие в одну группу с ООО «Гросс маркет» (далее — «Гросс маркет»), могут получить о Вас в процессе использования Вами любых сайтов, программ, продуктов и/или сервисов Гросс маркет (далее вместе «Сервисы»), информацию о которых Гросс маркет может также получать Персональную информацию от своих партнеров (далее — «Партнеры»), сайты, программы, продукты или сервисы которых Вы используете (например, от рекламодателей Гросс маркет или службами такси). В таких случаях передача Персональной информации возможна только в случаях, установленных применимым законодательством, и осуществляется на основании специальных договоров между Гросс маркет и каждым из Партнеров. </p>
+            <p>Настоящая политика конфиденциальности (далее — Политика) действует в
+              отношении всей информации, включая персональные данные в понимании
+              применимого законодательства (далее — «Персональная информация»), которую
+              ООО «Гросс маркет» и/или его аффилированные лица, в том числе входящие
+              в одну группу с ООО «Гросс маркет» (далее — «Гросс маркет»), могут
+              получить о Вас в процессе использования Вами любых сайтов, программ,
+              продуктов и/или сервисов Гросс маркет (далее вместе «Сервисы»), информацию
+              о которых Гросс маркет может также получать Персональную информацию
+              от своих партнеров (далее — «Партнеры»), сайты, программы, продукты
+              или сервисы которых Вы используете (например, от рекламодателей Гросс
+              маркет или службами такси). В таких случаях передача Персональной информации
+              возможна только в случаях, установленных применимым законодательством,
+              и осуществляется на основании специальных договоров между Гросс маркет
+              и каждым из Партнеров. </p>
             <span>Пожалуйста, обратите внимание, что использование любого из Сайтов и/или Сервисов может регулироваться дополнительными условиями, которые могут вносить в настоящую Политику изменения и/или дополнения, и/или иметь специальные условия в отношении персональной информации, размещенные в соответствующих разделах документов для таких Сайтов /или Сервисов. </span>
             <h3>2. Кто обрабатывает информацию</h3>
-            <p>Для обеспечения использования Вами Сайтов и Сервисов Ваша Персональная информация собирается и используется Яндексом, в том числе включая общество с ограниченной ответственностью «Гросс маркет», юридическое лицо, созданное по законодательству Российской Федерации и зарегистрированное по адресу: 123351, Россия, Москва, ул. Гроссова, д. 12 (ООО «Гросс маркет»), или его аффилированным лицом, предоставляющим соответствующий Сервис в иных юрисдикциях. С информацией о том, какое лицо предоставляет тот или иной Сервис, Вы можете ознакомиться в условиях использования соответствующего Сервиса.</p>
+            <p>Для обеспечения использования Вами Сайтов и Сервисов Ваша Персональная
+              информация собирается и используется Яндексом, в том числе включая
+              общество с ограниченной ответственностью «Гросс маркет», юридическое
+              лицо, созданное по законодательству Российской Федерации и зарегистрированное
+              по адресу: 123351, Россия, Москва, ул. Гроссова, д. 12 (ООО «Гросс
+              маркет»), или его аффилированным лицом, предоставляющим соответствующий
+              Сервис в иных юрисдикциях. С информацией о том, какое лицо предоставляет
+              тот или иной Сервис, Вы можете ознакомиться в условиях использования
+              соответствующего Сервиса.</p>
             <h3>3. Какова цель данной Политики</h3>
-            <p>Защита Вашей Персональной информации и Вашей конфиденциальности чрезвычайно важны для Гросс маркета. Поэтому при использовании Вами Сайтов и Сервисов Гросс маркет защищает и обрабатывает Вашу Персональную информацию в строгом соответствии с применимым законодательством.</p>
+            <p>Защита Вашей Персональной информации и Вашей конфиденциальности чрезвычайно
+              важны для Гросс маркета. Поэтому при использовании Вами Сайтов и Сервисов
+              Гросс маркет защищает и обрабатывает Вашу Персональную информацию в
+              строгом соответствии с применимым законодательством.</p>
             <h3>4. Какую Персональную информацию о Вас собирает Гросс маркет</h3>
-            <p>Для обеспечения использования Вами Сайтов и Сервисов Ваша Персональная информация собирается и используется Яндексом, в том числе включая общество с ограниченной ответственностью «Гросс маркет», юридическое лицо, созданное по законодательству Российской Федерации и зарегистрированное по адресу: 123351, Россия, Москва, ул. Гроссова, д. 12 (ООО «Гросс маркет»), или его аффилированным лицом, предоставляющим соответствующий Сервис в иных юрисдикциях. С информацией о том, какое лицо предоставляет тот или иной Сервис, Вы можете ознакомиться в условиях использования соответствующего Сервиса.</p>
+            <p>Для обеспечения использования Вами Сайтов и Сервисов Ваша Персональная
+              информация собирается и используется Яндексом, в том числе включая
+              общество с ограниченной ответственностью «Гросс маркет», юридическое
+              лицо, созданное по законодательству Российской Федерации и зарегистрированное
+              по адресу: 123351, Россия, Москва, ул. Гроссова, д. 12 (ООО «Гросс
+              маркет»), или его аффилированным лицом, предоставляющим соответствующий
+              Сервис в иных юрисдикциях. С информацией о том, какое лицо предоставляет
+              тот или иной Сервис, Вы можете ознакомиться в условиях использования
+              соответствующего Сервиса.</p>
+            
           </div>
-        
+
         </div>
       </div>
     </section>
@@ -373,17 +411,18 @@
     <section class="blank">
       <div class="container">
         <div class="blank__inner">
-          
+
         </div>
       </div>
     </section>
-    
-    
+
     <script type="text/javascript" src="js/libery/slick.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/sliders.js"></script>
     <script src="js/map.js"></script>
-    
 
-  </body>
+</body>
+
 </html>
+
+
