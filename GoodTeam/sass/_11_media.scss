@@ -3,22 +3,26 @@
     .container {
         max-width: 1024px;
     }
+
     // <---------------------------------------- HEADER 1190----------
     .header__inner {
         margin: 0 39px;
     }
+
     // <---------------------------------------- PREWIEW 1990----------
     .prewiew {
         &__content-wrap {
             max-width: 1024px;
         }
     }
+
     // <---------------------------------------- CARD 1190----------
-.instagram {
-    &__btn {
-        max-width: 935px;
+    .instagram {
+        &__btn {
+            max-width: 935px;
+        }
     }
-}
+
     .instagram__inner h3 {
         margin-left: 40px;
     }
@@ -88,6 +92,7 @@
         margin: 0 30px;
     }
 }
+
 // <------------------------------------------- 1043 ----------
 @media (max-width: 1043px) {
 
@@ -185,22 +190,59 @@
         max-width: 541px;
         margin: 0 auto;
     }
+
     .blank__discription,
     .blank__discription-wrap {
         max-width: 100%;
     }
+
     .blank__discription-wrap {
         max-width: 800px;
         margin: 0 39px;
     }
+
     .blank {
         overflow: hidden;
     }
+
     .personal__inner {
         max-width: 862px;
     }
 
+    .submit__inner {
+        margin: 0 auto;
+        max-width: 690px;
+    }
+
+    .submit__content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .submit__text {
+        margin-bottom: 72px;
+        max-width: 100%;
+    }
+
+    .submit__disription-wrap {
+        width: 100%;
+    }
+
+    .submit {
+        & .number {
+            margin-bottom: 72px;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    .submit__disription {
+        max-width: 100%;
+        width: 100%;
+    }
+
 }
+
 // <------------------------------------------- 970 ----------
 @media (max-width: 970px) {
     .card .block__button {
@@ -221,23 +263,25 @@
     .map__render-wrap {
         max-width: 100%;
     }
+
     .personal__inner {
         max-width: 684px;
     }
+
     .personal__title {
         padding: 32px 24px 0 24px;
     }
+
     .personal__text {
         padding: 0 24px 32px 24px;
-    }
-    .personal__inner{
-        // margin: 0 auto;
     }
 
     .card__header {
         margin-bottom: 30px;
     }
+
 }
+
 // <------------------------------------------- 830 ----------
 @media (max-width: 830px) {
     .instagram {
@@ -275,15 +319,17 @@
             border-radius: 8px;
         }
     }
+
     .blank__title {
         h2 {
             font-size: 58px;
         }
     }
 }
+
 // <------------------------------------------- 767 ----------
 @media (max-width: 767px) {
-  
+
 
     .prewiew {
         &__img {
@@ -317,9 +363,11 @@
             bottom: 70px;
         }
     }
+
     .card__header {
         margin-bottom: 30px;
     }
+
     .card__slider {
         width: 540px;
         overflow: visible;
@@ -397,11 +445,13 @@
     #map {
         height: 600px;
     }
+
     .personal__inner {
         max-width: 500px;
     }
 
 }
+
 // <------------------------------------------- 768----------
 @media (max-width: 768px) {
     .google-map {
@@ -421,7 +471,12 @@
         left: 39px;
         bottom: 46px;
     }
+
+    .submit__inner {
+        max-width: 460px;
+    }
 }
+
 // <-------------------------------------------- 700----------
 @media (max-width: 700px) {
 
@@ -456,6 +511,7 @@
     }
 
 }
+
 // <-------------------------------------------- 680----------
 @media (max-width: 680px) {
 
@@ -561,18 +617,23 @@
     .footer__coppy {
         margin-bottom: 24px;
     }
+
     .personal__title h2 {
         font-size: 48px;
         line-height: 44px;
     }
+
     .personal__text {
         h3 {
             margin-top: 32px;
         }
-    }.prewiew .prewiew__text h2 {
+    }
+
+    .prewiew .prewiew__text h2 {
         font-size: 52px;
     }
 }
+
 // <-------------------------------------------- 580----------
 @media (max-width: 580px) {
 
@@ -594,63 +655,81 @@
             display: none;
         }
     }
+
     .blank__title h2 {
         font-size: 48px;
     }
+
     .blank__inner {
         padding: 0 15px;
     }
+
     .form-control-wrap {
         .form-control {
             flex: 0 0 100%;
             max-width: 100%;
         }
     }
+
     .header-form {
         margin-bottom: 48px;
     }
+
     .blank__content {
         margin-top: 48px;
     }
+
     .blank__form-wrap {
         margin: 0;
     }
+
     .gender {
         padding: 0;
     }
+
     .gender div {
-      margin-right: 60px;
+        margin-right: 60px;
     }
+
     .linlk {
         margin-top: 24px;
     }
+
     .agreement-wrap {
         align-self: end;
     }
+
     .blank__form-wrap {
         margin-bottom: 48px;
     }
+
     .blank__discription-wrap {
         margin: 0px 11px;
     }
+
     .blank__discription p:last-child {
         margin-bottom: 0px;
     }
+
     .number {
         margin-top: 32px;
     }
+
     .footer__content {
         margin: 0;
     }
+
     .blank__title h2 {
         padding: 0;
     }
+
     .personal__inner {
         width: 100%;
         position: fixed;
         overflow-y: auto;
         overflow: auto;
     }
+
     .popup__wrap {
         position: fixed;
         top: 20px;
@@ -667,29 +746,37 @@
         border-radius: 8px;
         visibility: hidden;
         transition: .3s;
+
         // display: none;
-      &.active {
-          display: flex;
-          visibility: visible;
-      }
+        &.active {
+            display: flex;
+            visibility: visible;
+        }
+
         span {
-          font-weight: 500;
-          font-size: 18px;
-          line-height: 23px;
-          color: #000000;
-          // display: none;
-          visibility: hidden;
-          opacity: 0;
-          transition: .5s;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 23px;
+            color: #000000;
+            // display: none;
+            visibility: hidden;
+            opacity: 0;
+            transition: .5s;
         }
+
         span.active {
-          opacity: 1;
-          visibility: visible;
-          display: flex;
-          transition: .5s;
+            opacity: 1;
+            visibility: visible;
+            display: flex;
+            transition: .5s;
         }
+    }
+
+    .submit__inner {
+        max-width: 408px;
+    }
 }
-}
+
 // <-------------------------------------------- 420----------
 @media (max-width: 420px) {
     h2 {
@@ -726,7 +813,17 @@
     .card__slider {
         width: 420px;
     }
+    .submit__inner {
+        max-width: 346px;
+    }
+    .submit__disription-wrap {
+        h4 {
+            font-size: 24px;
+        }
+       
+    }
 }
+
 // <-------------------------------------------- 390----------
 @media (max-width: 390px) {
     .card__slider {
@@ -742,6 +839,7 @@
         padding-left: 0;
     }
 }
+
 // <-------------------------------------------- 375----------
 @media (max-width: 375px) {
     .container {
@@ -795,21 +893,26 @@
     .footer__content {
         margin: 0 8px;
     }
+
     .personal__title {
         padding: 72px 14px 0 14px;
     }
+
     .personal__text h3 {
         padding: 0;
     }
+
     .personal__text {
         overflow-y: scroll;
     }
 
     .personal__inner {
         top: 0;
-        height: 100%;overflow-y: scroll;
+        height: 100%;
+        overflow-y: scroll;
     }
 }
+
 // <-------------------------------------------- 370----------
 @media (max-width: 370px) {
     h2 {
@@ -841,6 +944,7 @@
         }
     }
 }
+
 // <-------------------------------------------- 350----------
 @media (max-width: 350px) {
     .instagram {
@@ -885,17 +989,29 @@
             width: 320px;
         }
     }
+    .submit__inner {
+        max-width: 293px;
+    }
+    .submit__disription-wrap {
+        h4 {
+            font-size: 24px;
+        }
+       
+    }
 }
+
 // <-------------------------------------------- 320----------
 @media (max-width: 320px) {
     h2 {
         font-size: 36px;
         padding: 0 20px;
     }
+
     .blank__title h2 {
         font-size: 36px;
         padding: 0 20px;
     }
+
     h3 {
         font-size: 24px;
         line-height: 24px;
@@ -907,7 +1023,7 @@
     }
 
     .header {
-        padding: 32px 15px;
+        padding: 32px 0px;
     }
 
     .header__logo {

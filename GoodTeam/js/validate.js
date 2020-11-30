@@ -27,8 +27,7 @@ window.addEventListener('click', function (e) {
 });
 
 
-
-const form = document.querySelector('form');
+const form = document.querySelector('.form');
 const profession = document.querySelector('.custom-select__trigger span').textContent;
 const username = document.querySelector('.username');
 const date = document.querySelector('.form-date');
@@ -36,14 +35,27 @@ const gender = document.querySelector('.gender');
 const phone = document.querySelector('.form-phone');
 const email = document.querySelector('.form-email');
 
-form.addEventListener('submit', e => {
-  e.preventDefault();
+
+let submitBtn = document.querySelector('.btn__submit');
+let formSubmit = document.querySelector('.form');
+
+
+submitBtn.onclick = function(e) {
   checkInputs();
   validateSubmit();
-  erorreArray = '';
-
-
-});
+  if (erorreArray < 1) {
+    formSubmit.submit('отправка');
+    console.log('отправляем JSON файл');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      erorreArray = 1;
+      document.location.href = "submit.html";
+    });
+  } else {
+    e.preventDefault();
+    console.log('валидация не пройдена');
+  }
+}
 
 function checkInputs() {
   // const profession = ();
@@ -108,12 +120,16 @@ function checkInputs() {
   }
 }
 
-let erorreArray = [];
+let erorreArray = 1;
+
 // отрисовываем ошибки 
 
 function setErrorFor(input, message) {
   if (input === 'вакансия') {
-    erorreArray = erorreArray + 1;
+    if (erorreArray >= 6) {
+      erorreArray = 6;
+    }
+    erorreArray++;
     const formControl = document.querySelector('.custom-select-wrapper').parentElement;
     const small = document.querySelector('small');
     formControl.className = 'form-control error';
@@ -124,15 +140,15 @@ function setErrorFor(input, message) {
     const small = input.parentElement.querySelector('small');
     formControl.className = 'form-control error';
     small.innerText = message;
-    erorreArray = erorreArray + 1;
+    erorreArray++;
+    if (erorreArray >= 6) {
+      erorreArray = 6;
+    }
   }
-  return erorreArray;
 }
 
 
-
-
-
+// проверяем нажатие обоих chtcbjx и активируем  кнопку submit
 
 let chbox;
 
@@ -151,7 +167,7 @@ chbox2.onclick = function () {
 
 let captcha = document.querySelector('.forn-captcha');
 let agree = document.querySelector('.forn-agreement');
-let submit = document.querySelector('.submit');
+let submit = document.querySelector('.btn__submit');
 
 
 validateSubmit = function () {
@@ -163,6 +179,11 @@ validateSubmit = function () {
   }
 }
 
+
+
+
+
+
     // ------------- ВАЛИДАЦИЯ ---------------- //
 
     // валидация Select
@@ -171,11 +192,18 @@ validateSubmit = function () {
       if (input == profession) {
         const formControl = document.querySelector('.custom-select-wrapper').parentElement;
         formControl.className = 'form-control success';
+        erorreArray = erorreArray -2;
       } else {
         const formControl = input.parentElement;
         formControl.className = 'form-control success';
+        erorreArray--;
       }
     }
+
+
+
+
+
 
     // валидация ФИО
 
