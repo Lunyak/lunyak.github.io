@@ -2683,4 +2683,32 @@ p, a, li, button, span {
     height: 562px;
   }
 }
+
+body {
+  background-color: red;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.header ul li {
+  background-color: #000;
+}
+
+.nav2:hover > .navbrop {
+  display: block;
+  visibility: visible;
+}
+
+.navbrop {
+  -webkit-transition: 2s;
+  transition: 2s;
+  display: none;
+  visibility: hidden;
+}
+
+.navbrop.active {
+  display: block;
+}
 /*# sourceMappingURL=slyle.css.map */

@@ -1,0 +1,30 @@
+body {
+  background-color: red;
+}
+
+.header {
+  background-color: #fff;
+  ul {
+    li {
+      background-color: #000;
+    }
+  }
+}
+
+.nav2:hover > .navbrop {
+  display: block;
+  visibility: visible;
+}
+
+.navbrop {
+  transition: 2s;
+  // display: none;
+  display: none;
+  visibility: hidden;
+}
+
+
+// когда будет js
+.navbrop.active {
+  display: block;
+}
