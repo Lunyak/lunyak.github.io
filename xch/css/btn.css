@@ -1,0 +1,92 @@
+.btn {
+	max-width: 194px;
+	height: 50px;
+	border: 1px solid #000;
+	border-radius: 4px;
+	background: none;
+	font-family: 'Museo Sans Cyrl';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #3C3C3C;
+	text-decoration: none;
+	margin: 0 auto;
+	cursor: pointer;
+	outline: none;
+}
+
+.btn:hover {
+	background-color: #CA3636;
+	color: white;
+	border: none;
+}
+
+/* .btn span {
+	position: relative;
+} */
+
+/* .btn__icon {
+	margin-left: 28px;
+} */
+
+/* .btn--icon {
+	display: inline-flex;
+	align-items: center;
+} */
+
+.btn--red {
+	margin: 0;
+	width: 186px;
+	background-color: #fff;
+	color: #CA3636;
+	border: 2px solid #CA3636;
+	outline: none;
+}
+
+.btn--white {
+	margin: 0;
+	padding: 0 17.5px;
+	background: #ffffff00;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	outline: none;
+	transition: border 0.4s, color 0.4s, background-color 0.4s ease-in;
+}
+
+.btn--white:hover {
+	background-color: #ffffff;
+	color: #CA3636;
+	border: 2px solid #ffffff00;
+}
+
+.btn--download {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	margin: 0;
+	padding: 0 12px;
+	background: #ffffff00;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	transition: color 0.4s ease-in;
+}
+
+.btn--download svg {
+	margin-left: 8px;
+	transition: fill 0.2s ease-in;
+	fill: #fff;
+}
+
+.btn--download:hover {
+	color: #3C3C3C;
+}
+.btn--download:hover svg {
+	fill: #3C3C3C;
+}
+

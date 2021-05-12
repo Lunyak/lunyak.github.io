@@ -1,0 +1,197 @@
+@font-face {
+	font-family: 'Oswald';
+	src: url('../fonts/Oswald-Bold.eot');
+	src: url('../fonts/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Oswald-Bold.woff') format('woff'),
+			url('../fonts/Oswald-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('../fonts/Oswald-Regular.eot');
+	src: url('../fonts/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Oswald-Regular.woff') format('woff'),
+			url('../fonts/Oswald-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('../fonts/Oswald-Light.eot');
+	src: url('../fonts/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Oswald-Light.woff') format('woff'),
+			url('../fonts/Oswald-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('../fonts/Oswald-Medium.eot');
+	src: url('../fonts/Oswald-Medium.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Oswald-Medium.woff') format('woff'),
+			url('../fonts/Oswald-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('../fonts/Oswald-SemiBold.eot');
+	src: url('../fonts/Oswald-SemiBold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Oswald-SemiBold.woff') format('woff'),
+			url('../fonts/Oswald-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('../fonts/Oswald-ExtraLight.eot');
+	src: url('../fonts/Oswald-ExtraLight.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Oswald-ExtraLight.woff') format('woff'),
+			url('../fonts/Oswald-ExtraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: url('../fonts/MuseoSansCyrl-300.eot');
+	src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
+			url('../fonts/MuseoSansCyrl-300.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: url('../fonts/MuseoSansCyrl-900.eot');
+	src: url('../fonts/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/MuseoSansCyrl-900.woff') format('woff'),
+			url('../fonts/MuseoSansCyrl-900.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: url('../fonts/MuseoSansCyrl-700.eot');
+	src: url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
+			url('../fonts/MuseoSansCyrl-700.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: url('../fonts/MuseoSansCyrl-100.eot');
+	src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/MuseoSansCyrl-100.woff') format('woff'),
+			url('../fonts/MuseoSansCyrl-100.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: url('../fonts/MuseoSansCyrl-500.eot');
+	src: url('../fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/MuseoSansCyrl-500.woff') format('woff'),
+			url('../fonts/MuseoSansCyrl-500.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Bold.eot');
+	src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/OpenSans-Bold.woff') format('woff'),
+			url('../fonts/OpenSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-ExtraBold.eot');
+	src: url('../fonts/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/OpenSans-ExtraBold.woff') format('woff'),
+			url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-SemiBold.eot');
+	src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+			url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Regular.eot');
+	src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/OpenSans-Regular.woff') format('woff'),
+			url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Light.eot');
+	src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/OpenSans-Light.woff') format('woff'),
+			url('../fonts/OpenSans-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro-Light.eot');
+	src: local('Gotham Pro Light'), local('GothamPro-Light'),
+		url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Light.woff') format('woff'),
+		url('../fonts/GothamPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro';
+	src: url('../fonts/GothamPro-Medium.eot');
+	src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
+		url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Medium.woff') format('woff'),
+		url('../fonts/GothamPro-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}

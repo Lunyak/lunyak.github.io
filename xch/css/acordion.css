@@ -1,0 +1,179 @@
+.acordion {
+	position: relative;
+	padding-top: 61px;
+	padding-bottom: 74px;
+	z-index: 1;
+}
+
+.acordion .title {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 121.5%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #3C3C3C;
+}
+
+.acordion__wrapper {
+	padding: 0 10px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+.acordion__item {
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 20px;
+	font-family: 'Museo Sans Cyrl';
+	color: #3C3C3C;
+	font-style: normal;
+	font-weight: normal;
+	position: relative;
+	overflow: hidden;
+}
+
+.acordion__item::before {
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: #3C3C3C;
+	bottom: 0;
+	position: absolute;
+}
+
+.acordion__item-contant {
+	margin-bottom: 20px;
+	max-width: 800px;
+	display: none;
+	opacity: 0;
+}
+
+.acordion__item-head {
+	margin-bottom: 30px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.acordion__btn {
+	border: none;
+	background: none;
+	cursor: pointer;
+	outline: none;
+}
+
+.acordion__btn svg {
+	stroke: #3C3C3C;
+	pointer-events: none;
+}
+
+/* состояние компонентов */
+
+.acordion__item.active svg {
+	stroke: #CA3636;
+	cursor: pointer;
+	transform: rotate(180deg);
+}
+
+.acordion__item.active > .acordion__item-contant  {
+	display: block;
+	animation-duration: 0.8s;
+  animation-name: show;
+	opacity: 1;
+}
+
+.acordion__item.active .acordion__item-title {
+	color: #CA3636;
+}
+
+.acordion__item-title {
+	font-size: 22px;
+	line-height: 28px;
+}
+
+.acordion__item-description {
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 300;
+}
+
+.acordion__item-link {
+	margin-top: 25px;
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	font-family: 'Museo Sans Cyrl';
+	color: #3C3C3C;
+	font-style: normal;
+	font-weight: normal;
+	position: relative;
+	overflow: hidden;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.acordion__item-link a {
+	text-decoration: none;
+	color: #3C3C3C;
+	position: relative;
+}
+
+.acordion__item-link a::before {
+	content: '';
+	width: 100%;
+	height: 1px;
+	background-color: #3C3C3C;
+	bottom: 2px;
+	position: absolute;
+}
+
+.acordion__item-drop {
+	left: 0;
+	bottom: -86px;
+	position: absolute;
+	width: 100%;
+	padding: 18px 17px;
+	background-color: #ca3636ea;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+
+	.acordion__wrapper  {
+		padding: 0;
+	}
+
+	.acordion .title {
+		font-weight: 400;
+		text-align: left;
+	}
+	.acordion .title span {
+		font-weight: 400;
+		text-align: left;
+		text-transform: lowercase;
+	}
+}
+
+@media (min-width: 1200px) {
+	.acordion .title {
+		font-weight: normal;
+		font-size: 60px;
+		line-height: 121.5%;
+		margin-bottom: 60px;
+	}
+
+	.acordion__item-head {
+		align-items: center;
+	}
+
+	.acordion__wrapper {
+		padding: 0 0px;
+	}
+}
+

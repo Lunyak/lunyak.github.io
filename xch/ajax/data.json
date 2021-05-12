@@ -1,0 +1,520 @@
+
+{
+  "test": [
+    {
+      "qustion": 0,
+      "title": "Знаете ли Вы о признаках такого заболевания <br> как хроническая сердечная недостаточность?",
+      "type": "radio",
+      "items": [
+        {
+          "type": "radio",
+          "id": "know",
+          "name": "qustion-01",
+          "text": "Хорошо информирован",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "something",
+          "name": "qustion-01",
+          "text": "Что-то слышал/слышала",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "nothing",
+          "name": "qustion-01",
+          "text": "Ничего не знаю",
+          "isToggle": false
+        }
+      ]
+    },
+    {
+      "qustion": 1,
+      "title": "Регион проживания",
+      "type": "select",
+      "items": [
+        {
+          "type": "select",
+          "id": "city",
+          "name": "qustion-02",
+          "isToggle": "Выберете из списка",
+          "option": ["Москва",	"Санкт-Петербург", "Севастополь",	"Республика Адыгея (Адыгея)", "Республика Алтай", "Республика Башкортостан", "Республика Бурятия", "Республика Дагестан", "Республика Ингушетия", "Кабардино-Балкарская Республика", "Республика Калмыкия", "Карачаево-Черкесская Республика", "Республика Карелия", "Республика Коми", "Республика Крым", "Республика Марий Эл", "Республика Мордовия", "Республика Саха (Якутия)", "Республика Северная Осетия – Алания", "Республика Татарстан (Татарстан)", "Республика Тыва", "Удмуртская Республика", "Республика Хакасия", "Чеченская Республика", "Чувашская Республика – Чувашия", "Алтайский край", "Забайкальский край", "Камчатский край", "Краснодарский край", "Красноярский край", "Пермский край", "Приморский край", "Ставропольский край", "Хабаровский край", "Амурская область", "Архангельская область", "Астраханская область", "Белгородская область", "Брянская область", "Владимирская область", "Волгоградская область", "Вологодская область", "Воронежская область", "Ивановская область", "Иркутская область", "Калининградская область", "Калужская область", "Кемеровская область", "Кировская область", "Костромская область", "Курганская область", "Курская область", "Ленинградская область", "Липецкая область", "Магаданская область", "Московская область", "Мурманская область", "Нижегородская область", "Новгородская область", "Новосибирская область", "Омская область", "Оренбургская область", "Орловская область", "Пензенская область", "Псковская область", "Ростовская область", "Рязанская область", "Самарская область", "Саратовская область", "Сахалинская область", "Свердловская область", "Смоленская область", "Тамбовская область", "Тверская область", "Томская область", "Тульская область", "Тюменская область", "Ульяновская область", "Челябинская область", "Ярославская область", "Город Москва", "Город Санкт-Петербург", "Город Севастополь", "Еврейская автономная область", "Ненецкий автономный округ", "Ханты-Мансийский автономный округ – Югра", "Чукотский автономный округ", "Ямало-Ненецкий автономный округ"]
+        }
+      ]
+    },
+    {
+      "qustion": 2,
+      "title": "Выберите пол",
+      "type": "toggle",
+      "items": [
+        {
+          "type": "toggle",
+          "id": "man",
+          "name": "qustion-03",
+          "text": "Женщина",
+          "isToggle": false
+        },
+        {
+          "type": "toggle",
+          "id": "famale",
+          "name": "qustion-03",
+          "text": "Мужчина",
+          "isToggle": false
+        }
+      ]
+    },
+    {
+      "qustion": 3,
+      "title": "Укажите возраст",
+      "type": "number",
+      "items": {
+        "type": "number",
+        "id": "number",
+        "name": "qustion-04",
+        "isToggle": "55"
+      }
+    },
+    {
+      "qustion": 4,
+      "title": "Страдаете ли вы такими заболеваниями, как",
+      "type": "checkbox",
+      "modify": "questions-table",
+      "items": [
+        {
+          "type": "checkbox",
+          "modify": "table",
+          "id": "qustion-04-12",
+          "name": "qustion-04",
+          "text": "Алкоголизм",
+          "isToggle": false
+        },
+        {
+          "type": "checkbox",
+          "modify": "table",
+          "id": "qustion-04-11",
+          "name": "qustion-04",
+          "text": "Хроническая почечная  недостаточность",
+          "isToggle": false
+        },
+        {
+          "type": "checkbox",
+          "modify": "table",
+          "id": "qustion-04-10",
+          "name": "qustion-04",
+          "text": "Нарушение <br> обмена веществ (метаболический синдром)",
+          "isToggle": false
+        },
+        {
+          "type": "checkbox",
+          "modify": "table",
+          "id": "qustion-04-09",
+          "name": "qustion-04",
+          "text": "Артериальная гипертония",
+          "isToggle": false
+        },
+        {
+          "type": "checkbox",
+          "modify": "table",
+          "id": "qustion-04-08",
+          "name": "qustion-04",
+          "text": "Кардиомиопатия (изменение <br> мышцы сердца)",
+          "isToggle": false
+        },
+        {
+          "type": "checkbox",
+          "modify": "table",
+          "id": "qustion-04-07",
+          "name": "qustion-04",
+          "text": "Частые <br> инфекции",
+          "isToggle": false
+        },
+        {
+          "type": "checkbox",
+          "modify": "table",
+          "id": "qustion-04-06",
+          "name": "qustion-04",
+          "text": "Врожденный порок сердца",
+          "isToggle": false
+        },
+        {
+          "type": "checkbox",
+          "modify": "table",
+          "id": "qustion-04-05",
+          "name": "qustion-04",
+          "text": "Инфаркт <br> миокарда",
+          "isToggle": false
+        },
+        {
+          "type": "checkbox",
+          "modify": "table",
+          "id": "qustion-04-04",
+          "name": "qustion-04",
+          "text": "Ревматизм",
+          "isToggle": false
+        },
+        {
+          "type": "checkbox",
+          "modify": "table",
+          "id": "qustion-04-03",
+          "name": "qustion-04",
+          "text": "Сахарный диабет",
+          "isToggle": false
+        },
+        {
+          "type": "checkbox",
+          "modify": "table",
+          "id": "qustion-04-02",
+          "name": "qustion-04",
+          "text": "Нарушение <br> ритма сердца",
+          "isToggle": false
+        },
+        {
+          "type": "checkbox",
+          "modify": "table",
+          "id": "qustion-04-01",
+          "name": "qustion-04",
+          "text": "Ишемическая болезнь сердца",
+          "isToggle": false
+        }
+      ]
+    },
+    {
+      "qustion": 5,
+      "title": "Курите ли Вы?",
+      "type": "radio",
+      "items": [
+        {
+          "type": "radio",
+          "id": "qustion-05-04",
+          "modify": "table-midle",
+          "name": "qustion-05",
+          "text": "Курю больше пачки в день",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-05-03",
+          "modify": "table-midle",
+          "name": "qustion-05",
+          "text": "Курю меньше пачки в день",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-05-02",
+          "modify": "table-midle",
+          "name": "qustion-05",
+          "text": "Курил ранее, <br> но бросил",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-05-01",
+          "modify": "table-midle",
+          "name": "qustion-05",
+          "text": "Нет",
+          "isToggle": false
+        }
+      ]
+    },
+    {
+      "qustion": 6,
+      "title": "Каков Ваш уровень физической активности?",
+      "type": "radio",
+      "modify": "questions-cards",
+      "items": [
+        {
+          "type": "radio",
+          "id": "qustion-06-04",
+          "modify": "table-big",
+          "name": "qustion-05",
+          "text": "Затрудняюсь ответить",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-06-03",
+          "modify": "table-big",
+          "name": "qustion-05",
+          "text": "Хожу мало  ",
+          "discription": "почти не выхожу из <br> дома – одышка",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-06-02",
+          "modify": "table-big",
+          "name": "qustion-05",
+          "text": "Пытаюсь чаще двигаться",
+          "discription": "хожу пешком, но менее <br> 30 мин в день и менее 4 <br> раз в неделю",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-06-01",
+          "modify": "table-big",
+          "name": "qustion-05",
+          "text": "Стараюсь <br> больше <br> двигаться,",
+          "discription": "хожу пешком, делаю физические упражнения – общая физическая <br> нагрузка не менее 30-40 мин. в день 4 раза в <br> неделю",
+          "isToggle": false
+        }
+      ]
+    },  {
+      "qustion": 7,
+      "title": "Ваш режим питания?",
+      "type": "radio",
+      "modify": "questions-cards-big",
+      "items": [
+        {
+          "type": "radio",
+          "id": "qustion-07-03",
+          "modify": "table-bigger",
+          "name": "qustion-07",
+          "text": "Стараюсь есть здоровую пищу",
+          "discription": "но иногда позволяю себе и жареное, и хорошо соленое",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-07-02",
+          "modify": "table-bigger",
+          "name": "qustion-07",
+          "text": "Ем, в основном, жареное, люблю копченое, соленое",
+          "discription": "  знаю, что вредно, но по-другому не вкусно",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-07-01",
+          "modify": "table-bigger",
+          "name": "qustion-07",
+          "text": "Не ем жирное, копченое, жареное",
+          "discription": "мой рацион – крупы, овощи, отварное мясо, соль ем в минимальных <br> количествах",
+          "isToggle": false
+        }
+      ]
+    },
+    {
+      "qustion": 8,
+      "title": "Появляется ли у Вас одышка при <br> физических нагрузках, ходьбе?",
+      "type": "toggle",
+      "items": [
+        {
+          "type": "toggle",
+          "id": "qustion-08-02",
+          "name": "qustion-08",
+          "text": "Нет",
+          "isToggle": false
+        },
+        {
+          "type": "toggle",
+          "id": "qustion-08-01",
+          "name": "qustion-08",
+          "text": "Да",
+          "isToggle": false
+        }
+      ]
+    },
+    {
+      "qustion": 9,
+      "title": "Есть ли у Вас одышка <br> в состоянии покоя?",
+      "type": "toggle",
+      "items": [
+        {
+          "type": "toggle",
+          "id": "qustion-09-02",
+          "name": "qustion-09",
+          "text": "Нет",
+          "isToggle": false
+        },
+        {
+          "type": "toggle",
+          "id": "qustion-09-01",
+          "name": "qustion-09",
+          "text": "Да",
+          "isToggle": false
+        }
+      ]
+    },
+    {
+      "qustion": 10,
+      "title": "Чувствуете ли Вы постоянную <br> слабость, усталость?",
+      "type": "radio",
+      "items": [
+        {
+          "type": "radio",
+          "id": "qustion-10-04",
+          "modify": "table-midle",
+          "name": "qustion-10",
+          "text": "Скорее да",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-10-03",
+          "modify": "table-midle",
+          "name": "qustion-10",
+          "text": "Скорее нет",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-10-02",
+          "modify": "table-midle",
+          "name": "qustion-10",
+          "text": "Да",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-10-01",
+          "modify": "table-midle",
+          "name": "qustion-10",
+          "text": "Нет",
+          "isToggle": false
+        }
+      ]
+    },
+    {
+      "qustion": 11,
+      "title": "Есть ли у Вас отёки ног <br> (лодыжки и выше)?",
+      "type": "radio",
+      "items": [
+        {
+          "type": "radio",
+          "id": "qustion-11-03",
+          "name": "qustion-11",
+          "text": "Бывают время <br> от времени",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-11-02",
+          "name": "qustion-11",
+          "text": "Нет",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-11-01",
+          "name": "qustion-11",
+          "text": "Да",
+          "isToggle": false
+        }
+      ]
+    },
+    {
+      "qustion": 12,
+      "title": "Есть ли жалобы на перебои <br> в работе сердца  (учащенное <br> или нерегулярное сердцебиение)?",
+      "type": "radio",
+      "items": [
+        {
+          "type": "radio",
+          "id": "qustion-12-03",
+          "name": "qustion-12",
+          "text": "Затрудняюсь ответить",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-12-02",
+          "name": "qustion-12",
+          "text": "Нет",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-12-01",
+          "name": "qustion-12",
+          "text": "Да",
+          "isToggle": false
+        }
+      ]
+    },
+    {
+      "qustion": 13,
+      "title": "Есть ли у Вас сухой кашель <br> с выделением белой  или розовой мокроты или хрипы?",
+      "type": "radio",
+      "items": [
+        {
+          "type": "radio",
+          "id": "qustion-13-03",
+          "name": "qustion-13",
+          "text": "Иногда",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-13-02",
+          "name": "qustion-13",
+          "text": "Нет",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-13-01",
+          "name": "qustion-13",
+          "text": "Да",
+          "isToggle": false
+        }
+      ]
+    },
+    {
+      "qustion": 14,
+      "title": "Изменился ли вес за последнюю неделю (более 2 кг за неделю)?",
+      "type": "radio",
+      "items": [
+        {
+          "type": "radio",
+          "id": "qustion-14-03",
+          "name": "qustion-14",
+          "text": "Точно не знаю",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-14-02",
+          "name": "qustion-14",
+          "text": "Увеличился",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-14-01",
+          "name": "qustion-14",
+          "text": "Нет",
+          "isToggle": false
+        }
+      ]
+    },
+    {
+      "qustion": 15,
+      "title": "В каком положении Вы спите?",
+      "type": "radio",
+      "items": [
+        {
+          "type": "radio",
+          "id": "qustion-15-03",
+          "name": "qustion-14",
+          "text": "Сидя",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-15-02",
+          "name": "qustion-14",
+          "text": "С приподнятым головным концом (большая подушка)",
+          "isToggle": false
+        },
+        {
+          "type": "radio",
+          "id": "qustion-15-01",
+          "name": "qustion-14",
+          "text": "Горизонтально",
+          "isToggle": false
+        }
+      ]
+    }
+  ]
+}

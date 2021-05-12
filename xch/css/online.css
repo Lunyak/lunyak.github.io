@@ -1,0 +1,596 @@
+.online {
+	padding-top: 26px;
+	padding-bottom: 35px;
+	position: relative;
+	background-color: #F2F2F2;
+}
+
+.online .title {
+	text-align: left;
+	position: relative;
+	font-family: Oswald;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 121.5%;
+	text-transform: uppercase;
+	color: #3C3C3C;
+}
+
+.online__main {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-direction: column-reverse;
+}
+
+.online__wrapper {
+	/* padding: 0 45px; */
+	max-width: 300px;
+	margin: 0 auto;
+	flex-direction: column;
+}
+
+.online__content {
+	align-self: start;
+	margin-bottom: 35px;
+	max-width: 300px;
+}
+
+.online__content-info-title {
+	margin-bottom: 20px;
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	line-height: 121.5%;
+	color: #CA3636;
+}
+
+.online__content-info-subtitle {
+	margin-bottom: 40px;
+	max-width: 543px;
+	font-family: 'Museo Sans Cyrl';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 28px;
+	color: #3C3C3C;
+}
+
+.online__form {
+	max-width: 732px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.online__form.active .online__form-date {
+	display: none;
+}
+
+.online__form.active .online__form-email {
+	display: block;
+}
+
+.online__form.active .online__form-btn {
+	background-color: #CA3636;
+	color: white;
+}
+
+.online__form.active .online__form-politics {
+	display: flex;
+}
+
+.online__form-date {
+	/* display: none; */
+	margin: 0 70px 20px 0;
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 121.5%;
+	color: #3C3C3C;
+}
+
+.online__form-email {
+	/* margin-right: 30px; */
+	display: none;
+	padding-left: 10px;
+	width: 277px;
+	height: 58px;
+	font-family: 'Museo Sans Cyrl';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 18px;
+	color: #828282;
+	border: 1px solid #E0E0E0;
+	border-radius: 60px;
+	outline: none;
+}
+
+
+.online__form-email:active {
+	border: 1px solid #CA3636;
+}
+.online__form-email:hover {
+	border: 1px solid #CA3636;
+}
+.online__form-email:focus {
+	border: 1px solid #CA3636;
+}
+
+.online__form-politics {
+	margin: 20px 0;
+	width: 100%;
+	height: 19px;
+  display: flex;
+	align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.online__form-politics input {
+	position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.online__form-politics-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+.online__form-politics:hover input ~ .online__form-politics-checkmark {
+  background-color: #ccc;
+}
+
+.online__form-politics input:checked ~ .online__form-politics-checkmark {
+  background-color: #2a487583;
+}
+
+.online__form-politics-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.online__form-politics input:checked ~ .online__form-politics-checkmark:after {
+  display: block;
+}
+
+.online__form-politics .online__form-politics-checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.online__form-politics {
+	display: none;
+}
+
+.online__form-politics-link {
+	padding-left: 35px;
+	display: flex;
+	align-items: center;
+	font-family: 'Gotham Pro';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 11px;
+	color: #595959;
+	text-decoration: none;
+}
+
+.online__form-politics-link:hover {
+	color: #CA3636;
+}
+
+.online__form-politics-link:active {
+	color: #CA3636;
+}
+
+.online__title--desc{
+	display: none;
+}
+
+.online__img {
+	margin-bottom: 40px;
+	/* max-width: 205px; */
+	width: 205px;
+	/* height: 242px; */
+}
+
+.online__img > img {
+	margin-bottom: 15px;
+}
+
+.online__img-text {
+	font-family: 'Museo Sans Cyrl';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+	color: #333333;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	position: relative;
+}
+
+.online__img-text img {
+	margin-left: 12px;
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+}
+
+.online__img-text-drop {
+	display: none;
+	width: 400px;
+	top: -265px;
+	padding: 44px 63px 37px 29px;
+	position: absolute;
+	text-align: left;
+	font-family: 'Museo Sans Cyrl';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	align-items: center;
+	color: #3C3C3C;
+	background-color: #fff;
+	box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	animation-duration: 0.8s;
+  animation-name: show;
+}
+
+.online__img-text-drop::before {
+	content: "";
+	position: absolute;
+	right: 75px;
+	bottom: -21px;
+	border: 12px solid transparent; border-left: 12px solid white;
+	border-top: 12px solid white;
+}
+
+/* анимируем появление всплывающего окна */
+
+.online__img-text img:hover + .online__img-text-drop {
+	display: flex;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.online__form-politics {
+	order: 1;
+}
+
+.online__form-btn {
+	order: 2;
+}
+
+.online__form-politics-link {
+	line-height: 14px;
+}
+
+/* description */
+
+.online__description {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 65px;
+	padding: 45px 20px 31px 20px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.online__description-item {
+	margin-bottom: 30px;
+	min-height: 160px;
+	display: block;
+	width: 100%;
+	max-width: 245px;
+}
+
+.online__description-item img{
+	max-width: 24px;
+}
+
+.online__description-text {
+	display: block;
+}
+
+.online__description-title {
+	font-family: 'Museo Sans Cyrl';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 28px;
+	color: #3C3C3C;
+}
+
+.online__description-subtitle {
+	font-family: 'Museo Sans Cyrl';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #3C3C3C;
+}
+
+.online__description-item img{
+	display: block;
+	margin-bottom: 10px;
+}
+
+/* video  */
+
+.online__video-title {
+	margin-bottom: 30px;
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 121.5%;
+	color: #3C3C3C;
+}
+
+.online__video-wrapper {
+	/* margin-bottom: 43px; */
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.online__video-wrapper .cards{
+	margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+
+	.online {
+		padding-top: 78px;
+		padding-bottom: 61px;
+	}
+
+	.online__wrapper {
+		padding: 0 45px;
+		max-width: 100%;
+		margin: 0;
+		flex-direction: row;
+	}
+
+	.online__content{
+		max-width: 400px;
+	}
+
+	.online__main {
+		flex-direction: row;
+		max-width: 900px;
+		margin: 0 auto;
+		align-items: center;
+	}
+
+	.online__content-info-subtitle {
+		font-size: 18px;
+		line-height: 24px; 
+		max-width: 370px;
+		margin-bottom: 40px;
+	}
+
+	.online__form-email {
+		width: 380px;
+		font-size: 18px;
+		padding-left: 30px;
+	}
+
+	.online__form-politics {
+		order: 1;
+		margin: 14px 0 19px;
+		max-width: 300px;
+	}
+
+	.online__form-politics-link {
+		line-height: 14px;
+	}
+
+	.online__form-btn {
+		order: 2;
+	}
+	.online__description-item {
+		width: calc((100% - 40px) / 2);
+		max-width: 100%;
+	}
+
+	.online__img-text {
+		justify-content: center;
+	}
+
+	.online__content-info-title {
+		margin-bottom: 43px;
+		font-size: 60px;
+		line-height: 121.5%;
+	}
+
+	.online__img {
+		margin-bottom: 0;
+		width: auto;
+	}
+
+	.online__img-text {
+		font-size: 16px;
+	}
+
+	.online__content-info-title {
+		margin-bottom: 43px;
+	}
+
+	.online__content-info-subtitle {
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	.online__content {
+		max-width: 100%;
+		margin-bottom: 75px;
+	}
+
+	.online__form-date {
+		margin-bottom: 20px;
+		/* margin-right: 0; */
+	}
+
+	.online__video-wrapper {
+		margin-bottom: 43px;
+	}
+
+	.online__video-wrapper .cards{
+		margin-bottom: 0px;
+	}
+
+	.online__form-btn {
+		order: 1;
+		margin-left: 20px;
+	}
+
+	.online__video-wrapper .cards {
+		margin-top: 20px;
+		margin-bottom: 0;
+		margin-right: 20px;
+	}
+
+
+
+	.online__video-wrapper .cards:nth-child(2) {
+		margin-top: 20px;
+		margin-bottom: 0;
+		margin-right: 20px;
+	}
+
+	.online__video-wrapper .cards:nth-child(3n) {
+		margin-top: 20px;
+		margin-bottom: 0;
+		margin-right: 0px;
+	}
+
+	.online__video-wrapper .cards:nth-child(5),
+	.online__video-wrapper .cards:nth-child(8), 
+	.online__video-wrapper .cards:nth-child(11)
+	.online__video-wrapper .cards:nth-child(14) {
+		margin-right: 20px;
+	}
+
+	.online__video-wrapper .cards:nth-child(1), 
+	.online__video-wrapper .cards:nth-child(2),
+	.online__video-wrapper .cards:nth-child(3) {
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.online .title {
+		margin-bottom: 80px;
+	}
+
+	.online__content-info-title {
+		margin-bottom: 23px;
+	}
+
+	.online__wrapper {
+		padding: 0 0px;
+	}
+
+	.online__main {
+		flex-direction: row;
+		max-width: 100%;
+		margin: 0;
+	}
+
+	.online__content-info-subtitle {
+		margin-bottom: 80px;
+		max-width: 543px;
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.online__form-email {
+		margin-right: 30px;
+		width: 515px;
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.online__content{
+		max-width: 100%;
+	}
+
+	.online__form-politics {
+		order: 2;
+		margin: 14px 0 19px;
+		max-width: 100%;
+	}
+
+	.online__description-item {
+		width: calc((100% - 40px) / 4);
+		max-width: 100%;
+	}
+
+	.online__description-item {
+		max-width: 242px;
+	}
+
+	.online__form-politics {
+		display: flex;
+		align-items: center;
+	}
+
+	.online__description-item {
+		margin-bottom: 0;
+	}
+
+	.online__form {
+		max-width: 770px;
+	}
+}
+
+@media (min-width: 768px) {
+	.online__title--mobile {
+		display: none;
+	}
+
+	.online__title--desc{
+		display: block;
+	}
+
+}

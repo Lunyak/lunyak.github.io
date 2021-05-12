@@ -1,0 +1,151 @@
+.top-block {
+	min-height: 569px;
+	padding: 15px 0px 280px;
+	background: #000000;
+	position: relative;
+}
+
+.top-block__inner {
+	max-width: 320px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 0;
+}
+
+.top-block__title {
+	margin: 0 10px;
+	max-width: 300px;
+	margin-bottom: 40px;
+	line-height: 121.5%;
+	font-size: 35px;
+	line-height: 121%;
+	font-family: 'Oswald';
+	font-weight: normal;
+	color: #FFFFFF;
+	order: 1;
+}
+
+.top-block__subtitle {
+	display: none;
+	max-width: 449px;
+	margin-left: 22px;
+	order: 2;
+	font-family: 'Museo Sans Cyrl';
+	font-style: normal;
+	font-weight: normal;
+
+	color: #fff;
+	margin: 0;
+}
+
+.top-block__img {
+	top: 100px;
+	position: absolute;
+	max-width: 320px;
+	order: 3;
+}
+
+.top-block__play {
+	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (min-width: 768px) {
+	.top-block {
+		padding: 0 20px;
+		padding-top: 155px;
+	}
+
+	.top-block__inner {
+		max-width: 800px;
+		padding: 0 0px;
+		margin: 0 auto;
+	}
+	
+	.top-block__img {
+		position: absolute;
+		height: fit-content;
+		top: -50px;
+		right: 40px;
+		width: auto;
+		margin: 0 auto;
+	}
+
+	.top-block__title {
+		margin: 0px 0px 20px;
+		max-width: 400px;
+	}
+
+	.top-block__subtitle {
+		max-width: 360px;
+		display: block;
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	.top-block__play {
+		position: absolute;
+		top: 70%;
+		left: 30%;
+	}
+}
+
+@media (min-width: 1070px) {
+	.top-block {
+		padding: 150px 100px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.top-block {
+		padding: 155px 0 185px;
+	}
+
+	.top-block__inner {
+		padding: 0;
+		max-width: 100%;
+	}
+
+	.top-block__img {
+		max-width: 637px;
+		right: 2%;
+		top: -150px;
+	}
+	
+	.top-block__title {
+		max-width: 600px;
+		font-size: 65px;
+		line-height: 121.5%;
+		margin-bottom: 35px;
+	}
+
+	.top-block__subtitle {
+		max-width: 449px;
+		display: block;
+		font-size: 22px;
+		line-height: 28px;
+	}
+
+	.top-block__play {
+		position: absolute;
+		top: 50%;
+		left: 39%;
+	}
+}
+
+@media (min-width: 1300px) {
+	.top-block__img {
+		/* right: 0%; */
+	}
+}
+
+@media (min-width: 1490px) {
+	.top-block__img {
+		/* right: 0px; */
+	}
+}

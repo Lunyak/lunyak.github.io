@@ -211,7 +211,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 .banner-matter{
 	float:left;
 	padding: 0em 0 0;
-	width: 39%;
+	width: 60%;
 }
 .banner-matter h1{
 	color: #a2a3a3;
@@ -227,7 +227,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 	color:#fff;
 	font-size: 1.1em;
 	line-height: 1.8em;
-	width: 80%;
+	width: 100%;
 	padding: 0em 0 0;
 }
 .tv{
@@ -273,7 +273,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 }
 #filters li span:hover ,#filters li.active span {
 	color: #fff;
-	background:#279f7c;
+	background:#82c6ee;
 	border-radius:5px;
 }
 #portfoliolist .portfolio {
@@ -296,24 +296,18 @@ div#portfoliolist {
 	overflow:hidden;
 	position: relative !important;
 	cursor:pointer;
-	max-height: 245px;
+	width: 330px;
+	height: 240px;
+	/* max-height: 245px; */
 }
 .portfolio-wrapper p{
 	color:#000;
 	font-size:1.1em;
 	padding:1em 0;
 }
-.portfolio-wrapper span.arrow{
-	background: url(../images/arrow.png) no-repeat 0px 0px;
-	width: 49px;
-	height: 26px;
-	display: inline-block;
-	position: absolute;
-	bottom: 50px;
-left: 114px;
-}
+
 .portfolio img {
-	max-width:100%;
+	/* max-width:100%; */
 	transition: all 300ms!important;
 	-webkit-transition: all 300ms!important;
 	-moz-transition: all 300ms!important;
@@ -353,6 +347,9 @@ left: 114px;
 	overflow:hidden;
 	width: 100%;
 }
+.b-link-stripe:hover img{
+	transform: scale(1.1);
+}
 .b-link-stripe .b-wrapper{
 	position:absolute;
 	width:100%;
@@ -362,6 +359,7 @@ left: 114px;
 	text-align:center;
 	color:#ffffff;
 	overflow:hidden;
+	box-shadow: inset 1px 0px 12px 0px #2396f3;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -380,8 +378,9 @@ left: 114px;
 	font-size:1.1em;
 	font-weight:700;
 }
-.b-animate img{
-	margin-top: 4%;
+.b-animate:hover img{
+	/* margin-top: 4%; */
+	/* transform: scale(0.5); */
 	display: -webkit-inline-box;
 }
 .b-animate span{
@@ -415,7 +414,7 @@ left: 114px;
 .b-from-left{
 	position: relative;
 	left: -100%;
-	background:rgba(39, 159, 124, 0.6);
+	background:rgba(91, 175, 243, 0.6);
 	background-size: 100% 100%;
 	top: 0px;
 	margin: 0;
@@ -948,18 +947,27 @@ ul.social li a i.dot:hover{
 .footer-class a:hover{
 	color:#fff;
 }
-#toTop {
+.toTop {
 	display: none;
 	text-decoration: none;
 	position: fixed;
-	bottom: 10px;
-	right: 10px;
-	overflow: hidden;
+	bottom: 100px;
+	right: 100px;
+	align-items: center;
+	justify-content: center;
 	width: 52px;
 	height: 52px;
 	border: none;
-	text-indent: 100%;
-	background: url('../images/up.png') no-repeat 0px 0px;
+}
+.toTop  svg {
+	transform: rotate(90deg);
+	fill: #2395f377;
+	width: 49px;
+	height: 50px;
+}
+.toTop  p {
+	color: #f8f8f8;
+	opacity: 1;
 }
 /*--responsive--*/
 @media(max-width:1440px){
@@ -1468,17 +1476,18 @@ a.read {
 .foto {
 	background-color: #fff;
 	width: 50%;
-	max-width: 300px;
-	height: 300px;
-	border-radius: 50%;
+	max-width: 200px;
+	border-radius: 10px 10px 10px 10px;
 	overflow: hidden;
 	box-shadow: 0px 0px 8px 0px rgb(241, 238, 238);
 	margin-right: 40px;
+	
 }
 
 .foto img {
-	top: -50px;
+	width: 100%;
 	position: relative;
+	object-fit: cover;
 	
 }
 
