@@ -1,0 +1,14 @@
+include /atoms/link/link.pug
+include /molecules/list/news/list-news.pug
+
+mixin section-news(props= {info: false, className: ''})
+	if (props.info)
+		.section-news
+			.section-news__title(data-anim='fadeUp', data-delay='0.2')
+				.section-news.text-heading-2.topline= props.info.title
+				if (props.info.link)
+					+link({info: props.info.link, className: 'section-news__title-link link--arrow'})
+			if (props.info.list)
+				+list-news({info: props.info.list, 
+					className: 'section-news__list',
+					attrs: {'data-anim': 'fadeUp', 'data-delay': '0.4'}})

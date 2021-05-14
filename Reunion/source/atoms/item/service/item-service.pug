@@ -1,0 +1,5 @@
+mixin item-service(props={info: false, className: ''})
+  if (props.info)
+    .item-service(class=props.className)
+      img.item-service__image(src=props.info.img, alt=props.info.img)
+      p.text-heading-6.item-service__text= props.info.text

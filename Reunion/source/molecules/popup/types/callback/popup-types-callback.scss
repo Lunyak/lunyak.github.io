@@ -1,0 +1,206 @@
+@import "~@molecules/popup/layout/popup-layout.scss";
+@import '~@atoms/field/input/field-input.scss';
+@import '~@atoms/field/textarea/field-textarea.scss';
+@import '~@atoms/field/select/field-select.scss';
+@import '~@atoms/field/date/field-date.scss';
+@import '~@atoms/field/file/field-file.scss';
+
+$parent: "popup-types-callback";
+
+@include block($parent) {
+  @include max-media('mMax') {
+    height: 100vh;
+  }
+
+  @include min-media('t') {
+    max-height: 90vh;
+  }
+
+  @include element($parent, 'container') {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: rem(20);
+    padding-bottom: rem(100);
+    padding-top: rem(40);
+    color: $primary;
+    background-color: $gray-light;
+
+    @include min-media('t') {
+      width: rem(600);
+      height: auto;
+      padding: rem(50);
+    }
+
+    @include min-media('xl') {
+      padding-bottom: rem(29);
+      width: rem(920);
+      // height: rem(416);
+      // min-height: rem(416);
+    }
+
+    @include max-media('mMax') {
+      min-height: rem(720);
+    }
+  }
+
+  @include element($parent, 'back') {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  @include element($parent, 'content') {
+    z-index: 2;
+    width: 100%;
+
+    @include min-media('xl') {
+      width: 55%;
+    }
+
+    @include modifier($parent, 'success') {
+      width: 100%;
+    }
+  }
+
+  @include element($parent, 'form') {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @include element($parent, 'title') {
+    margin-bottom: rem(20);
+  }
+
+  @include element($parent, 'subtitle') {
+    margin-bottom: rem(20);
+    line-height: rem(26);
+    width: 100%;
+
+    @include min-media('xl') {
+      width: rem(400);
+    }
+  }
+
+  @include element($parent, 'icon') {
+    width: rem(69);
+    height: rem(67);
+    margin: 0 auto rem(40);
+  }
+
+  @include element($parent, 'input') {
+    margin-bottom: rem(10);
+    height: rem(46);
+    background: $white;
+    border-radius: rem(4);
+
+    &::placeholder {
+      font-size: rem(14);
+      line-height: rem(22);
+      opacity: 0.7;
+    }
+
+    input,
+    textarea {
+      height: 100%;
+    }
+
+    @include modifier($parent, 'textarea') {
+      min-height: rem(90);
+    }
+
+    @include modifier($parent, 'half') {
+      width: 100%;
+
+      @include min-media('xl') {
+        width: calc(50% - #{rem(5)});
+      }
+    }
+  }
+
+  @include element($parent, 'footer') {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin-top: rem(30);
+
+    @include min-media('xl') {
+      margin-left: rem(20);
+      flex-direction: row;
+    }
+  }
+
+  @include element($parent, 'btn') {
+    align-self: flex-start;
+    margin-bottom: rem(27);
+    margin-right: rem(78);
+    margin-top: rem(5);
+  }
+
+  @include element($parent, 'politics') {
+    width: 100%;
+    margin-bottom: rem(20);
+
+    @include min-media('xl') {
+      width: 55%;
+    }
+
+    a {
+      color: $primary;
+      text-decoration: underline;
+      font-family: "OpenSans", sans-serif;
+
+      &:hover {
+        color: $green;
+        transition: color $ease;
+      }
+    }
+  }
+
+  @include element($parent, 'img') {
+    padding-bottom: rem(140);
+
+    @include min-media('xl') {
+      padding-bottom: 0;
+    }
+  }
+
+  @include element($parent, 'picture') {
+    display: block;
+    position: absolute;
+    right: calc(50% - #{rem(123)});
+
+    @include min-media('xl') {
+      top: rem(36);
+      right: rem(-35);
+    }
+
+    & > img {
+      width: rem(246);
+
+      @include min-media('xl') {
+        width: auto;
+      }
+    }
+  }
+
+  @include modifier($parent, 'open') {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @include modifier($parent, 'medium') {
+    @include element($parent, 'container') {
+      text-align: center;
+
+      @include min-media('t') {
+        width: rem(600);
+        padding: rem(56) rem(105) rem(59);
+      }
+    }
+  }
+}

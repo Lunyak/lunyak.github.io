@@ -1,0 +1,9 @@
+include /atoms/icon/icon.pug
+include /atoms/btn/btn.pug
+
+mixin field-date(props= {info: false, className: ''})
+  - var classes = [props.info.isLight ? 'field-date--light' : '', props.className ? props.className : '']
+  .field-date(class= classes, data-api=props.info.api || '', data-min-date=props.info.minDate, data-date= props.info.date)
+    .field-date__calendar
+      input.field-date__input(type='text', value=props.info.value, name=props.info.name, placeholder=props.info.label, data-validator= props.info.validators || false, data-mode= props.info.isMode || false)
+      +icon({info: props.info.icon, className: 'field-date__icon'})

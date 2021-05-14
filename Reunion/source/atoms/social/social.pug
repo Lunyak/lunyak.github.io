@@ -1,0 +1,7 @@
+mixin social(props={info: false, className: ''})
+  .social(class= props.className || '')
+    for item in props.info
+      a.social__link(href=item.href)
+        if (item.text)
+          .social__link-text= item.text
+        != loadAssets('./svg/' + item.icon + '.svg')

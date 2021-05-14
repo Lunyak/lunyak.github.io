@@ -1,0 +1,134 @@
+@import "~@atoms/field/input/field-input.scss";
+@import "~@atoms/field/textarea/field-textarea.scss";
+
+$parent: section-feedback;
+
+@include block($parent) {
+  position: relative;
+  padding-top: rem(54);
+  padding-bottom: rem(62);
+  background-color: $gray-light;
+  z-index: 0;
+
+  @include min-media('t') {
+    padding-top: rem(84);
+    padding-bottom: rem(40);
+  }
+
+  @include min-media('xl') {
+    overflow: hidden;
+    padding-top: rem(94);
+    padding-bottom: rem(51);
+  }
+
+  @include element($parent, 'wrapper') {
+    // @include min-media('t') {
+    //   width: rem(650);
+    // }
+
+    // @include min-media('xl') {
+    //   width: rem(740);
+    // }
+  }
+
+  @include element($parent, 'title') {
+    margin-bottom: rem(20);
+  }
+
+  @include element($parent, 'text') {
+    margin-bottom: rem(20);
+
+    @include min-media('t') {
+      width: rem(400);
+    }
+  }
+
+  @include element($parent, 'form') {
+    display: flex;
+    flex-direction: column;
+
+    @include min-media('t') {
+      width: rem(490);
+    }
+  }
+
+  @include element($parent, 'fields') {
+    margin-bottom: rem(9);
+
+    @include min-media('t') {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: rem(30);
+    }
+  }
+
+  @include element($parent, 'field') {
+    @include modifier($parent, 'half') {
+      @include min-media('t') {
+        width: calc(50% - #{rem(5)});
+      }
+    }
+  }
+
+  @include element($parent, 'footer') {
+    display: flex;
+    flex-direction: column;
+    margin-left: rem(20);
+    align-items: flex-start;
+
+    @include min-media('t') {
+      flex-direction: row;
+    }
+  }
+
+  @include element($parent, 'btn') {
+    order: 2;
+    flex-shrink: 0;
+
+    @include min-media('t') {
+      padding-top: rem(4);
+      margin-right: rem(80);
+      align-self: flex-start;
+      order: 0;
+    }
+  }
+
+  @include element($parent, 'politics') {
+    margin-bottom: rem(30);
+
+    & > a {
+      position: relative;
+      text-decoration: underline;
+      font-family: 'OpenSans', sans-serif;
+      color: $primary;
+    }
+  }
+
+  @include element($parent, 'image') {
+    display: none;
+
+    @include min-media('t') {
+      display: block;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+
+      & > img {
+        @include min-media('t') {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          font-family: "object-fit: cover;";
+        }
+
+        @include min-media('xl') {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

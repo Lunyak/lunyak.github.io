@@ -1,0 +1,32 @@
+@import "~@molecules/list/clients/list-clients.scss";
+
+$parent: section-clients;
+
+@include block($parent) {
+  @include element($parent, 'title') {
+    margin-bottom: rem(30);
+
+    @include min-media('xl') {
+      margin-bottom: rem(20);
+    }
+  }
+
+  @include element($parent, 'text') {
+    max-width: calc(100% - #{rem(20)});
+    margin-bottom: rem(50);
+
+    @include min-media('t') {
+      max-width: 90%;
+    }
+
+    @include min-media('xl') {
+      max-width: rem(375);
+      margin-bottom: rem(39);
+    }
+  }
+
+  @include element($parent, 'list') {
+    margin-left: rem(-5);
+    overflow-x: auto;
+  }
+}

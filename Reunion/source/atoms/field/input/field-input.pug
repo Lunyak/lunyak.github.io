@@ -1,0 +1,4 @@
+mixin field-input(props= {info: false, className: ''})
+  if props.info
+    lable.field-input(class= props.className ? props.className : '')
+      input.field-input__input(type= props.info.type, name= props.info.name, placeholder= props.info.placeholder, required= props.info.required || false, disabled= props.info.disabled || false, data-validator= props.info.validators || false, value= props.info.value)

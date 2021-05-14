@@ -1,0 +1,42 @@
+extends /layouts/main.pug
+include /organisms/section/feedback/section-feedback.pug
+include /organisms/section/firstScreen/section-firstScreen.pug
+include /organisms/section/formalization/formalization.pug
+include /molecules/accordion/accordion.pug
+include /molecules/list/service/short/list-service-short.pug
+
+block vars
+  - var page = require('../data/pages/services-inner.json');
+
+block content
+  .main
+    if page.firstScreen
+      .section
+        +section-firstscreen({info: page.firstScreen, className: 'section-firstscreen--small'})
+    if page.description
+      .section
+        .container.container--small.text!= page.description
+    if page.accordion
+      .section
+        .container.container--small
+          if page.accordion.title
+            h2.text-heading-2.topline.mb-30= page.accordion.title
+          if page.accordion.list
+            each item in page.accordion.list
+              +accordion(item)
+                mixin accordionHeader
+                  h3= item.title
+                mixin accordionContent
+                  .text!= item.content
+    if page.formalization
+      .section
+        +formalization({info: page.formalization})
+    if page.services
+      .section
+        .container
+          if page.services.title
+            h2.text-heading-2.topline.mb-30= page.services.title
+          +list-service-short({info: page.services.list})
+    if page.feedback
+      .section
+        +section-feedback({info: page.feedback})

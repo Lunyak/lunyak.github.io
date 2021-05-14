@@ -1,0 +1,19 @@
+mixin container-detail(props= {className: ''})
+  mixin content()
+    div
+  mixin bottom()
+    div
+  mixin column()
+    |
+  block
+  mixin mixin(mixin)
+    +#{mixin}
+  .container-detail(class= props.className ? props.className : '')
+    .container-detail__content
+      +mixin('content')
+    aside.container-detail__column
+      .container-detail__column-sticky
+        +mixin('column')
+    if props.botton
+      .container-detail__bottom
+        +mixin('bottom')

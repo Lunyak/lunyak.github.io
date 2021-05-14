@@ -1,0 +1,56 @@
+
+$parent: list-digits;
+
+@include block($parent) {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include min-media('xl') {
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: rem(20);
+  }
+
+  @include modifier($parent, 'small') {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+
+    @include min-media('t') {
+      width: 60%;
+      flex-direction: row;
+    }
+
+    @include min-media('d') {
+      width: 58%;
+    }
+
+    @include min-media('xl') {
+      justify-content: flex-end;
+    }
+
+    .list-digits__item {
+      margin-top: rem(22);
+    }
+
+    .list-digits__item:nth-child(1) {
+      margin-top: 0;
+    }
+
+    .list-digits__item:nth-child(2) {
+      @include min-media('t') {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @include element($parent, 'item') {
+    @include min-media('d') {
+      margin-right: rem(60);
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}

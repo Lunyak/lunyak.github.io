@@ -1,0 +1,204 @@
+{
+  "header": "file::/parts/header.json",
+  "footer": "file::/parts/footer.json",
+  "firstScreen": {
+    "slider": [
+      {
+        "image": {
+          "sources": {
+            "mobile": ["/images/services-header.png"]
+          },
+          "alt": "slide 1 image"
+        },
+        "title": "Услуги",
+        "text": "Собственная система обучения <br>и высокая экспертиза рынка",
+        "breadcrumbs": [
+          {
+            "href": "#",
+            "text": "Главная"
+          },
+          {
+            "text": "Услуги"
+          }
+        ]
+      }
+    ],
+    "logo": {
+      "sources": {
+        "mobile": ["/images/logo-big.svg"]
+      },
+      "alt": ""
+    },
+    "bottom": {
+      "sources": {
+        "mobile": ["/images/subtract1.png"]
+      },
+      "alt": ""
+    },
+    "mouse": {
+      "sources": {
+        "mobile": ["/images/mouse.svg"]
+      },
+      "alt": "scroll down!"
+    }
+  },
+  "description": "Для экономически развитых стран в последнее десятилетие характерно появление новых профессий, которые на первый взгляд являются сложными в содержании. Тем самым с их появлением появляются и новые обязанности, и задачи, а также создаются новые должности. В данном разделе мы попытаемся разобраться в профессии и должностных обязанностях счетчика-ревизора.",
+  "list": [
+    {
+      "isBig": true,
+      "label": "Инвентаризация",
+      "title": "Магазина",
+      "image": {
+        "sources": {
+          "mobile": ["/images/card-1.png"]
+        },
+        "alt": "Отзывы клиентов"
+      },
+      "href": "#"
+    },
+    {
+      "label": "Инвентаризация",
+      "title": "Экспертная",
+      "text": "Мы рекомендуем компанию «Реюнион» как профессионального, ответственного, нацеленного на...",
+      "link": {
+        "text": "Подробнее",
+        "href": "/"
+      },
+      "picture": {
+        "sources": {
+          "mobile": ["/images/book.png"]
+        },
+        "alt": "Отзывы клиентов"
+      }
+    },
+    {
+      "label": "Инвентаризация",
+      "title": "Склада",
+      "text": "Мы рекомендуем компанию «Реюнион» как профессионального, ответственного, нацеленного на...",
+      "link": {
+        "text": "Подробнее",
+        "href": "/"
+      }
+    },
+    {
+      "label": "Инвентаризация",
+      "title": "Склада",
+      "image": {
+        "sources": {
+          "mobile": ["/images/card-2.png"]
+        },
+        "alt": "Отзывы клиентов"
+      },
+      "href": "/"
+    },
+    {
+      "label": "Инвентаризация",
+      "title": "Экспертная",
+      "text": "Мы рекомендуем компанию «Реюнион» как профессионального, ответственного, нацеленного на...",
+      "link": {
+        "text": "Подробнее",
+        "href": "/"
+      }
+    },
+    {
+      "label": "Инвентаризация",
+      "title": "Склада",
+      "image": {
+        "sources": {
+          "mobile": ["/images/card-2.png"]
+        },
+        "alt": "Отзывы клиентов"
+      },
+      "href": "/"
+    },
+    {
+      "label": "Инвентаризация",
+      "title": "Склада",
+      "text": "Мы рекомендуем компанию «Реюнион» как профессионального, ответственного, нацеленного на...",
+      "link": {
+        "text": "Подробнее",
+        "href": "/"
+      }
+    },
+    {
+      "label": "Инвентаризация",
+      "title": "Склада",
+      "image": {
+        "sources": {
+          "mobile": ["/images/card-1.png"]
+        },
+        "alt": "Отзывы клиентов"
+      },
+      "href": "/"
+    },
+    {
+      "label": "Инвентаризация",
+      "title": "Склада",
+      "text": "Мы рекомендуем компанию «Реюнион» как профессионального, ответственного, нацеленного на...",
+      "link": {
+        "text": "Подробнее",
+        "href": "/"
+      }
+    },
+    {
+      "label": "Инвентаризация",
+      "title": "Склада",
+      "image": {
+        "sources": {
+          "mobile": ["/images/card-2.png"]
+        },
+        "alt": "Отзывы клиентов"
+      },
+      "href": "/"
+    }
+  ],
+  "feedback": {
+    "title": "Появились вопросы?",
+    "text": "Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время",
+    "form": {
+      "action": "/ajax/popup-success-questions.json",
+      "method": "get"
+    },
+    "fields": [
+      {
+        "type": "text",
+        "placeholder": "Имя",
+        "name": "name",
+        "validators": "required",
+        "isHalf": true
+      },
+      {
+        "type": "tel",
+        "placeholder": "Телефон",
+        "name": "phone",
+        "validators": "required|phone",
+        "isHalf": true
+      },
+      {
+        "type": "email",
+        "placeholder": "Почта",
+        "name": "email",
+        "validators": "required|email"
+      },
+      {
+        "type": "textarea",
+        "placeholder": "Вопрос ",
+        "name": "message"
+      }
+    ],
+    "btn": {
+      "text": "Отправить",
+      "type": "submit"
+    },
+    "politics": "Нажимая на кнопку вы соглашаетесь с <a href='/'> политикой конфиденциальности </a>",
+    "image": {
+      "sources": {
+        "lg": ["/images/bg-feedback-lg.jpg"],
+        "desktop": ["/images/bg-feedback-xl.jpg"],
+        "tablet": ["/images/bg-logo.png"],
+        "mobile": ["/images/bg-logo.png"]
+      },
+      "alt": "background"
+    }
+  }
+}

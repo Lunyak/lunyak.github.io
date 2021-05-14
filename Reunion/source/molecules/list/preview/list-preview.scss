@@ -1,0 +1,12 @@
+@import "~@atoms/item/preview/item-preview.scss";
+
+$parent: list-preview;
+
+@include block($parent) {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include min-media('t') {
+    margin: rem(-10);
+  }
+}

@@ -1,0 +1,8 @@
+include /atoms/picture/picture.pug
+
+mixin banner-quote(props= {info: false, className: '', attr: {}})
+  .banner-quote(class= props.className || '')&attributes(props.attrs)
+    if props.info.image
+      +picture({info: props.info.image, className: 'banner-quote__image'})
+    if props.info.text
+      .banner-quote__text= props.info.text

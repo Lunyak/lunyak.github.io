@@ -1,0 +1,15 @@
+
+mixin accordion(props= {className: ''})
+  mixin accordionHeader()
+    div
+  mixin accordionContent()
+    |
+  block
+  mixin mixin(mixin)
+      +#{mixin}
+  .accordion(class= props.className ? props.className : '', data-anim='fadeUp', data-delay='0.2')
+    .accordion__container
+      +mixin('accordionHeader')
+      .accordion__btn
+    .accordion__hidden
+        +mixin('accordionContent')

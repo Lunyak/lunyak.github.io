@@ -1,0 +1,10 @@
+include /molecules/list/news/list-news.pug
+include /atoms/link/link.pug
+
+mixin list-news-ajax(props= {info: false, className: ''})
+  .list-news-ajax
+    - var classesList = [props.info.gridFlex ? 'list-news--grid-flex' : '', props.className ? props.className : '']
+    +list-news({info: props.info.items, className: classesList,  isGrid: true, attrs: {'data-anim': 'fadeUp', 'data-delay': '0.6'}})
+    - var classes = !props.info.nextPage ? 'link--rectangle link--center text-big js-load-more link--hide' : 'link--rectangle link--center text-big js-load-more'
+    +link({ info: props.info.btn, className: classes,
+            attrs: {'data-anim': 'fadeUp', 'data-delay': '0.6'}})

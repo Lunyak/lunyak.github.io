@@ -1,0 +1,12 @@
+include /atoms/icon/icon.pug
+
+mixin btn(props={info: false, className: '', attr: {}})
+  if props.info
+    if props.info.href
+      a.btn(class= props.className, href= props.info.href)= props.info.text
+    else
+      button.btn(class= props.className, type=props.info.type || 'button')&attributes(props.attrs)
+        if props.info.text
+          .btn__text= props.info.text
+        if props.info.icon
+          +icon({info: props.info.icon})

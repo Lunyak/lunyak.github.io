@@ -1,0 +1,93 @@
+$parent: section-job;
+
+@include block($parent) {
+  @include min-media('xl') {
+    display: flex;
+  }
+
+  @include element($parent, 'description') {
+    padding-top: rem(74);
+    padding-bottom: rem(62);
+    position: relative;
+    background-color: $primary;
+    color: $white;
+    border-bottom-left-radius: rem(4);
+    border-bottom-right-radius: rem(4);
+
+    @include min-media('t') {
+      padding: rem(85) rem(60) rem(71) rem(44);
+    }
+
+    @include min-media('xl') {
+      padding: rem(84) rem(50) rem(71) rem(65);
+      width: 52%;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: rem(4);
+    }
+  }
+
+  @include element($parent, 'container') {
+    padding: 0 rem(15);
+  }
+
+  @include element($parent, 'img') {
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include min-media('xl') {
+      order: 2;
+      width: 48%;
+      height: auto;
+    }
+  }
+
+  @include element($parent, 'logo') {
+    position: absolute;
+    height: rem(430);
+    top: 0;
+    right: 0;
+
+    // @include min-media('t') {
+    //   height: rem(335);
+    // }
+
+    & > img {
+      height: 100%;
+      right: 0;
+    }
+  }
+
+  @include element($parent, 'title') {
+    margin-bottom: rem(30);
+
+    @include min-media('t') {
+      margin-bottom: rem(40);
+    }
+  }
+
+  @include element($parent, 'subtitle') {
+    margin-bottom: rem(20);
+  }
+
+  @include element($parent, 'text') {
+    margin-bottom: rem(43);
+    color: $white;
+    opacity: 1;
+
+    @include min-media('t') {
+      padding-right: rem(20);
+    }
+  }
+
+  @include element($parent, 'btn') {
+    display: inline-block;
+    align-self: center;
+  }
+
+  @include element($parent, 'controls') {
+    display: flex;
+    justify-content: space-between;
+  }
+}

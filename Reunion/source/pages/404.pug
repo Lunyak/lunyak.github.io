@@ -1,0 +1,11 @@
+extends /layouts/main.pug
+include /organisms/section/404/section-404.pug
+
+block vars
+  - var page = require('../data/pages/404.json');
+
+block content
+  .main
+    if page.error
+      .section
+        +section-404({info: page.error})

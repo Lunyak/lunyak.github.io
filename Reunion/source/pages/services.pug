@@ -1,0 +1,23 @@
+extends /layouts/main.pug
+include /organisms/section/feedback/section-feedback.pug
+include /organisms/section/firstScreen/section-firstScreen.pug
+include /molecules/list/service/cards/list-service-cards.pug
+
+block vars
+  - var page = require('../data/pages/services.json');
+
+block content
+  .main
+    if page.firstScreen
+      .section
+        +section-firstscreen({info: page.firstScreen, className: 'section-firstscreen--small'})
+    if page.description
+      .section.section--pb-0
+        .container.container--small.text!= page.description
+    if page.list
+      .section
+        .container
+          +list-service-cards({info: page.list})
+    if page.feedback
+      .section
+        +section-feedback({info: page.feedback})

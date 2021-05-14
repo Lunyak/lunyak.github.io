@@ -1,0 +1,13 @@
+@import "~@molecules/list/preview/list-preview.scss";
+
+$parent: section-preview;
+
+@include block($parent) {
+  @include element($parent, 'subtitle') {
+    color: $primary;
+    font-size: rem(14);
+    line-height: rem(22);
+    margin-bottom: rem(20);
+    opacity: 0.7;
+  }
+}

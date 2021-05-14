@@ -1,0 +1,17 @@
+@import "~@atoms/item/client/item-client.scss";
+
+$parent: list-clients;
+
+@include block($parent) {
+  display: flex;
+
+  @include min-media('t') {
+    flex-wrap: wrap;
+    margin: rem(-5);
+  }
+
+  @include min-media('xl') {
+    flex-wrap: wrap;
+    margin: rem(-5) rem(-5) rem(-30);
+  }
+}

@@ -1,0 +1,48 @@
+@import "~@atoms/item/service/card/item-service-card.scss";
+
+$parent: list-service-short;
+
+@include block($parent) {
+  overflow-x: auto;
+  display: flex;
+  width: calc(100% + #{rem(20)});
+  margin-right: rem(-20);
+
+  @include element($parent, 'item') {
+    width: rem(310);
+    min-width: rem(310);
+    height: rem(340);
+    padding: rem(5);
+
+    @include min-media('t') {
+      width: rem(390);
+      min-width: rem(390);
+    }
+
+    @include min-media('xl') {
+      width: 33.33%;
+      min-width: 33.33%;
+    }
+  }
+
+  @include element($parent, 'item-container') {
+    height: 100%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  @include min-media('t') {
+    width: calc(100% + #{rem(80)});
+    margin-right: rem(-80);
+  }
+
+  @include min-media('xl') {
+    width: 100%;
+    margin-right: 0;
+    overflow: hidden;
+  }
+}

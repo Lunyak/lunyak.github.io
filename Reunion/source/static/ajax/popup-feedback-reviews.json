@@ -1,0 +1,48 @@
+{
+  "title": "Оставить отзыв",
+  "text": "Оставьте свои отзыв и мы обязательно прислушиемся к Вашему мнению",
+  "form": {
+    "action": "/ajax/popup-success",
+    "method": "get"
+  },
+  "action": "/ajax/popup-success-review.json",
+  "method": "get",
+  "fields": [
+    {
+      "type": "text",
+      "placeholder": "Имя",
+      "name": "name",
+      "validators": "required",
+      "isHalf": true
+    },
+    {
+      "type": "tel",
+      "placeholder": "Телефон",
+      "name": "phone",
+      "validators": "required|phone",
+      "isHalf": true
+    },
+    {
+      "type": "text",
+      "placeholder": "Компания",
+      "name": "сompany",
+      "validators": "required"
+    },
+    {
+      "type": "textarea",
+      "placeholder": "Сообщение",
+      "name": "message"
+    }
+  ],
+  "btn": {
+    "text": "Отправить",
+    "type": "submit"
+  },
+  "politics": "Нажимая на кнопку вы соглашаетесь с&nbsp;<a href='/'>политикой конфиденциальности</a>",
+  "image": {
+    "sources": {
+      "mobile": ["/images/paper.png"]
+    },
+    "alt": "Заявка"
+  }
+}

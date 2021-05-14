@@ -1,0 +1,17 @@
+include /atoms/social/social.pug
+include /atoms/link/link.pug
+include /atoms/item/contacts/item-contacts.pug
+
+mixin menu(props= {info: false, className: ''})
+  nav.header__menu
+    img.header__menu-decor(src= props.info.image, alt='')
+    ul.header__menu-list
+      for link in props.info.links
+        li.header__menu-item
+          if (link.type)
+            a.text-heading-2.header__menu-link(href=link.href, data-type= link.type, data-popup)= link.text
+          else
+            a.text-heading-2.header__menu-link(href= link.href)= link.text
+    if props.info.contacts
+      +item-contacts({info: props.info.contacts, className: 'item-contacts--mobile'})
+      +social({info: props.info.social})

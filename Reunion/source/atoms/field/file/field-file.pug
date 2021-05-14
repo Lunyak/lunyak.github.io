@@ -1,0 +1,7 @@
+include /atoms/icon/icon.pug
+
+mixin field-file(props= {info: {}, className: ''})
+  .field-file.dropzone(action= props.info.action || "/file-upload", data-size= props.info.maxSize || false, data-count= props.info.maxCount || false, data-format= props.info.formatTypes || false, method= props.info.method)
+    .field-file__text.dz-button= props.info.text 
+    +icon({info: 'loading', className: 'field-file__icon'})
+    .field-file__format= props.info.formatText

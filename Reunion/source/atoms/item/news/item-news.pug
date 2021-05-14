@@ -1,0 +1,17 @@
+include /atoms/link/link.pug
+
+mixin item-news(props= {info: false, className: '', isGrid: false})
+  - var classDesk = [props.isGrid ? 'item-news--grid' : '', props.className ? props.className : '']
+  - var attrs = props.info.link.popup ? {'data-popup': true} : {}
+  .item-news(class= classDesk)
+    if props.info.link
+      a.item-news__card(href=props.info.link.href, data-type= props.info.link.type || false)&attributes(attrs)
+    .item-news__wrap
+      if props.info.lable
+        p.item-news__lable= props.info.lable
+      if props.info.title
+        p.text-heading-3.item-news__title= props.info.title
+      if props.info.desc
+        p.text.item-news__desc= props.info.desc
+      if props.info.link
+        +link({info: props.info.link , className: 'item-news__link link--line'})

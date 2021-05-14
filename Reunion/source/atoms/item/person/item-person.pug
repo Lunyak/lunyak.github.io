@@ -1,0 +1,18 @@
+include /atoms/picture/picture.pug
+
+mixin item-person(props= {info: false, className: ''})
+  .item-person(class= props.className)
+    if props.info.link
+      - var attrs= props.info.link.popup ? {'data-popup': true} : {}
+      a.item-person__link(href= props.info.link.href)&attributes(attrs)
+    .item-person__description
+      if props.info.label
+          p.item-person__label= props.info.label
+      if props.info.title
+          p.item-person__title(class= props.info.titleNobr ? 'item-person__title--nobr':'')= props.info.title
+      if props.info.text
+        p.item-person__text.text= props.info.text
+      if props.info.link
+        +link({info: props.info.link, className: 'text-big link--white item-person__link-text'})
+    if props.info.image
+      +picture({info: props.info.image, className: 'item-person__img'})

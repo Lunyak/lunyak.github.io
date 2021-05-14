@@ -1,0 +1,6 @@
+include /atoms/item/service/item-service.pug
+
+mixin list-service(props= {info: false, className: ''})
+  .list-service(class= props.className)&attributes(props.attrs)
+    for card in props.info
+      +item-service({info: card, className: 'list-service__item'})

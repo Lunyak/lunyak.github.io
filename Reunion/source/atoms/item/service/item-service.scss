@@ -1,0 +1,32 @@
+$parent: item-service;
+
+@include block($parent) { // перенсти часть в .section-service__item
+  width: 80%;
+  display: flex;
+  margin-top: rem(30);
+
+  @include min-media('t') {
+    max-width: 50%;
+  }
+
+  @include min-media('xl') {
+    max-width: 50%;
+    display: block;
+  }
+
+  @include min-media('xxl') {
+    width: 50%;
+  }
+
+  @include element($parent, 'image') {
+    margin-right: rem(30);
+
+    @include min-media('xl') {
+      margin-bottom: rem(25);
+    }
+  }
+
+  @include element($parent, 'text') {
+    max-width: rem(190);
+  }
+}

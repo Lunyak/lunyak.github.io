@@ -1,0 +1,100 @@
+{
+  "items": [
+    {
+      "id": "msk",
+      "coords": ["43.132960, 131.928810"],
+      "icon": "pin",
+      "tooltip": {
+        "city": "Москва",
+        "address": "Московский пр-т. д 101",
+        "mail": [
+          {
+            "url": "mailto:reunion@example.com",
+            "text": "ReunionMosk@example.com"
+          }
+        ],
+        "phone": [
+          {
+            "url": "tel:+78455554505",
+            "text": "+7 (845) 555-45-77"
+          },
+          {
+            "url": "tel:+78455554505",
+            "text": "+7 (845) 555-45-66"
+          },
+          {
+            "url": "tel:+78455554505",
+            "text": "+7 (845) 555-45-88"
+          }
+        ],
+        "daytime": "Пн-Вс: 9:00 - 21:00"
+      }
+    },
+    {
+      "id": "kzn",
+      "coords": ["43.112960, 131.918810"],
+      "icon": "pin",
+      "tooltip": {
+        "city": "Казань",
+        "address": "Пролетарский пр-т. д 10001",
+        "mail": [
+          {
+            "url": "mailto:reunion@example.com",
+            "text": "ReunionKaz@example.com"
+          }
+        ],
+        "phone": [
+          {
+            "url": "tel:+78455554505",
+            "text": "+7 (845) 555-45-05"
+          }
+        ],
+        "daytime": "Пн-Вс: 9:00 - 21:00"
+      }
+    },
+    {
+      "id": "spb",
+      "coords": ["43.122960, 131.908810"],
+      "icon": "pin",
+      "tooltip": {
+        "city": "Санкт-Петебург",
+        "address": "Некрасовский пр-т. д 101",
+        "mail": [
+          {
+            "url": "mailto:reunion@example.com",
+            "text": "ReunionSP@example.com"
+          }
+        ],
+        "phone": [
+          {
+            "url": "tel:+78455554501",
+            "text": "+7 (845) 555-45-01"
+          }
+        ],
+        "daytime": "Пн-Вс: 9:00 - 21:00"
+      }
+    },
+    {
+      "id": "ulsk",
+      "coords": ["43.1132960, 131.998810"],
+      "icon": "pin",
+      "tooltip": {
+        "city": "Ульяновск",
+        "address": "Ульяновский пр-т. д 101",
+        "mail": [
+          {
+            "url": "mailto:reunion@example.com",
+            "text": "Reunion@example.com"
+          }
+        ],
+        "phone": [
+          {
+            "url": "tel:+78455554505",
+            "text": "+7 (845) 555-45-05"
+          }
+        ],
+        "daytime": "Пн-Вс: 9:00 - 21:00"
+      }
+    }
+  ]
+}

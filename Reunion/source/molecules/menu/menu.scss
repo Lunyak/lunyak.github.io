@@ -1,0 +1,32 @@
+$parent: header;
+
+@include block($parent) {
+  @include element($parent, 'menu') {
+    position: relative;
+    margin-left: rem(20);
+    padding: rem(68) 0 rem(30) 0;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  @include element($parent, 'menu-decor') {
+    position: absolute;
+    top: rem(47);
+    right: rem(-20);
+
+    @include min-media('t') {
+      right: rem(-80);
+    }
+  }
+
+  .header__link {
+    margin-left: 0;
+
+    a {
+      color: white;
+    }
+  }
+}

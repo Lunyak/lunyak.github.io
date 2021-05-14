@@ -1,0 +1,40 @@
+include /atoms/link/link.pug
+include /atoms/picture/picture.pug
+include /atoms/item/person/item-person.pug
+include /atoms/item/contacts/item-contacts.pug
+
+mixin section-person(props= {info: false, className: ''})
+  .section-person.lazyload(class= props.className || '')&attributes(props.attrs)
+    if props.info.imageLogo
+      +picture({info: props.info.imageLogo, className: 'section-person__logo'})
+    .container.container--width-xl-100
+      .section-person__inner
+        if props.info.image
+          .section-person__slider-image.swiper-container
+            .section-person__slider-wrap.swiper-wrapper
+              for item in props.info.image
+                +picture({info: item, className: "section-person__img swiper-slide"})
+        .section-person__description
+          .section-person__container
+            if props.info.slider
+              .section-person__slider.swiper-container
+                .swiper-wrapper
+                  each item in props.info.slider
+                    .section-person__item.swiper-slide
+                      if item.title
+                        .section-person__title.text-heading-2.topline= item.title
+                      if item.sudtitle
+                        .section-person__subtitle.text-heading-3= item.sudtitle
+                      if item.text
+                        .section-person__text.text!= item.text
+                      if item.contacts
+                        .section-person__contacts
+                          +item-contacts({info: item.contacts, className: 'section-person__contacts item-contacts--person swiper-slide'})
+              if props.info.slider.length > 1 
+                .section-person__controls
+                  if props.info.btn
+                    +link({info: props.info.btn, className: 'section-person__btn link--white'})
+                  .swiper-pagination__controls-wrapper
+                    .swiper-pagination
+                    button.swiper__button.swiper__button--prev
+                    button.swiper__button.swiper__button--next

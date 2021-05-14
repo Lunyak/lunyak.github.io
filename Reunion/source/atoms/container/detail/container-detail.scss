@@ -1,0 +1,89 @@
+$parent: container-detail;
+
+@include block($parent) {
+  @include min-media("xl") {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @include element($parent, "content") {
+    width: 100%;
+    background-color: $white;
+    border-radius: rem(4);
+    // overflow: hidden;
+    // margin-bottom: rem(-40);
+
+    // & > * {
+    //   margin-bottom: rem(40);
+    // }
+
+    @include min-media("xl") {
+      width: 62.5%;
+    }
+  }
+
+  @include element($parent, "text-content") {
+    padding: rem(20);
+
+    @include min-media("t") {
+      padding: rem(40);
+    }
+
+    @include min-media("xl") {
+      padding: rem(50);
+    }
+  }
+
+  @include element($parent, "wrapper") {
+    @include min-media('xl') {
+      padding-left: rem(20);
+      padding-right: rem(30);
+    }
+  }
+
+  @include element($parent, "wide-block") {
+    margin: 0 rem(-20);
+
+    @include min-media("t") {
+      margin: 0 rem(-40);
+    }
+
+    @include min-media("xl") {
+      margin: 0 rem(-50);
+    }
+  }
+
+  @include element($parent, "bottom") {
+    width: 100%;
+
+    @include min-media("xl") {
+      width: calc(66.66% - #{rem(16)});
+    }
+
+    @include min-media('xxxl') {
+      width: 71.4%;
+    }
+  }
+
+  @include element($parent, "column") {
+    margin-top: rem(30);
+
+    @include min-media("xl") {
+      width: calc(37.5% - #{rem(65)});
+      min-width: rem(375);
+      margin-top: 0;
+      margin-left: auto;
+    }
+
+    @include min-media('xxxl') {
+      width: 20%;
+    }
+  }
+
+  @include element($parent, "column-sticky") {
+    position: sticky;
+    top: rem(100);
+    transition: top 0.3s ease;
+  }
+}

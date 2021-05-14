@@ -1,0 +1,8 @@
+include /atoms/picture/picture.pug
+
+mixin banner(props= {info: false, className: '', attrs: {}})
+  .banner(class= props.className || '')&attributes(props.attrs)
+    if props.info.text
+      .banner__text.text-frame= props.info.text
+    if props.info.image
+      +picture({info: props.info.image, className: 'banner__image'})

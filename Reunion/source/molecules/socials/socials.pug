@@ -1,0 +1,13 @@
+include /atoms/btn/btn.pug
+include /atoms/social/social.pug
+
+mixin socials(props= {info: false, className: '', attrs: {}})
+  .socials(class= props.className || '')&attributes(props.attrs)
+    if props.info.btn
+      +btn({info: props.info.btn, className: 'btn--white text-big socials__btn'})
+    if props.info.text || props.info.list
+      .socials__icon 
+        if props.info.text
+          .socials__text= props.info.text
+        if props.info.list
+          +social({info: props.info.list, className: 'social--green'})

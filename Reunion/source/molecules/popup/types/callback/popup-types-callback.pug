@@ -1,0 +1,39 @@
+include /atoms/picture/picture
+include /atoms/link/link
+include /atoms/field/input/field-input
+include /atoms/field/textarea/field-textarea
+include /atoms/field/select/field-select
+include /atoms/field/date/field-date
+include /atoms/field/file/field-file
+include /atoms/picture/picture
+include /molecules/popup/layout/popup-layout.pug
+
+mixin popup-types-callback(props={info: false, className: '', id: ''})
+  +popup-layout({className: `popup-types-callback ${props.className}`})
+    .popup-types-callback__container
+      if props.info.title
+        .popup-types-callback__title.text-heading-2!= props.info.title
+      .popup-types-callback__content(class= props.info.isSuccess ? 'popup-types-callback__content--success' : '')
+        if props.info.icon
+          .popup-types-callback__icon
+            != loadAssets(`./svg/${props.info.icon}.svg`)
+        if props.info.text
+          .popup-types-callback__subtitle.text!= props.info.text
+        - var id = props.id ? {'data-id': props.id} : {}
+        form.popup-types-callback__form(enctype=props.info.enctype, method= props.info.method, action= props.info.action, data-url= props.info.attr)&attributes(id)
+          if props.info.fields
+            each input in props.info.fields
+              - var tag = input.mixin ? 'field-' + input.mixin : 'field-input'
+              - var classes = input.isHalf ? 'popup-types-callback__input popup-types-callback__input--half' : input.isTextarea ? '' : 'popup-types-callback__input';
+              +#{tag}({info: input, className: classes})
+            if props.info.file
+              - var fileInfo = Object.assign(props.info.file, {action: props.info.action})
+              +field-file({info: fileInfo})
+          .popup-types-callback__footer
+            if props.info.btn
+              +link({info: props.info.btn, className: 'popup-types-callback__btn'})
+            if props.info.politics
+              .popup-types-callback__politics.text-extrasmall!= props.info.politics
+        if props.info.image
+          .popup-types-callback__img
+            +picture({info: props.info.image, className: 'popup-types-callback__picture'})

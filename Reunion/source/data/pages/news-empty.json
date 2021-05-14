@@ -1,0 +1,37 @@
+{
+  "header": "file::/parts/header-white.json",
+  "footer": "file::/parts/footer.json",
+  "title": "Новости",
+  "breadcrumbs": [
+    {
+      "href": "/",
+      "text": "Главная"
+    },
+    {
+      "text": "Новости"
+    }
+  ],
+  "no_data_text": "В разделе пока нет новостей",
+  "news": {
+    "items": [],
+    "btn": {
+      "text": "Загрузить еще",
+      "href": "/ajax/news.json"
+    },
+    "date": {
+      "form": {
+        "action": "/ajax/filterNews.json",
+        "method": "get"
+      },
+      "list": [
+        {
+          "type": "date",
+          "label": "Период",
+          "name": "date",
+          "icon": "link-arrow"
+        }
+      ]
+    },
+    "nextPage": "/ajax/news2.json"
+  }
+}

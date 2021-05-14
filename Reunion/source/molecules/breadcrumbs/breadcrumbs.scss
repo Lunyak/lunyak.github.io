@@ -1,0 +1,62 @@
+$parent: breadcrumbs;
+
+@include block($parent) {
+  display: flex;
+  padding-bottom: rem(40);
+
+  @include element($parent, 'item') {
+    color: $white;
+    font-family: $OpenSans;
+    white-space: nowrap;
+    transition: color $ease;
+
+    &:not(:last-child) {
+      &::after {
+        content: "/";
+        margin: 0 rem(7);
+        color: $white;
+      }
+    }
+
+    &[href]:hover {
+      color: $green;
+
+      &::after {
+        color: $white;
+      }
+    }
+
+    &:last-child {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    @include modifier($parent, 'current') {
+      opacity: 0.7;
+
+      &[href]:hover {
+        color: $white;
+      }
+    }
+  }
+
+  @include modifier($parent, 'dark') {
+    padding-bottom: rem(16);
+
+    @include element($parent, 'item') {
+      color: $blue-dark;
+
+      &:not(:last-child) {
+        &::after {
+          color: $blue-dark;
+        }
+      }
+    }
+
+    // & + .text-heading-2 {
+    //   margin-top: rem(16);
+    //   margin-bottom: rem(40);
+    // }
+  }
+}

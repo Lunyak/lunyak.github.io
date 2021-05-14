@@ -1,0 +1,8 @@
+-
+  loadAssets = function(file) {
+    if (file.indexOf('.svg') !== -1) {
+      file = file.replace('./svg/','').replace('.svg','');
+      return '<svg><use xlink:href="/assets/sprite.svg#'+file+'-usage"/></svg>';
+    }
+    return file;
+  }

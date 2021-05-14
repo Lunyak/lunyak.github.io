@@ -1,0 +1,34 @@
+
+include /atoms/icon/icon.pug
+include /atoms/link/link.pug
+include /atoms/item/contacts/item-contacts.pug
+include /molecules/menu/menu.pug
+
+mixin header(props={info: false, className: ''})
+  - var classes = [props.className, props.info.isWhite ? 'header--fixed header--white' : '']
+  .header(class= classes)
+    
+    .container
+      .header__inner
+        if (props.info.logo)
+          a.header__logo(href= props.info.logo.href)
+            +icon({info: props.info.logo.icon, className: 'header__logo-img'})
+          nav.header__nav
+            ul.header__nav-list
+              for link in props.info.nav
+                li.header__nav-item
+                  if (link.type)
+                    a.text-small.header__nav-link(href=link.href, data-type= link.type, data-popup)= link.text
+                  else
+                    a.text-small.header__nav-link(href=link.href)= link.text
+                    if (link.dropmenu)
+                      ul.header__drop-menu
+                        for droplinks in link.dropmenu
+                          li.header__drop-item
+                            a.text-small.header__drop-link(href= droplinks.href)= droplinks.text
+        button.header__btn
+          p.text.header__btn-text(data-open= props.info.btn.textOpen, data-close= props.info.btn.textClose)= props.info.btn.textClose
+          +icon({info: props.info.btn.image.open, className: 'header__btn-icon header__btn-icon--open'})
+          +icon({info: props.info.btn.image.close, className: 'header__btn-icon header__btn-icon--close'})
+        +item-contacts({info: props.info.contacts, className: 'header__contacts'})
+      +menu({info: props.info.menu})

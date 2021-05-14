@@ -1,0 +1,10 @@
+include /molecules/list/news/ajax/list-news-ajax.pug
+include /atoms/btn/btn.pug
+
+mixin section-reviews(props= {info: false, className: ''})
+  .section-reviews(class= props.className || '')
+    .container
+      if props.info.title
+        .section-reviews__title.text-heading-2(data-anim='fadeUp', data-delay='0.2')= props.info.title
+      if props.info
+        +list-news-ajax({info: props.info})

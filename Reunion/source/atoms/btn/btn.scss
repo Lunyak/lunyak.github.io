@@ -1,0 +1,38 @@
+$parent: btn;
+
+@include block($parent) {
+  @include modifier($parent, 'white') {
+    display: block;
+    width: rem(260);
+    height: rem(56);
+    border: rem(1) solid $green;
+    border-radius: rem(4);
+
+    &::before {
+      display: none;
+    }
+
+    &:hover {
+      background-color: $green;
+      color: $white;
+      transition: background-color $ease, color $ease;
+    }
+
+    &:active {
+      background-color: $green-darken;
+      transition: background-color $ease;
+    }
+  }
+
+  @include modifier($parent, 'center') {
+    margin: 0 auto;
+  }
+
+  @include element($parent, 'text') {
+    font: 600 rem(18)/rem(18) 'OpenSans', sans-serif;
+  }
+
+  @include modifier($parent, 'hide') {
+    display: none;
+  }
+}

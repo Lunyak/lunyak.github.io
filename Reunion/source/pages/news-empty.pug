@@ -1,0 +1,30 @@
+extends /layouts/main.pug
+
+include /organisms/section/news/section-news.pug
+include /molecules/list/news/ajax/list-news-ajax.pug
+include /atoms/btn/btn.pug
+include /molecules/form/filter/form-filter.pug
+include /molecules/breadcrumbs/breadcrumbs.pug
+
+block vars
+  - var page = require('../data/pages/news-empty.json');
+
+block content
+  .main
+    .section-top.mb-30
+      .container
+        if page.breadcrumbs
+          +breadcrumbs({info: page.breadcrumbs, className: 'breadcrumbs--dark'})
+      .container.container--flex
+        if page.title
+          .text-heading-2(data-anim='fadeUp', data-delay='0.2')!= page.title
+        if page.news.date
+          +form-filter({info: page.news.date, className: 'js-filter',
+            attrs: {'data-anim': 'fadeUp', 'data-delay': '0.2'}})
+    if page.news
+      .section.section--pt-0.section-bottom
+        .container
+          if page.news.items.length > 0
+            +list-news-ajax({info: page.news})
+          else
+            .text-small= page.no_data_text

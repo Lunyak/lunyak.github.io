@@ -1,0 +1,12 @@
+include /atoms/item/news/item-news.pug
+include /atoms/item/person/item-person.pug
+
+mixin list-news(props= {info: false, className: '', isGrid: false})
+  - var classes = [props.isGrid ? 'list-news--grid' : '', props.className ? props.className : '']
+  .list-news(class= classes)&attributes(props.attrs)
+    for card in props.info
+      if card.image
+        +item-person({info: card, className: 'list-news__item-person'})
+      else
+        //- - var classesItem = [props.isGrid ? 'list-news__item ', isGrid: true : 'list-news__item']
+        +item-news({info: card, className: 'list-news__item', isGrid: props.isGrid})

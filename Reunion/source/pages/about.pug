@@ -1,0 +1,40 @@
+extends /layouts/main.pug
+include /molecules/banner/banner.pug
+include /organisms/section/application/section-application.pug
+include /organisms/section/clients/section-clients.pug
+include /organisms/section/service/section-service.pug
+include /organisms/section/person/section-person.pug
+include /organisms/section/news/section-news.pug
+include /organisms/section/feedback/section-feedback.pug
+include /organisms/section/firstScreen/section-firstScreen.pug
+
+block vars
+  - var page = require('../data/pages/about.json');
+
+block content
+   .main
+    if page.firstScreen
+      .section
+        +section-firstscreen({info: page.firstScreen, className: 'section-firstscreen--about'})
+    if page.service
+      .section.is-hidden
+        .container
+          +section-service({info: page.service})
+    if page.banner
+      .section.is-hidden
+        .container.container--pl-m-0.container--pr-m-0.container--plr-t-40
+          +banner({info: page.banner, className: 'banner--text-width', attrs: {'data-anim': 'fadeUp', 'data-delay': '0.4'}})
+    if page.service
+      .section.is-hidden
+        .container
+          +section-service({info: page.map})
+    if page.person
+      .section.is-hidden
+        +section-person({info: page.person})
+    if page.news
+      .section.is-hidden
+        .container.container--pr-t-0
+          +section-news({info: page.news})
+    if page.feedback
+      .section
+        +section-feedback({info: page.feedback})

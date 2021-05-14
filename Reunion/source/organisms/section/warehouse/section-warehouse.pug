@@ -1,0 +1,33 @@
+include /atoms/link/link.pug
+include /atoms/picture/picture.pug
+include /atoms/item/person/item-person.pug
+
+mixin section-warehouse(props= {info: false, className: ''})
+  .section-warehouse(class= props.className || '')
+    .container.container--width-xxxl-100(data-anim='fadeUp', data-delay='0.6')
+      .section-warehouse__description
+        .section-warehouse__container
+          if props.info.slider
+            .section-warehouse__slider.swiper-container
+              .swiper-wrapper
+                each item in props.info.slider
+                  .section-warehouse__item.swiper-slide
+                    if item.title
+                      .section-warehouse__title.text-heading-2.topline= item.title
+                    if item.sudtitle
+                      .section-warehouse__subtitle.text-heading-3= item.sudtitle
+                    if item.text
+                      .section-warehouse__text.text!= item.text
+            if props.info.slider.length > 1
+              .section-warehouse__controls
+                if props.info.btn
+                  +link({info: props.info.btn, className: 'section-warehouse__btn'})
+                .swiper-pagination__controls-wrapper
+                  .swiper-pagination
+                  button.swiper__button.swiper__button--green.swiper__button--prev
+                  button.swiper__button.swiper__button--green.swiper__button--next
+    if props.info.cards
+      .section-warehouse__cards-container.swiper-container
+        .section-warehouse__cards.swiper-wrapper
+          for item in props.info.cards
+            +item-person({info: item, className: 'section-warehouse__cards-item swiper-slide blur'})

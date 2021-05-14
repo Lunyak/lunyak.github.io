@@ -1,0 +1,44 @@
+extends /layouts/main.pug
+include /organisms/section/feedback/section-feedback.pug
+include /atoms/item/person/item-person.pug
+include /molecules/breadcrumbs/breadcrumbs.pug
+include /atoms/container/detail/container-detail.pug
+include /molecules/accordion/accordion.pug
+include /atoms/btn/btn.pug
+
+block vars
+  - var page = require('../data/pages/vacancies.json');
+
+block content
+  .main
+    .section-top
+      .container.container--detail
+        if page.breadcrumbs
+          +breadcrumbs({info: page.breadcrumbs, className: 'breadcrumbs--dark'})
+        if page.title
+          h2.text-heading-2.mb-40= page.title
+        +container-detail
+          mixin content
+            if page.accordion
+              if page.accordion.list.length > 0
+                each item in page.accordion.list
+                  +accordion(item)
+                    mixin accordionHeader
+                      h3= item.title
+                    mixin accordionContent
+                      .text.user-text.mb-40!= item.content
+                      if item.btns
+                        - var attr = item.id ? {id: item.id} : {}
+                        .accordion__wrap-btns&attributes(attr)
+                          each btn in item.btns
+                            - var tag = btn.link ? 'link' : 'btn'
+                            - var attrs = btn.api ? {'data-api': btn.api } : {}
+                            +#{tag}({ info: btn, className: 'btn--white text-big', attrs: attrs })
+              else
+                if page.no_data_text
+                  .text-small= page.no_data_text
+          mixin column
+            +item-person({info: page.card, className: 'item-person--aside'})
+    if page.feedback
+      .section
+        +section-feedback({info: page.feedback})

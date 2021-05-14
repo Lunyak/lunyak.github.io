@@ -1,0 +1,42 @@
+extends /layouts/main.pug
+
+include /molecules/breadcrumbs/breadcrumbs.pug
+include /atoms/container/detail/container-detail.pug
+include /atoms/picture/picture.pug
+include /molecules/banner/banner.pug
+include /molecules/socials/socials.pug
+include /organisms/section/preview/section-preview.pug
+
+block vars
+  - var page = require('../data/pages/inner-news.json');
+
+block content
+  .main
+    .section-top.mb-30
+      .container.container--detail
+        if page.breadcrumbs 
+          +breadcrumbs({info: page.breadcrumbs, className: 'breadcrumbs--dark mb-30'})
+        +container-detail
+          mixin content
+            if page.news.image
+              +picture({info: page.news.image, 
+                className: 'picture--border-radius mb-40',
+                attrs: {'data-anim': 'fadeUp', 'data-delay': '0.2'}})
+            .container-detail__wrapper(data-anim='fadeUp', data-delay='0.4')
+              if page.news.title
+                .text-heading-2.mb-16!= page.news.title
+              if page.news.lable
+                .text-lable.mb-40= page.news.lable
+              if page.news.subtitle
+                .text.text--no-opacity.mb-60!= page.news.subtitle
+              if page.news.quote
+                +banner({info: page.news.quote, className: 'banner--column mb-60'})
+              if page.news.text
+                .inner-news__text.text--no-opacity.text.mb-60!= page.news.text
+            if page.socials
+              +socials({info: page.socials, attrs: {'data-anim': 'fadeUp', 'data-delay': '0.6'}})
+
+          mixin column
+            if page.preview
+              +section-preview({info: page.preview, attrs: {'data-anim': 'fadeUp', 'data-delay': '0.2'}})
+    .section

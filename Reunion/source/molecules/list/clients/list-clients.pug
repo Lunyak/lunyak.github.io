@@ -1,0 +1,7 @@
+include /atoms/item/client/item-client
+
+mixin list-clients(props= {info: false, className: ''})
+  if props.info
+    .list-clients(class= props.className)&attributes(props.attrs)
+      each item in props.info
+        +item-client({info: item})

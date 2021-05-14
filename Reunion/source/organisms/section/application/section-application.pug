@@ -1,0 +1,18 @@
+include /atoms/link/link.pug
+
+mixin section-application(props= {info: false, className: ''})
+  .section-application(class= props.className || '')
+    .container.section-application__wrapper
+      .section-application__description
+        if props.info.title
+          .section-application__title.text-heading-2.topline(data-anim='fadeUp', data-delay='0.2')= props.info.title
+        if props.info.text
+          .section-application__text.text(data-anim='fadeUp', data-delay='0.4')!= props.info.text
+        if props.info.btn
+          +link({info: props.info.btn, 
+            className: 'link--white section-application__link',
+            attrs: {'data-anim': 'fadeUp', 'data-delay': '0.5'}})
+      if props.info.image
+        .section-application__img
+          +picture({info: props.info.image, className: 'section-application__picture',
+          attrs: {'data-anim': 'fadeUp', 'data-delay': '0.4'}})

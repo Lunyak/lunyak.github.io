@@ -1,0 +1,34 @@
+$parent: "popup";
+
+@include block($parent) {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($primary, 0.7);
+  z-index: 500;
+  max-height: 100vh;
+  overflow: auto;
+  opacity: 0;
+  pointer-events: none;
+
+  // @include min-media('t') {
+  //   background-color: rgba($primary, 0.7);
+  // }
+
+  @include min-media('t') {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include modifier($parent, 'open') {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  // @include modifier($parent, 'bg-dark') {
+  //   background-color: black;
+  // }
+}

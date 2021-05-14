@@ -1,0 +1,5 @@
+mixin item-digits(props={info: false, className: ''})
+  if (props.info)
+    .item-digits(class=props.className)
+      p.item-digits__number= props.info.number
+      p.item-digits__text= props.info.text

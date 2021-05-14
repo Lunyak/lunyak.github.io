@@ -1,0 +1,7 @@
+include /atoms/item/preview/item-preview.pug
+
+mixin list-preview(props= {info: false, className: ''})
+  if props.info
+    .list-preview(class= props.className || '')
+      each item in props.info
+        +item-preview({info: item})

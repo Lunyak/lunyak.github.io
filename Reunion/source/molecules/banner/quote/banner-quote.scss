@@ -1,0 +1,50 @@
+@import "~@atoms/picture/picture.scss";
+
+$parent: banner-quote;
+
+@include block($parent) {
+  display: flex;
+  flex-wrap: wrap;
+  padding: rem(20);
+  justify-content: space-between;
+  position: relative;
+  background-color: $gray-light;
+  border-radius: rem(4);
+  overflow: hidden;
+
+  @include min-media('xl') {
+    width: 100%;
+    padding: rem(30) rem(40);
+    padding-left: rem(30);
+  }
+
+  @include element($parent, 'text') {
+    line-height: rem(26);
+    font-weight: 600;
+    width: 100%;
+    z-index: 2;
+    text-align: right;
+
+    @include min-media('t') {
+      width: 85%;
+      // padding: rem(40);
+    }
+
+    @include min-media('xl') {
+      // padding: rem(60) rem(100);
+      width: 89%;
+    }
+  }
+
+  @include element($parent, 'image') {
+    display: block;
+    height: 100%;
+    margin-bottom: rem(20);
+    margin-top: rem(10);
+
+    img {
+      height: rem(29);
+      width: rem(47);
+    }
+  }
+}

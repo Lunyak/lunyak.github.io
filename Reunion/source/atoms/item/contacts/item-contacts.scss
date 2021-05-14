@@ -1,0 +1,106 @@
+
+$parent: item-contacts;
+
+@include block($parent) {
+  display: flex;
+  margin-left: rem(0);
+  justify-content: space-between;
+  position: relative;
+  flex-direction: column;
+
+  @include modifier($parent, 'mobile') {
+    display: flex;
+    margin-left: rem(0);
+    margin-top: rem(60);
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    @include min-media('d') {
+      display: flex;
+    }
+
+    img {
+      margin-right: rem(10);
+    }
+
+    @include element($parent, 'phone') {
+      margin-bottom: rem(6);
+      color: $gray-dark;
+      font-size: rem(24);
+      line-height: rem(33.6);
+
+      &:hover {
+        color: $green;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  @include modifier($parent, 'person') {
+    @include element($parent, 'email') {
+      font-size: rem(12);
+    }
+
+    @include element($parent, 'phone') {
+      font-size: rem(18);
+    }
+
+    @include element($parent, 'icon') {
+      margin-right: rem(20);
+      width: rem(22);
+    }
+
+    @include element($parent, 'icon-email') {
+      width: rem(19.8);
+      height: rem(10.8);
+    }
+  }
+
+  @include element($parent, 'wrap') {
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      margin-bottom: rem(20);
+    }
+  }
+
+  @include element($parent, 'phone') {
+    color: $white;
+    font-size: rem(18);
+    line-height: rem(25);
+
+    &:hover {
+      color: $green;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @include element($parent, 'icon') {
+    max-width: rem(18);
+    max-height: rem(14.5);
+    margin-right: rem(10);
+
+    @include min-media('xl') {
+      svg {
+        height: rem(18);
+        width: rem(14);
+      }
+    }
+  }
+
+  @include element($parent, 'email') {
+    font-size: 14px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+}

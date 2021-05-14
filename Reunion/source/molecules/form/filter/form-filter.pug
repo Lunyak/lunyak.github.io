@@ -1,0 +1,9 @@
+include /atoms/field/date/field-date.pug
+include /atoms/field/input/field-input.pug
+include /atoms/field/textarea/field-textarea.pug
+
+mixin form-filter(props= {info: false, className: '', attr: {}})
+  form.form-filter(class= props.className, action= props.info.form.action, method= props.info.form.method)&attributes(props.attrs)
+      each item in props.info.list
+        - var tag = `field-${item.type}`
+        +#{tag}({info: item, className: 'form-filter__item'})

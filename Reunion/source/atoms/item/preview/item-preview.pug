@@ -1,0 +1,12 @@
+include /atoms/picture/picture.pug
+
+mixin item-preview(props= {info: false, className: ''})
+  if props.info
+    a.item-preview(href= props.info.href, class= props.className || '')
+      if props.info.image
+        +picture({info: props.info.image, className: 'picture--border-radius'})
+      .item-preview__description
+        if props.info.lable
+          .item-preview__lable.text-lable= props.info.lable
+        if props.info.text
+          .item-preview__text.text-heading-5!= props.info.text

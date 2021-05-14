@@ -1,0 +1,28 @@
+$parent: map;
+
+@include block($parent) {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  @include element($parent, 'wrapper') {
+    height: 100%;
+  }
+
+  /* stylelint-disable */
+  ymaps[id] ymaps {
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: $blue-dark;
+    text-align: center;
+  }
+
+  .ymaps-2-1-78-copyright,
+  .ymaps-2-1-78-map-copyrights-promo {
+    display: none;
+  }
+
+  .ymaps-2-1-78-ground-pane {
+    filter: grayscale(1);
+  }
+}

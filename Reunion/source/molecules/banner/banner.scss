@@ -1,0 +1,70 @@
+@import "~@atoms/picture/picture.scss";
+@import "~@atoms/container/container.scss";
+
+$parent: banner;
+
+@include block($parent) {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: $primary;
+  overflow: hidden;
+
+  @include min-media('t') {
+    border-radius: rem(4);
+  }
+
+  @include modifier($parent, 'text-width') {
+    @include element($parent, 'text') {
+      padding-right: rem(40);
+    }
+  }
+
+  @include modifier($parent, 'column') {
+    @include min-media('xl') {
+      & > .banner__text {
+        font-size: rem(16);
+        line-height: rem(26);
+        padding: rem(30) rem(40);
+        padding-right: rem(20);
+      }
+    }
+  }
+
+  @include element($parent, 'text') {
+    position: relative;
+    padding: rem(20);
+    z-index: 2;
+    width: 84%;
+    color: $white;
+
+    @include min-media('t') {
+      padding: rem(40);
+    }
+
+    @include min-media('xl') {
+      padding: rem(60) rem(100);
+      width: 82%;
+    }
+  }
+
+  @include element($parent, 'image') {
+    position: absolute;
+    height: 94%;
+    right: 0;
+    top: 0;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+
+    @include min-media ('t') {
+      height: 100%;
+    }
+
+    @include min-media('xl') {
+      height: 97%;
+    }
+  }
+}

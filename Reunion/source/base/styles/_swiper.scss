@@ -1,0 +1,125 @@
+$parent: 'swiper_dist';
+
+@if import-once($parent) {
+  .swiper-pagination {
+    display: flex;
+    text-align: center;
+    transition: 0.3s opacity;
+    transform: translate3d(0, 0, 0);
+    align-items: flex-end;
+  }
+
+  .swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    width: 100%;
+
+    &:hover .swiper-pagination {
+      opacity: 1;
+    }
+  }
+
+  .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+    align-items: flex-start;
+    transition: all 300ms;
+  }
+
+  .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+  }
+
+  .swiper-pagination-current {
+    font-size: rem(36);
+    line-height: rem(36);
+    margin: 0 6px -2px 0;
+  }
+
+  .swiper-pagination-total {
+    font-size: rem(20);
+    line-height: rem(20);
+  }
+
+  .swiper-pagination__controls-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .swiper-pagination__controls-wrapper {
+    width: rem(150);
+    padding: 0 rem(37);
+    position: relative;
+  }
+
+  .swiper__button {
+    position: absolute;
+    top: rem(14);
+    width: rem(9);
+    height: rem(9);
+    border-left: 2px solid $white;
+    border-bottom: 2px solid $white;
+    transition: border $ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 400%;
+      transform: rotate(135deg) translateY(32%);
+    }
+
+    &--prev {
+      left: 0;
+      transform: rotate(45deg);
+    }
+
+    &--next {
+      right: 0;
+      transform: rotate(-135deg);
+    }
+
+    &--green {
+      border-left: 2px solid $dark;
+      border-bottom: 2px solid $dark;
+
+      &:active {
+        border-left: 2px solid $green;
+        border-bottom: 2px solid $green;
+      }
+    }
+
+    &:hover {
+      border-left: 2px solid $green;
+      border-bottom: 2px solid $green;
+    }
+
+    &:active {
+      border-left: 2px solid $green-darken;
+      border-bottom: 2px solid $green-darken;
+    }
+  }
+
+  .swiper-container-autoheight {
+    height: auto;
+
+    .swiper-slide {
+      height: auto;
+    }
+  }
+}

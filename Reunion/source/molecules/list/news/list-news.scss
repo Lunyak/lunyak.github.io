@@ -1,0 +1,87 @@
+@import "~@atoms/icon/icon.scss";
+@import "~@atoms/item/news/item-news.scss";
+@import "~@atoms/item/person/item-person.scss";
+
+$parent: list-news;
+
+@include block($parent) {
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  margin-bottom: rem(-10);
+
+  @include min-media('xl') {
+    overflow-x: hidden;
+    margin: 0 rem(-5);
+  }
+
+  @include modifier($parent, 'grid') {
+    flex-wrap: wrap;
+    margin-bottom: rem(50);
+
+    @include min-media('t') {
+      margin: rem(-5);
+      margin-bottom: rem(50);
+    }
+
+    @include min-media('xl') {
+      display: block;
+      margin-bottom: rem(60);
+      flex-wrap: wrap;
+      clear: both;
+    }
+
+    @include element($parent, "item") {
+      padding-left: rem(30);
+      margin-right: 0;
+      margin-bottom: rem(10);
+      width: 100%;
+
+      @include min-media('t') {
+        width: calc(50% - #{rem(10)});
+        margin: rem(5);
+      }
+
+      @include min-media('xl') {
+        width: calc(33.33% - #{rem(10)});
+      }
+    }
+  }
+
+  @include modifier($parent, 'grid-flex') {
+    display: flex;
+  }
+
+  @include element($parent, "item") {
+    width: 310px;
+    width: rem(310);
+    // height: rem(372);
+    margin-right: rem(10);
+    float: left;
+
+    // &--person {
+    //   float: right;
+    // }
+
+    @include min-media('t') {
+      // min-width: auto;
+      width: rem(390);
+      // height: rem(330);
+      flex-shrink: 0;
+    }
+
+    @include min-media('xl') {
+      margin: 0 rem(5);
+      width: calc(100% / 3 - #{rem(10)});
+    }
+  }
+
+  @include element($parent, "item-person") {
+    margin-bottom: rem(10);
+
+    @include min-media('t') {
+      margin: rem(5);
+    }
+  }
+}

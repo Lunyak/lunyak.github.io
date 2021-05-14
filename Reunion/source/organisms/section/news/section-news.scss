@@ -1,0 +1,43 @@
+@import "~@molecules/list/news/list-news.scss";
+
+$parent: section-news;
+
+@include block($parent) {
+  @include element($parent, 'title') {
+    margin-bottom: rem(30);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @include element($parent, 'list') {
+    margin-left: rem(-5);
+    overflow-x: auto;
+  }
+
+  @include element($parent, 'title-link') {
+    margin-right: rem(20);
+    display: flex;
+    font-size: rem(16);
+    font-weight: 600;
+
+    @include min-media('t') {
+      margin-right: rem(80);
+    }
+
+    @include min-media('xl') {
+      margin-right: rem(125);
+    }
+
+    @include min-media('xxl') {
+      margin-right: 0;
+    }
+
+    svg {
+      margin-left: rem(16);
+      max-width: rem(20);
+      max-height: rem(20);
+    }
+  }
+}

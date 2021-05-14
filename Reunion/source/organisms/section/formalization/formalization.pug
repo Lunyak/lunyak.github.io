@@ -1,0 +1,19 @@
+include /atoms/item/service/card/item-service-card.pug
+include /atoms/picture/picture.pug
+
+mixin formalization(props= {info: false, className: ''})
+  .formalization(class= props.className)
+    .container
+      .formalization__container
+        if props.info.image
+          .formalization__image-container
+            +picture({info: props.info.image, className: 'formalization__image'})
+        .formalization__description
+          if props.info.title
+            .formalization__title.text-heading-2.topline= props.info.title
+          if props.info.list
+            .formalization__list
+              each item in props.info.list
+                .formalization__item
+                  .formalization__number= item.number
+                  .formalization__text!= item.text
