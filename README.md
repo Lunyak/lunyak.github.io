@@ -1,5 +1,5 @@
 # Добро пожаловать на мою страничку:
-![Альтернативный текст](https://sun9-15.userapi.com/zmo0OyjmhC7kbn_WJHpLOBNhMH3vlEblGao62g/Kw1SHLteaG8.jpg)
+<!-- ![Альтернативный текст](https://sun9-15.userapi.com/zmo0OyjmhC7kbn_WJHpLOBNhMH3vlEblGao62g/Kw1SHLteaG8.jpg) -->
 
 ----------------------
 
@@ -32,6 +32,9 @@
 ### Тут вы можете ознакомится с некоторыми моими работами.
 
 [Mirror](https://lunyak.github.io/Mirror/ "8")*
+
+[Mirror](https://lunyak.github.io/Reunion/ "8")*
+
 Верстка. В  разделе "Наши работы"
 В "каталоге" выдвигающийся sidebar с фильтрами.
 Поведение input при фокусировке: высвечивается дублирующая надпись над полем ввода,
