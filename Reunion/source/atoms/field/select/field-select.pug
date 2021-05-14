@@ -1,9 +1,0 @@
-mixin field-select(props= {info: false, className: '', attrs: {}})
-  - var classes = [props.info.isLight ? 'field-select--light' : '', props.className ? props.className : '']
-  .field-select(class= classes)&attributes(props.attrs)
-    select.field-select__select(disabled= props.info.disabled || false, name= props.info.name, required= props.info.required || false, data-validator= props.info.validators || false, data-placeholder=props.info.placeholder)
-      if props.info.placeholder
-        option(value='')= props.info.placeholder
-      if props.info.options
-        each option in props.info.options
-          option.field-select__item(selected= option.selected || false, value= option.value, disabled=option.disabled || false)= option.text

@@ -1,7 +1,0 @@
-include /atoms/item/service/card/item-service-card.pug
-
-mixin list-service-short(props= {info: false, className: ''})
-  .list-service-short(class= props.className)
-    for card in props.info
-      .list-service-short__item(data-anim='fadeUp', data-delay='0.2')
-        +item-service-card({info: card, className: 'list-service-short__item-container'})

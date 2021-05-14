@@ -1,4 +1,0 @@
-mixin field-textarea(props= {info: false, className: ''})
-  if props.info
-    lable.field-textarea(class= props.className ? props.className : '')
-      textarea.field-textarea__textarea(name= props.info.name, placeholder= props.info.placeholder, required= props.info.required || false, disabled= props.info.disabled || false, data-validator= props.info.validators || false)

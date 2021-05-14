@@ -1,7 +1,0 @@
-include /atoms/picture/picture
-
-mixin item-client(props= {info: false, className: ''})
-  if props.info
-    .item-client
-      if props.info.image
-        +picture({info: props.info.image})

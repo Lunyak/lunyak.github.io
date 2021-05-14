@@ -1,7 +1,0 @@
-mixin popup-layout(props)
-  .popup-layout(class= props.className ? props.className : '')
-    .popup-layout__content
-      .popup-layout__text.text-small= 'Закрыть'
-      button.popup-layout__btn-close.js-close
-        != loadAssets('./svg/burger-close.svg')
-      block

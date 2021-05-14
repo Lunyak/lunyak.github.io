@@ -1,7 +1,0 @@
-$parent: icon;
-
-@include block($parent) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}

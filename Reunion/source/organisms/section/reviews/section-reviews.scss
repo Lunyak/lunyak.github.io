@@ -1,9 +1,0 @@
-$parent: section-reviews;
-
-@include block($parent) {
-  // margin-top: rem(150);
-
-  @include element($parent, 'title') {
-    margin-bottom: rem(30);
-  }
-}

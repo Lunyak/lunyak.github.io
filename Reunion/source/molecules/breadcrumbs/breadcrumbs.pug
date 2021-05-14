@@ -1,7 +1,0 @@
-mixin breadcrumbs(props={info: false, className: ''})
-	.breadcrumbs(class=props.className)
-		each item in props.info
-			if item.href
-				a.breadcrumbs__item(href= item.href)= item.text
-			else
-				span.breadcrumbs__item.breadcrumbs__item--current= item.text
